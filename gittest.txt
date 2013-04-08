@@ -1,5 +1,6 @@
 git add .
 git commit -m ""
+git commit -m "aa"
 git push
 git commit -a -m "aa"
 git clone https://github.com/mwjx/tests
