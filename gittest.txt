@@ -1,4 +1,13 @@
 git add .
 git commit -m ""
 git push
+git commit -a -m "aa"
 git clone https://github.com/mwjx/tests
+git clone https://github.com/mwjx/tests tests
+git clone mwjx@github.com:mwjx/tests tests
+git clone mwjx@github.com:mwjx/tests.git tests
+git clone https://github.com/mwjx/tests.git
+
+scp en.* mwjx@mwjx.vicp.net:/Users/mwjx/
+scp mwjx@mwjx.vicp.net:/Users/mwjx/en.*  ./
+
