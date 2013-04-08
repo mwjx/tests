@@ -46,6 +46,7 @@ private:
 	int ref_count; //被引用计数
 	int roomen; //房间号
 	std::stringstream ss;  //临时字符串格式流
+	bool blnrun; //是否运行
 	int pool; //彩池
 	int nowno; //当前题目词号
 	tp_vi vi_opt; //选项
@@ -73,6 +74,20 @@ private:
 	void inroom(int cli); //进房
 	void outroom(int cli); //出房
 	void bc_init(int cli); //广播初始房间信息
+	void req_down(int cli,const char *); //坐下
+	void rsp_down(int cli,int no); //坐下响应
+	void bc_sitinfo(int no); //座位信息
+	void req_up(int cli,const char *arg); //站起
+	void clear_sit(int no); //踢人
+
+	//线程安全函数,2013-4-9,暂未完成
+	int tsf_set_sit(int no,int tp,int v){if(1==tp){vs_sits[no].u=v;}else{vs_sits[no].money=v;}}
+	int tsf_sit_uid(int no){return vs_sits[no].u;}
+	int tsf_sitbyuid(int u); //根据uid查座位号
+	int tsf_enough(int u); //用户钱是否够
+	int tsf_user2sit(int u,int no); //用户钱到桌子
+	int tsf_sit2user(int no,int u); //桌子钱到用户
+	void tsf_down(int no,int u){vs_sits[no].u=u;} //坐下
 
 	inline int get_ref(void) const { return ref_count;}
 	inline void add_ref(void){ ++ ref_count;}
