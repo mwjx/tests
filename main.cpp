@@ -2,9 +2,12 @@
 #include <iostream>  
 #include <time.h>  
 #include <stdlib.h>  
-using std::cout;  
+#include <vector>
+using namespace std;  
 const int SIZE_CHAR = 32; //生成32 + 1位C Style字符串  
 const char CCH[] = "_0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_";  
+typedef vector<int> tp_vi;
+void print(tp_vi &tmp);
 int main()  
 {  
     srand((unsigned)time(NULL));  
@@ -17,8 +20,32 @@ int main()
     cout <<ch <<"/n";        
     return 0;  
 }  
+void rash(void)
+{
+	srand((unsigned int)time(NULL));
+	int num = 80;
+	tp_vi vi_ls;
+	vi_ls.reserve(num);
+	for(int i =0;i<num;++i){
+		vi_ls.push_back(i);
+	}
 
-
+	//乱序
+	int key,val;
+	for(int i =0;i<vi_ls.size();++i){
+		key = rand()%num;
+		val = vi_ls[key];
+		vi_ls[key] = vi_ls[i];
+		vi_ls[i] = val;
+	}
+}
+void print(tp_vi &tmp)
+{
+	for(int i=0;i<tmp.size();++i){
+		cout << tmp[i] << ",";
+	}
+	cout << endl;
+}
 void ques()
 {
 	//出题
