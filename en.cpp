@@ -281,14 +281,17 @@ void c_en::bc_init(int cli)
 void c_en::click(int cli,int no)
 {
 	//选择
-	//参数:cli客户,no选项词号
+	//参数:cli客户,no选项下标
 	//返回:无
-	int ruid = p_ul->uidbycid(cli);
-	if(ruid<1){return;}
+	if(no<0 || no>=NUM_OPT){return;}
 	//不在运行中
 	if(!blnrun){return;}
-	//已答
+	int ruid = p_ul->uidbycid(cli);
+	if(ruid<1){return;}
+	//已答对
 	if(-1==nowno){return;}
+	//正确词号
+	int word = vi_opt[no];
 	//不是座位用户
 	int mysit = tsf_sitbyuid(ruid);
 	if(-1==mysit){return;}
@@ -310,14 +313,14 @@ void c_en::click(int cli,int no)
 	}
 	//是否正确
 	//正确获奖移钱,答案置-1
-	if(nowno==no){
+	if(nowno==word){
 		blnpool = true;
 		v = vs_sits[mysit].money; //p_level->get_vals(15,ruid);
 		v += pool;
 		pool = 0;
 		vs_sits[mysit].money = v; //p_level->set_vals(15,ruid,v);
+		nowno = -1;
 	}
-	nowno = -1;
 	if(blnpool){
 		//广播彩池到房
 		bc_pool();
@@ -325,9 +328,16 @@ void c_en::click(int cli,int no)
 		bc_sitmoney(money);
 	}
 	//选择和结果到房
-	bc_click(mysit,no);
+	bc_click(blnpool,mysit,no);
 }
-
+void bc_click(bool bln,int sit,int no)
+{
+	std::stringstream stmp;  //临时字符串格式流
+	stmp.str("");
+	stmp.clear();
+	stmp << (bln?"Y":"N") << "," << sit << "," << no;
+	//add_bc();
+}
 int c_en::cmd(int room,int cli,int cmd,const char *arg)
 {
 	//指令
