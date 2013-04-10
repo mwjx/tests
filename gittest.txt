@@ -1,10 +1,10 @@
 git status
+git add .
 git commit -a -m "aa"
 git push
 git pull
 
 CPLUS_INCLUDE_PATH=CPATH=...
-git add .
 git commit -m ""
 git commit -m "aa"
 git clone https://github.com/mwjx/tests
