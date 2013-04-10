@@ -13,10 +13,10 @@
 #include <ctime>
 #include "../cmdif/basecmd.h"
 typedef std::vector<int> tp_vi;
+typedef std::set<int> tp_si;
 /*
 using namespace std;
 //typedef list<top_score> tp_lt;
-typedef set<int> tp_si;
 
 //class c_global_sql;
 //class c_mysql;
@@ -30,6 +30,12 @@ class c_level;
 class c_userlist; //在线
 class c_broadcastlist;
 class c_cmdif; //指令接口
+class c_tm;
+class c_en;
+struct AF{
+c_en * p; //类对象指针
+void (c_en::*pmf)(void); // 成员函数指针
+};
 class c_en :public c_basecmd //: public c_observer
 {
 public:
@@ -57,6 +63,11 @@ private:
 	const static int NUM_SIT = 5; //座位数
 	typedef std::vector<tp_sit> tp_vs;
 	tp_vs vs_sits; //座位表
+	AF a1;
+	c_tm *p_tm;
+	int no_tm; //定时任务下标
+	tp_vi vi_ls; //牌堆
+	tp_si si_ed; //已经选过:[uid]
 	/*
 	int max_userlv; //用户等级上限
 	tp_si si_att; //可升级属性代码
@@ -79,7 +90,16 @@ private:
 	void bc_sitinfo(int no); //座位信息
 	void req_up(int cli,const char *arg); //站起
 	void clear_sit(int no); //踢人
-	void click(); //选择
+	void ques(void); //出题
+	void print(tp_vi &tmp);
+	void rash(void); //洗牌
+	void bc_pool(void); //彩池信息广播
+	void bc_ques(void); //题目广播
+	void bc_sitmoney(void); //座位钱广播
+	void bc_sitmoney(int no); //座位钱广播
+	void click(int cli,int no); //答题
+	void bc_click(bool bln,int sit,int no); //广播结果
+
 
 	//线程安全函数,2013-4-9,暂未完成
 	int tsf_set_sit(int no,int tp,int v){if(1==tp){vs_sits[no].u=v;}else{vs_sits[no].money=v;}}
@@ -89,6 +109,7 @@ private:
 	int tsf_user2sit(int u,int no); //用户钱到桌子
 	int tsf_sit2user(int no,int u); //桌子钱到用户
 	void tsf_down(int no,int u){vs_sits[no].u=u;} //坐下
+	void tsf_up_state(void); //刷新运行状态
 
 	inline int get_ref(void) const { return ref_count;}
 	inline void add_ref(void){ ++ ref_count;}

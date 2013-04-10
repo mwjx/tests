@@ -18,17 +18,28 @@
 #include "../map/cinfo.h"
 #include "../class_broadcastlist.h"
 #include "../cmdif/cmdif.h"
+#include "tm.h"
 #include <algorithm>
 using namespace std;
 const int NUM_OPT = 4; //选项数
 //const int NUM_SIT = 5; //座位数
 const int MIN_SITMONEY = 20; //最小上桌钱
 const int MAX_SITMONEY = 100; //最大上桌钱
-const int MAX_CLICK = 10; //选金上限
+const int SIG_MONEY = 1; //单注
+const int CLICK_MONEY = 10; //选金上限
+const int NUM_CARD = 80; //词数
 //const int TM_TOP = 3600; //每小时更新排行
 //const int NUM_TOP = 10; //前n名有奖
 //bool is_eque(top_score a,int u){return (a.u==u);}
 //bool is_lit(top_score a,top_score b){return (a.v<b.v && a.u!=b.u);}
+void _tm_en(void* ptr)
+{
+	AF *pa = static_cast<AF *>(ptr); // 强制转换 p 为 A* 
+	c_en *ph = pa->p; // 从A中析取Hack对象地址
+	void (c_en::*pmf)(void)=pa->pmf; //析取 ptr 到成员函数
+	(ph->*pmf)(); // 调用成员函数
+}
+
 c_en* c_en::_instance = NULL;
 c_en* c_en::instance(void)
 {
@@ -43,10 +54,13 @@ void c_en::release(void)
 	delete _instance;
 	_instance = NULL;
 }
-c_en::c_en(void):ref_count(0),roomen(534),pool(0),nowno(-1),blnrun(false)
+c_en::c_en(void):ref_count(0),roomen(534),pool(0),nowno(0),blnrun(false)
 {
+	vi_opt.reserve(NUM_OPT);
 	vi_opt.resize(NUM_OPT,-1);
+	vs_sits.reserve(NUM_SIT);
 	vs_sits.resize(NUM_SIT);
+	vi_ls.reserve(NUM_CARD);
 	/*
 //	p_gsql = c_global_sql::instance();
 //	p_sql = p_gsql->get_sql();
@@ -64,10 +78,21 @@ c_en::c_en(void):ref_count(0),roomen(534),pool(0),nowno(-1),blnrun(false)
 	p_if->attach(2065,this); //退房
 	p_if->attach(2067,this); //坐下
 	p_if->attach(2071,this); //站起
+	p_if->attach(2079,this); //答题
+	p_tm = c_tm::instance();
+	a1.p = this;
+	a1.pmf = &c_en::ques;
+	no_tm = p_tm->reg_cb(&_tm_en,&a1);
+	
 	//tests();
 }
 c_en::~c_en(void)
 {
+	assert(-1!=no_tm);
+	p_tm->cancel_cb(no_tm);
+	no_tm = -1;
+	p_tm->release();
+	p_if->detach(2079);
 	p_if->detach(2071);
 	p_if->detach(2067);
 	p_if->detach(2065);
@@ -93,12 +118,16 @@ void c_en::tests(void)
 	//输出:无
 	cerr << "英语多人房测试" << endl;
 	req_down(123,"0");
+	rash();
+	print(vi_ls);
+	ques();
 }
 int c_en::tsf_sitbyuid(int u)
 {
 	//根据uid查座位号
 	//参数:u用户
 	//返回:座位号,-1无座位
+	if(u<1){return -1;}
 	for(int i =0;i<NUM_SIT;++i){
 		if(u==vs_sits[i].u){return i;}
 	}
@@ -130,7 +159,7 @@ int c_en::tsf_user2sit(int u,int no)
 	//用户钱到桌子
 	//参数:u用户,no座号
 	//返回:0成功,-1失败
-	//p_level->set_vals(15,u,MAX_SITMONEY);
+	p_level->set_vals(15,u,MAX_SITMONEY*100);
 	int v = p_level->get_vals(15,u);
 	if(v<MIN_SITMONEY){return -1;}
 	int sub = (v>=MAX_SITMONEY)?MAX_SITMONEY:MIN_SITMONEY;
@@ -173,11 +202,13 @@ void c_en::clear_sit(int no)
 	tsf_set_sit(no,1,0);
 	tsf_set_sit(no,2,0);
 	//cout << "req_up,555" << endl;
-	//状态信号,略
+	//状态信号
+	tsf_up_state();
 	//广播座号到个人
 	int cli = p_ul->cidbyuid(u);
 	//cout << "req_up,666" << endl;
-	rsp_down(cli,no);
+	//rsp_down(cli,no);
+	rsp_down(cli,-1);
 	//广播座位信息到房间
 	bc_sitinfo(no);
 }
@@ -206,7 +237,8 @@ void c_en::req_down(int cli,const char *arg)
 	//cout << "req_down,555" << endl;
 	//坐下
 	tsf_down(no,ruid);
-	//状态信号,略
+	//状态信号
+	tsf_up_state();
 	//广播结果消息到请求者
 	rsp_down(cli,no);
 	//广播座位信息到房间
@@ -218,6 +250,9 @@ void c_en::inroom(int cli)
 	//输入:cli客户
 	//输出:无
 	p_ul->set_room(cli,roomen);
+	int ruid = p_ul->uidbycid(cli);
+	int mysit = tsf_sitbyuid(ruid);
+	rsp_down(cli,mysit);
 	bc_init(cli);
 }
 void c_en::outroom(int cli)
@@ -241,6 +276,59 @@ void c_en::bc_sitinfo(int no)
 	stmp << no << "," << vs_sits[no].money << "," << tmp;
 	p_bl->add_bc(4,roomen,2070,stmp.str().c_str(),roomen); //房间	
 }
+void c_en::bc_pool(void)
+{
+	//彩池信息广播
+	//参数:无
+	//返回:无
+	std::stringstream stmp;  //临时字符串格式流
+	stmp.str("");
+	stmp.clear();
+	stmp << pool;
+	p_bl->add_bc(4,roomen,2074,stmp.str().c_str(),roomen); //房间	
+}
+void c_en::bc_sitmoney(int no)
+{
+	//座位钱广播
+	//参数:no座位下标
+	//返回:无
+	assert((no>=0 && no<vs_sits.size()));
+	std::stringstream stmp;  //临时字符串格式流
+	stmp.str("");
+	stmp.clear();
+	stmp << no << "_" << vs_sits[no].money;
+	p_bl->add_bc(4,roomen,2078,stmp.str().c_str(),roomen); //房间	
+}
+void c_en::bc_sitmoney(void)
+{
+	//座位钱广播
+	//参数:无
+	//返回:无
+	std::stringstream stmp;  //临时字符串格式流
+	stmp.str("");
+	stmp.clear();
+	for(int i = 0;i<vs_sits.size();++i){
+		if(vs_sits[i].u<1){continue;}
+		if(!stmp.str().empty()){stmp << ",";}
+		stmp << i << "_" << vs_sits[i].money;
+	}
+	p_bl->add_bc(4,roomen,2078,stmp.str().c_str(),roomen); //房间	
+}
+void c_en::bc_ques(void)
+{
+	//题目广播
+	//参数:无
+	//返回:无
+	std::stringstream stmp;  //临时字符串格式流
+	stmp.str("");
+	stmp.clear();
+	stmp << nowno;
+	for(int i = 0;i<vi_opt.size();++i){
+		stmp << "," << vi_opt[i];
+	}
+	p_bl->add_bc(4,roomen,2076,stmp.str().c_str(),roomen); //房间	
+}
+
 void c_en::rsp_down(int cli,int no)
 {
 	//坐下响应
@@ -278,20 +366,103 @@ void c_en::bc_init(int cli)
 	p_bl->add_bc(1,cli,2064,ss.str().c_str(),0); //私人
 
 }
+void c_en::ques(void)
+{
+	//出题//定时器调用
+	//参数:无
+	//返回:无
+	//cout << "c_en::ques" << endl;
+	//不在运行中
+	if(!blnrun){return;}
+	//扣所有座位单注
+	//扣注失败，踢出
+	int count = 0;
+	for(int i=0;i<NUM_SIT;++i){
+		if(vs_sits[i].u<1){continue;}
+		if(vs_sits[i].money<SIG_MONEY){
+			clear_sit(i);
+			continue;
+		}
+		vs_sits[i].money-=SIG_MONEY;		
+		count += SIG_MONEY;
+	}
+	//cout << "count=" << count << endl;
+	//注数合计是否为0
+	if(count<1){return;}
+	//加注到彩池
+	pool += count;
+	//取题目及选项
+	if(vi_ls.size()<NUM_OPT){rash();}
+	vi_opt.clear();
+	for(int i=0;i<NUM_OPT;++i){
+		vi_opt.push_back(vi_ls.back());
+		vi_ls.pop_back();
+	}
+	//设题目
+	srand((unsigned int)time(NULL));
+	nowno = vi_opt[rand()%NUM_OPT];
+	//清空答题标识
+	si_ed.clear();
+	//广播彩池到房间
+	bc_pool();
+	//广播题目到房
+	bc_ques();
+	//广播座位钱到房
+	bc_sitmoney();
+	//cout << "end,nowno=" << nowno << endl;
+}
+void c_en::rash(void)
+{
+	//洗出一副牌
+	//参数:无
+	//返回:无
+	srand((unsigned int)time(NULL));
+	for(int i =0;i<NUM_CARD;++i){
+		vi_ls.push_back(i);
+	}
+
+	//乱序
+	int key,val;
+	for(int i =0;i<vi_ls.size();++i){
+		key = rand()%NUM_CARD;
+		val = vi_ls[key];
+		vi_ls[key] = vi_ls[i];
+		vi_ls[i] = val;
+	}
+}
+void c_en::print(tp_vi &tmp)
+{
+	for(int i=0;i<tmp.size();++i){
+		cout << tmp[i] << ",";
+	}
+	cout << endl;
+}
+void c_en::tsf_up_state(void)
+{
+	//刷新运行状态
+	//参数:无
+	//返回:无
+	for(int i=0;i<NUM_SIT;++i){
+		if(vs_sits[i].u>0){
+			blnrun = true;
+			return;
+		}
+	}
+	blnrun = false;
+}
 void c_en::click(int cli,int no)
 {
-	//选择
-	//参数:cli客户,no选项下标
+	//答题
+	//参数:cli客户,no选项下标(0-3)
 	//返回:无
 	if(no<0 || no>=NUM_OPT){return;}
 	//不在运行中
 	if(!blnrun){return;}
-	int ruid = p_ul->uidbycid(cli);
-	if(ruid<1){return;}
 	//已答对
 	if(-1==nowno){return;}
-	//正确词号
-	int word = vi_opt[no];
+	//用户无效
+	int ruid = p_ul->uidbycid(cli);
+	if(ruid<1){return;}
 	//不是座位用户
 	int mysit = tsf_sitbyuid(ruid);
 	if(-1==mysit){return;}
@@ -302,7 +473,7 @@ void c_en::click(int cli,int no)
 	//彩池变动变量
 	bool blnpool = false;
 	//是否够选金
-	int need = pool>MAX_CLICK?MAX_CLICK:pool;
+	int need = pool>CLICK_MONEY?CLICK_MONEY:pool;
 	int v = vs_sits[mysit].money; //p_level->get_vals(15,ruid);
 	//扣钱
 	if(v>=need){
@@ -311,32 +482,35 @@ void c_en::click(int cli,int no)
 		v -= need;
 		vs_sits[mysit].money = v; //p_level->set_vals(15,ruid,v);
 	}
+//	//正确词号
+//	int word = vi_opt[no];
 	//是否正确
 	//正确获奖移钱,答案置-1
-	if(nowno==word){
-		blnpool = true;
-		v = vs_sits[mysit].money; //p_level->get_vals(15,ruid);
-		v += pool;
+	bool blnok = false; //是否答对
+	if(blnpool && nowno==vi_opt[no]){
+		blnok = true;
+		vs_sits[mysit].money += pool;
 		pool = 0;
-		vs_sits[mysit].money = v; //p_level->set_vals(15,ruid,v);
 		nowno = -1;
 	}
 	if(blnpool){
 		//广播彩池到房
 		bc_pool();
 		//座位钱到房
-		bc_sitmoney(money);
+		bc_sitmoney(mysit);
 	}
 	//选择和结果到房
-	bc_click(blnpool,mysit,no);
+	bc_click(blnok,mysit,no);
 }
-void bc_click(bool bln,int sit,int no)
+void c_en::bc_click(bool bln,int sit,int no)
 {
+	//广播结果
+	//参数:bln结果,sit座位号0-4,no选项0-3
 	std::stringstream stmp;  //临时字符串格式流
 	stmp.str("");
 	stmp.clear();
 	stmp << (bln?"Y":"N") << "," << sit << "," << no;
-	//add_bc();
+	p_bl->add_bc(4,roomen,2080,stmp.str().c_str(),roomen); //房间	
 }
 int c_en::cmd(int room,int cli,int cmd,const char *arg)
 {
@@ -356,6 +530,9 @@ int c_en::cmd(int room,int cli,int cmd,const char *arg)
 		break;
 	case 2071: //站起
 		req_up(cli,arg);
+		break;
+	case 2079: //答题
+		click(cli,atoi(arg));
 		break;
 	default:
 		break;
