@@ -24,6 +24,7 @@ const int NUM_OPT = 4; //选项数
 //const int NUM_SIT = 5; //座位数
 const int MIN_SITMONEY = 20; //最小上桌钱
 const int MAX_SITMONEY = 100; //最大上桌钱
+const int MAX_CLICK = 10; //选金上限
 //const int TM_TOP = 3600; //每小时更新排行
 //const int NUM_TOP = 10; //前n名有奖
 //bool is_eque(top_score a,int u){return (a.u==u);}
@@ -42,7 +43,7 @@ void c_en::release(void)
 	delete _instance;
 	_instance = NULL;
 }
-c_en::c_en(void):ref_count(0),roomen(534),pool(0),nowno(0),blnrun(false)
+c_en::c_en(void):ref_count(0),roomen(534),pool(0),nowno(-1),blnrun(false)
 {
 	vi_opt.resize(NUM_OPT,-1);
 	vs_sits.resize(NUM_SIT);
@@ -277,6 +278,56 @@ void c_en::bc_init(int cli)
 	p_bl->add_bc(1,cli,2064,ss.str().c_str(),0); //私人
 
 }
+void c_en::click(int cli,int no)
+{
+	//选择
+	//参数:cli客户,no选项词号
+	//返回:无
+	int ruid = p_ul->uidbycid(cli);
+	if(ruid<1){return;}
+	//不在运行中
+	if(!blnrun){return;}
+	//已答
+	if(-1==nowno){return;}
+	//不是座位用户
+	int mysit = tsf_sitbyuid(ruid);
+	if(-1==mysit){return;}
+	//本轮已答
+	if(si_ed.end()!=si_ed.find(ruid)){return;}
+	//设答题标识
+	si_ed.insert(ruid);
+	//彩池变动变量
+	bool blnpool = false;
+	//是否够选金
+	int need = pool>MAX_CLICK?MAX_CLICK:pool;
+	int v = vs_sits[mysit].money; //p_level->get_vals(15,ruid);
+	//扣钱
+	if(v>=need){
+		blnpool = true;
+		pool += need;
+		v -= need;
+		vs_sits[mysit].money = v; //p_level->set_vals(15,ruid,v);
+	}
+	//是否正确
+	//正确获奖移钱,答案置-1
+	if(nowno==no){
+		blnpool = true;
+		v = vs_sits[mysit].money; //p_level->get_vals(15,ruid);
+		v += pool;
+		pool = 0;
+		vs_sits[mysit].money = v; //p_level->set_vals(15,ruid,v);
+	}
+	nowno = -1;
+	if(blnpool){
+		//广播彩池到房
+		bc_pool();
+		//座位钱到房
+		bc_sitmoney(money);
+	}
+	//选择和结果到房
+	bc_click(mysit,no);
+}
+
 int c_en::cmd(int room,int cli,int cmd,const char *arg)
 {
 	//指令

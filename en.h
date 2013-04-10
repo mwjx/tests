@@ -79,6 +79,7 @@ private:
 	void bc_sitinfo(int no); //座位信息
 	void req_up(int cli,const char *arg); //站起
 	void clear_sit(int no); //踢人
+	void click(); //选择
 
 	//线程安全函数,2013-4-9,暂未完成
 	int tsf_set_sit(int no,int tp,int v){if(1==tp){vs_sits[no].u=v;}else{vs_sits[no].money=v;}}
