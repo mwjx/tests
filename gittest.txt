@@ -1,6 +1,7 @@
 git status
 git commit -a -m "aa"
 git push
+git pull
 
 CPLUS_INCLUDE_PATH=CPATH=...
 git add .
