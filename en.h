@@ -68,6 +68,7 @@ private:
 	int no_tm; //定时任务下标
 	tp_vi vi_ls; //牌堆
 	tp_si si_ed; //已经选过:[uid]
+	//c_mutex *mt_data; //数据锁
 	/*
 	int max_userlv; //用户等级上限
 	tp_si si_att; //可升级属性代码
@@ -110,6 +111,8 @@ private:
 	int tsf_sit2user(int no,int u); //桌子钱到用户
 	void tsf_down(int no,int u){vs_sits[no].u=u;} //坐下
 	void tsf_up_state(void); //刷新运行状态
+	//int tsf_get_pool(void); //取彩池
+	//void tsf_set_pool(int); //设彩池
 
 	inline int get_ref(void) const { return ref_count;}
 	inline void add_ref(void){ ++ ref_count;}

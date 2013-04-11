@@ -512,6 +512,24 @@ void c_en::bc_click(bool bln,int sit,int no)
 	stmp << (bln?"Y":"N") << "," << sit << "," << no;
 	p_bl->add_bc(4,roomen,2080,stmp.str().c_str(),roomen); //房间	
 }
+/*
+int c_en::tsf_get_pool(void)
+{
+	//取彩池
+	int val = 0;
+	mt_data.lock();
+	val = pool;
+	mt_data.unlock();
+	return val;
+}
+void c_en::tsf_set_pool(int v)
+{
+	//设彩池
+	mt_data.lock();
+	pool = v;
+	mt_data.unlock();
+}
+*/
 int c_en::cmd(int room,int cli,int cmd,const char *arg)
 {
 	//指令
