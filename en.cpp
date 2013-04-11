@@ -147,7 +147,7 @@ int c_en::tsf_sit2user(int no,int u)
 	//桌子钱到用户
 	//参数:no座号,u用户
 	//返回:0成功,-1失败
-	if(vs_sits[no].money<1){return -1;}
+	if(vs_sits[no].money<1){return 0;}
 	int v = p_level->get_vals(15,u);
 	v += vs_sits[no].money;
 	p_level->set_vals(15,u,v);
