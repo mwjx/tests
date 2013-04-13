@@ -3,10 +3,11 @@
 //现金
 //初始我在座位
 //答题红字
-划线
 IE
 FF
-缺钱踢人
+划线
+//mt
+//缺钱踢人
 */
 //#include <stdio.h>
 #include <iostream>  
