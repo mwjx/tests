@@ -143,13 +143,13 @@ function init_wordlist()
 	var word1 = new Array("abash", "embarrass", "使困窘");
 	var word2 = new Array("abbreviate", "shorten", "缩短");
 	var word3 = new Array("abdicate", "renounce; give up", "弃绝；放弃");
-	var word4 = new Array("aberration", "wandering or straying; in optics, fa", "游荡；漂泊");
+	var word4 = new Array("aberration", "wandering or straying; in optics, fa", "偏差；差错");
 	var word5 = new Array("abettor", "encourager", "教唆者");
 	var word6 = new Array("abeyance", "suspended action", "暂缓");
 	var word7 = new Array("abhor", "detest; hate", "憎恨");
 	var word8 = new Array("abjure", "renounce upon oath", "誓言放弃");
 	var word9 = new Array("ablution", "washing", "沐浴");
-	var word10 = new Array("abnegation", "repudiation; self-sacrifice", "否认；自我牺牲");
+	var word10 = new Array("abnegation", "repudiation; self-sacrifice", "自我克制；放弃");
 	var word11 = new Array("abolish", "cancel; put an end to", "废除");
 	var word12 = new Array("abominate", "loathe; hate", "憎恶");
 	var word13 = new Array("aboriginal", "being the first of its kind in a reg", "原始的；本土的");
@@ -201,7 +201,7 @@ function init_wordlist()
 	var word59 = new Array("camaraderie", "good-fellowship", "同志爱；友谊");
 	var word60 = new Array("cameo", "shell or jewel carved in relief", "刻有浮雕之宝石");
 	var word61 = new Array("canard", "unfounded rumor; exaggerated report", "虚报");
-	var word62 = new Array("candor", "frankness", "诚恳");
+	var word62 = new Array("candor", "frankness", "坦率；爽直；诚恳");
 	var word63 = new Array("canine", "related to dogs; dog-like", "犬科动物");
 	var word64 = new Array("canker", "any ulcerous sore; any evil", "积病");
 	var word65 = new Array("canny", "shrewd; thrifty", "灵敏的；小心的");
