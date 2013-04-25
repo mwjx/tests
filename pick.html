@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+<script type="text/javascript">
+function pick()
+{
+	var arr = $$("txt_src").value.split("\n");
+	var len = arr.length;
+	var row,lenrow;
+	var patt1=new RegExp("^第.*册$");
+	var pattn=new RegExp("^[0-9]+$");
+	var arrtbl = [];
+	var tblno = -1;
+	var cxkey = {"n":true,"v":true,"adj":true,"adv":true,"prep":true,"conj":true,"phr.":true,"num":true,"pron":true};
+	var qus,yb,cx,ans,nocx=-1,nowd=-1;
+	for(var i =0;i<len;++i){
+		//glog(arr[i]);
+		row = arr[i].split(" ");
+		lenrow = row.length;
+		if(2==lenrow){
+			var ret = patt1.test(row[0]);
+			if(ret){
+				arrtbl.push([]);
+				tblno = arrtbl.length-1;
+				glog("new tbl="+tblno);
+			}
+		}
+		if(lenrow<3){continue;}
+		if(!pattn.test(row[0])){continue;} //glog("not n:"+arr[i]);
+		glog("had n:"+arr[i]);
+		//find cx
+		nocx = -1;
+		for(var j=2;j<lenrow;++j){
+			if(cxkey[row[j]]){
+				nocx = j;
+				break;
+			}
+		}
+		if(-1==nocx){glog("not cx:"+arr[i]);continue;}
+		//find yb
+		nowd = nocx;
+		yb = "";
+		if('['==row[nocx-1].substr(0,1)){
+			nowd = nocx-1;
+			yb = row[nocx-1];
+		}
+		glog("qus="+",yb="+",cx="+",ans=");
+	}
+				
+}
+window.onload = function()
+{
+	pick();
+}
+function glog(s){console.log(s);}
+function $$(id){return document.getElementById(id);}
+</script>
+ </head>
+
+ <body>
+ <textarea id="txt_src" style="width:100%;height:200px;">
+初中英语词汇表
+注：n 名词   v 动词       adj形容词
+adv 副词       prep介词  conj连词
+phr.短语      num数词   pron 代名词
+第一册 1----833
+1    what [hwɔt] pron 什么
+2    is [iz] v 是
+3    what's [hwɔts] what is 的缩写形式
+4    your [juə] pron 你的,你们的 </textarea>
+ <button onclick="pick();">pick</button>
+ </body>
+</html>
