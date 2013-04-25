@@ -18,11 +18,13 @@ function pick()
 	var tblno = -1;
 	var cxkey = {"n":true,"v":true,"adj":true,"adv":true,"prep":true,"conj":true,"phr.":true,"num":true,"pron":true};
 	var qus,yb,cx,ans,nocx=-1,nowd=-1;
+	var out = []; //[[qus,yb,cx,ans]]
 	for(var i =0;i<len;++i){
 		//glog(arr[i]);
 		row = arr[i].split(" ");
 		lenrow = row.length;
 		if(2==lenrow){
+			glog("2:"+arr[i]);
 			var ret = patt1.test(row[0]);
 			if(ret){
 				arrtbl.push([]);
@@ -30,18 +32,22 @@ function pick()
 				glog("new tbl="+tblno);
 			}
 		}
+		continue;
+		if(-1==tblno){continue;}
 		if(lenrow<3){continue;}
 		if(!pattn.test(row[0])){continue;} //glog("not n:"+arr[i]);
-		glog("had n:"+arr[i]);
+		//glog("had n:"+arr[i]);
 		//find cx
 		nocx = -1;
+		cx = "";
 		for(var j=2;j<lenrow;++j){
 			if(cxkey[row[j]]){
 				nocx = j;
+				cx = row[nocx];
 				break;
 			}
 		}
-		if(-1==nocx){glog("not cx:"+arr[i]);continue;}
+		if(-1==nocx){continue;} //glog("not cx:"+arr[i]);
 		//find yb
 		nowd = nocx;
 		yb = "";
@@ -49,9 +55,35 @@ function pick()
 			nowd = nocx-1;
 			yb = row[nocx-1];
 		}
-		glog("qus="+",yb="+",cx="+",ans=");
+		//merge
+		qus = "";
+		for(var k=1;k<nowd;++k){
+			if(""!=qus){qus += " ";}
+			qus += row[k];
+		}
+		ans = "";
+		for(var k=nocx+1;k<lenrow;++k){
+			if(""!=ans){ans += " ";}
+			ans += row[k];
+		}
+		//glog("qus="+qus+",yb="+yb+",cx="+cx+",ans="+ans);
+		arrtbl[tblno].push([qus,yb,cx,ans]);
 	}
-				
+	show(arrtbl);
+}
+function show(arrtbl)
+{
+	var txt = [];
+	for(var i =0;i<arrtbl.length;++i){
+		txt.push("<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<table>\r\n");
+		for(var j =0;j<arrtbl[i].length;++j){
+			txt.push("<item id=\""+j+"\" qus=\""+arrtbl[i][j][0]+"\" yb=\""+arrtbl[i][j][1]+"\" cx=\""+arrtbl[i][j][2]+"\" ans=\""+arrtbl[i][j][3]+"\"/>");
+		}
+		txt.push("\r\n</table>");
+		txt.push("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+	}
+	$$("txt_src").value = txt.join("\r\n");
+	//$$("txt_src").value = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<table>\r\n"+txt.join("\r\n")+"\r\n</table>";
 }
 window.onload = function()
 {
@@ -72,7 +104,10 @@ phr.短语      num数词   pron 代名词
 1    what [hwɔt] pron 什么
 2    is [iz] v 是
 3    what's [hwɔts] what is 的缩写形式
-4    your [juə] pron 你的,你们的 </textarea>
+4    your [juə] pron 你的,你们的 
+第二册  834----1644
+
+</textarea>
  <button onclick="pick();">pick</button>
  </body>
 </html>

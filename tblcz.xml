@@ -1,0 +1,2048 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+
+<item id="0" qus="what" yb="[hwɔt]" cx="pron" ans="什么"/>
+<item id="1" qus="is" yb="[iz]" cx="v" ans="是"/>
+<item id="2" qus="your" yb="[juə]" cx="pron" ans="你的,你们的"/>
+<item id="3" qus="name" yb="[neim]" cx="n" ans="名字"/>
+<item id="4" qus="my" yb="[mai]" cx="pron" ans="我的"/>
+<item id="5" qus="I " yb="[ai]" cx="pron" ans="我"/>
+<item id="6" qus="am" yb="[æm]" cx="v" ans="是"/>
+<item id="7" qus="in" yb="[in]" cx="prep" ans="在...里(内,上)"/>
+<item id="8" qus="row" yb="[rəu]" cx="n" ans="(一)排,(一)行"/>
+<item id="9" qus="one" yb="[wʌn]" cx="num" ans="一"/>
+<item id="10" qus="number" yb="['nʌmbə]" cx="n" ans="数字,号码"/>
+<item id="11" qus="two" yb="[tu:]" cx="num" ans="二"/>
+<item id="12" qus="too" yb="[tu:]" cx="adv" ans="也"/>
+<item id="13" qus="three" yb="[θri:]" cx="num" ans="三"/>
+<item id="14" qus="are" yb="[ɑ:]" cx="v" ans="是"/>
+<item id="15" qus="you" yb="[ju:]" cx="pron" ans="你,你们"/>
+<item id="16" qus="yes" yb="[jes]" cx="adv" ans="是"/>
+<item id="17" qus="four" yb="[fɔ:]" cx="num" ans="四"/>
+<item id="18" qus="five" yb="[faiv]" cx="num" ans="五"/>
+<item id="19" qus="no" yb="[nəu]" cx="adv" ans="& adj 不,不是"/>
+<item id="20" qus="not" yb="[nɔt]" cx="adv" ans="不"/>
+<item id="21" qus="class" yb="[klɑ:s]" cx="n" ans="(学校里的)班级,年级"/>
+<item id="22" qus="grade" yb="[greid]" cx="n" ans="年级"/>
+<item id="23" qus="six" yb="[siks]" cx="num" ans="六"/>
+<item id="24" qus="seven" yb="['sevn]" cx="num" ans="七"/>
+<item id="25" qus="eight" yb="[eit]" cx="num" ans="八"/>
+<item id="26" qus="nine" yb="[nain]" cx="num" ans="九"/>
+<item id="27" qus="ten" yb="[ten]" cx="num" ans="十"/>
+<item id="28" qus="zero" yb="['ziərəu]" cx="num" ans="& n 零"/>
+<item id="29" qus="plus [plʌs] " yb="" cx="prep" ans="加,加上"/>
+<item id="30" qus="it" yb="[it]" cx="pron" ans="它"/>
+<item id="31" qus="how" yb="[hau]" cx="adv" ans="(指程度)多少,怎样"/>
+<item id="32" qus="old" yb="[əuld]" cx="adj" ans="...岁的,老的"/>
+<item id="33" qus="eleven" yb="[i'levn]" cx="num" ans="十一"/>
+<item id="34" qus="twelve" yb="[twelv]" cx="num" ans="十二"/>
+<item id="35" qus="thirteen" yb="['θə:ti:n]" cx="num" ans="十三"/>
+<item id="36" qus="fourteen" yb="['fɔ:'ti:n]" cx="num" ans="十四"/>
+<item id="37" qus="fifteen" yb="['fif'ti:n]" cx="num" ans="十五"/>
+<item id="38" qus="spell" yb="[spel]" cx="v" ans="拼写"/>
+<item id="39" qus="that" yb="[ðæt]" cx="pron" ans="那,那个"/>
+<item id="40" qus="secret" yb="['si:krit]" cx="n" ans="秘密"/>
+<item id="41" qus="this" yb="[ðis]" cx="pron" ans="这,这个"/>
+<item id="42" qus="in" yb="[in]" cx="prep" ans="用...(表达)"/>
+<item id="43" qus="English" yb="['iŋgliʃ]" cx="n" ans="& adj 英语,英国人"/>
+<item id="44" qus="in English [in'iŋgliʃ] " yb="" cx="phr." ans="用英语(表达)"/>
+<item id="45" qus="clock" yb="[klɔk]" cx="n" ans="钟"/>
+<item id="46" qus="and" yb="[ænd]" cx="conj" ans="和,又,而"/>
+<item id="47" qus="pencil-box ['penslbɔks] " yb="" cx="n" ans="铅笔盒"/>
+<item id="48" qus="pencil" yb="['pensl]" cx="n" ans="铅笔"/>
+<item id="49" qus="ruler" yb="['ru:lə]" cx="n" ans="尺子"/>
+<item id="50" qus="pen" yb="[pen]" cx="n" ans="钢笔"/>
+<item id="51" qus="sharpener" yb="['ʃɑ:pənə]" cx="n" ans="卷笔刀"/>
+<item id="52" qus="eraser" yb="[i'reisə]" cx="n" ans="橡皮擦"/>
+<item id="53" qus="room" yb="[ru:m]" cx="n" ans="房间"/>
+<item id="54" qus="book" yb="[buk]" cx="n" ans="书"/>
+<item id="55" qus="map" yb="[mæp]" cx="n" ans="地图"/>
+<item id="56" qus="desk" yb="[desk]" cx="n" ans="书桌"/>
+<item id="57" qus="cup" yb="[kʌp]" cx="n" ans="杯子"/>
+<item id="58" qus="bag" yb="[bæg]" cx="n" ans="书包"/>
+<item id="59" qus="bed" yb="[bed]" cx="n" ans="床"/>
+<item id="60" qus="keyboard" yb="['ki:bɔ:d]" cx="n" ans="键盘"/>
+<item id="61" qus="pear" yb="[pɛə]" cx="n" ans="梨"/>
+<item id="62" qus="cake" yb="[keik]" cx="n" ans="蛋糕,饼,糕"/>
+<item id="63" qus="banana" yb="[bə'nɑ:nə]" cx="n" ans="香蕉"/>
+<item id="64" qus="apple" yb="['æpl]" cx="n" ans="苹果"/>
+<item id="65" qus="orange" yb="['ɔ:rindʒ]" cx="n" ans="橙子,橘子"/>
+<item id="66" qus="egg" yb="[eg]" cx="n" ans="蛋"/>
+<item id="67" qus="bike" yb="[baik]" cx="n" ans="自行车"/>
+<item id="68" qus="bus" yb="[bʌs]" cx="n" ans="公共汽车"/>
+<item id="69" qus="car" yb="[kɑ:]" cx="n" ans="汽车,小汽车"/>
+<item id="70" qus="jeep" yb="[dʒi:p]" cx="n" ans="吉普车"/>
+<item id="71" qus="look" yb="[luk]" cx="v" ans="瞧,看"/>
+<item id="72" qus="who" yb="[hu:]" cx="pron" ans="谁"/>
+<item id="73" qus="she" yb="[ʃi:]" cx="pron" ans="她"/>
+<item id="74" qus="he" yb="[hi:]" cx="pron" ans="他"/>
+<item id="75" qus="bird" yb="[bə:d]" cx="n" ans="鸟"/>
+<item id="76" qus="Its" yb="[its]" cx="pron" ans="它的"/>
+<item id="77" qus="know" yb="[nəu]" cx="v" ans="知道,懂得"/>
+<item id="78" qus="think" yb="[θiŋk]" cx="v" ans="想,认为"/>
+<item id="79" qus="Mr=mister" yb="['mistə]" cx="n" ans="先生(用于姓名前)"/>
+<item id="80" qus="very" yb="['veri]" cx="adv" ans="很,非常"/>
+<item id="81" qus="picture" yb="['piktʃə]" cx="n" ans="图画,照片"/>
+<item id="82" qus="Mrs" yb="['mɪsɪz]" cx="n" ans="夫人"/>
+<item id="83" qus="boy" yb="[bɔi]" cx="n" ans="男孩"/>
+<item id="84" qus="girl" yb="[gə:l]" cx="n" ans="女孩"/>
+<item id="85" qus="woman" yb="['wumən]" cx="n" ans="妇女,女人"/>
+<item id="86" qus="man" yb="[mæn]" cx="n" ans="男人,人"/>
+<item id="87" qus="cat" yb="[kæt]" cx="n" ans="猫"/>
+<item id="88" qus="his" yb="[hiz]" cx="pron" ans="他的"/>
+<item id="89" qus="teacher" yb="['ti:tʃə]" cx="n" ans="教师"/>
+<item id="90" qus="her" yb="[hə:]" cx="pron" ans="她的"/>
+<item id="91" qus="everyone" yb="['evriwʌn]" cx="pron" ans="每人,人人"/>
+<item id="92" qus="here" yb="[hiə]" cx="adv" ans="这里,这儿"/>
+<item id="93" qus="today" yb="[tə'dei]" cx="adv" ans="& n 今天"/>
+<item id="94" qus="at" yb="[æt]" cx="prep" ans="在"/>
+<item id="95" qus="school" yb="[sku:l]" cx="n" ans="学校"/>
+<item id="96" qus="at school  " yb="" cx="phr." ans="在学校"/>
+<item id="97" qus="sorry" yb="['sɔri]" cx="adj" ans="对不起,抱歉的"/>
+<item id="98" qus="where" yb="[hwɛə]" cx="adv" ans="在哪里"/>
+<item id="99" qus="home" yb="[həum]" cx="n" ans="家"/>
+<item id="100" qus="at home  " yb="" cx="phr." ans="在家"/>
+<item id="101" qus="fine" yb="[fain]" cx="adj" ans="(身体)好的"/>
+<item id="102" qus="thanks" yb="[θæŋks]" cx="n" ans="谢谢(只用复数)"/>
+<item id="103" qus="OK  " yb="" cx="adv" ans="(口语)好,对,不错,可以"/>
+<item id="104" qus="thank" yb="[θæŋk]" cx="v" ans="谢谢"/>
+<item id="105" qus="parrot" yb="['pærət]" cx="n" ans="鹦鹉"/>
+<item id="106" qus="sister" yb="['sistə]" cx="n" ans="姐,妹"/>
+<item id="107" qus="father" yb="['fɑ:ðə]" cx="n" ans="父亲"/>
+<item id="108" qus="mother" yb="['mʌðə]" cx="n" ans="母亲"/>
+<item id="109" qus="box" yb="[bɔks]" cx="n" ans="盒子,箱子"/>
+<item id="110" qus="excuse" yb="[iks'kju:z]" cx="v" ans="原谅"/>
+<item id="111" qus="me" yb="[mi:]" cx="pron" ans="我"/>
+<item id="112" qus="but" yb="[bʌt]" cx="conj" ans="但是"/>
+<item id="113" qus="these" yb="[ði:z]" cx="pron" ans="这些"/>
+<item id="114" qus="they" yb="[ðei]" cx="pron" ans="他(她,它)们"/>
+<item id="115" qus="good" yb="[gud]" cx="adj" ans="好的"/>
+<item id="116" qus="those" yb="[ðəuz]" cx="pron" ans="那些"/>
+<item id="117" qus="boat" yb="[bəut]" cx="n" ans="船"/>
+<item id="118" qus="hill" yb="[hil]" cx="n" ans="小山"/>
+<item id="119" qus="tree" yb="[tri:]" cx="n" ans="树"/>
+<item id="120" qus="their" yb="[ðɛə]" cx="pron" ans="他们(她们,它们)的"/>
+<item id="121" qus="much" yb="[mʌtʃ]" cx="adv" ans="多,很,非常"/>
+<item id="122" qus="very much  " yb="" cx="phr." ans="很,非常"/>
+<item id="123" qus="all" yb="[ɔ:l]" cx="adv" ans="都,完全"/>
+<item id="124" qus="right" yb="[rait]" cx="adv" ans="& adj 对的,正确的"/>
+<item id="125" qus="all right  " yb="" cx="phr." ans="好,行,不错"/>
+<item id="126" qus="mum" yb="[mʌm]" cx="n" ans="(口语)妈妈"/>
+<item id="127" qus="friend" yb="[frend]" cx="n" ans="朋友"/>
+<item id="128" qus="brother" yb="['brʌðə]" cx="n" ans="兄,弟"/>
+<item id="129" qus="nice" yb="[nais]" cx="adj" ans="令人愉快的"/>
+<item id="130" qus="to" yb="[tu:]" cx="prep" ans="(表示方向)到,向 动词不定式符号"/>
+<item id="131" qus="meet" yb="[mi:t]" cx="v" ans="见面,会面,遇见"/>
+<item id="132" qus="child" yb="[tʃaild]" cx="n" ans="小孩"/>
+<item id="133" qus="children" yb="['tʃildrən]" cx="n" ans="child的复数形式"/>
+<item id="134" qus="welcome" yb="['welkəm]" cx="v" ans="欢迎"/>
+<item id="135" qus="our" yb="['auə]" cx="pron" ans="我们的"/>
+<item id="136" qus="come" yb="[kʌm]" cx="v" ans="来"/>
+<item id="137" qus="come in  " yb="" cx="phr." ans="进来,进入"/>
+<item id="138" qus="morning" yb="['mɔ:niŋ]" cx="n" ans="早晨,上午"/>
+<item id="139" qus="class" yb="[klɑ:s]" cx="n" ans="同一个班的学生"/>
+<item id="140" qus="on" yb="[ɔn]" cx="prep" ans="在,在...上"/>
+<item id="141" qus="duty" yb="['dju:ti]" cx="n" ans="职责,责任"/>
+<item id="142" qus="on duty  " yb="" cx="phr." ans="值日"/>
+<item id="143" qus="we" yb="[wi:]" cx="pron" ans="我们"/>
+<item id="144" qus="have" yb="[hæv]" cx="v" ans="有"/>
+<item id="145" qus="new" yb="[nju:]" cx="adj" ans="新的"/>
+<item id="146" qus="student" yb="['stju:dənt]" cx="n" ans="学生"/>
+<item id="147" qus="twin" yb="[twin]" cx="n" ans="双胞胎之一"/>
+<item id="148" qus="look" yb="[luk]" cx="v" ans="看上去,显得"/>
+<item id="149" qus="same" yb="[seim]" cx="adj" ans="同样的,同一的"/>
+<item id="150" qus="look the same  " yb="" cx="phr." ans="看起来很像"/>
+<item id="151" qus="sit" yb="[sit]" cx="v" ans="坐"/>
+<item id="152" qus="down" yb="[daun]" cx="adv" ans="向下"/>
+<item id="153" qus="sit down  " yb="" cx="phr." ans="坐下"/>
+<item id="154" qus="over" yb="['əuvə]" cx="adv" ans="在那边,在另一边"/>
+<item id="155" qus="there" yb="[ðɛə]" cx="adv" ans="那里,那儿"/>
+<item id="156" qus="over there  " yb="" cx="phr." ans="在那边"/>
+<item id="157" qus="after" yb="['ɑ:ftə]" cx="prep" ans="在...以后,在...后面"/>
+<item id="158" qus="look after  " yb="" cx="phr." ans="照顾,照看"/>
+<item id="159" qus="way" yb="[wei]" cx="n" ans="路,道路"/>
+<item id="160" qus="put" yb="[put]" cx="v" ans="放"/>
+<item id="161" qus="coat" yb="[kəut]" cx="n" ans="外套,上衣"/>
+<item id="162" qus="them" yb="[ðem]" cx="pron" ans="他(她,它)们"/>
+<item id="163" qus="washroom" yb="['wɔʃrum]" cx="n" ans="盥洗室,厕所"/>
+<item id="164" qus="let" yb="[let]" cx="v" ans="让"/>
+<item id="165" qus="us" yb="[ʌs]" cx="pron" ans="我们"/>
+<item id="166" qus="go" yb="[gəu]" cx="v" ans="去"/>
+<item id="167" qus="classmate" yb="['klɑ:smeit]" cx="n" ans="同班同学"/>
+<item id="168" qus="nice" yb="[nais]" cx="adj" ans="好的,漂亮的"/>
+<item id="169" qus="love" yb="[lʌv]" cx="v" ans="爱,喜爱"/>
+<item id="170" qus="No" yb="['nʌmbə]" cx="n" ans="number 的缩写形式"/>
+<item id="171" qus="middle" yb="['midl]" cx="adj" ans="中间的,中级的"/>
+<item id="172" qus="middle school  " yb="" cx="n" ans="中学"/>
+<item id="173" qus="fax" yb="[fæks]" cx="n" ans="传真"/>
+<item id="174" qus="phone" yb="[fəun]" cx="n" ans="电话,电话机"/>
+<item id="175" qus="ID " yb="" cx="n" ans="身份征"/>
+<item id="176" qus="policeman" yb="[pə'li:smən]" cx="n" ans="警察"/>
+<item id="177" qus="ask" yb="[ɑ:sk]" cx="v" ans="问"/>
+<item id="178" qus="sir" yb="[sə:]" cx="n" ans="(用于尊称)先生,阁下"/>
+<item id="179" qus="licence" yb="['laisəns]" cx="n" ans="执照,许可证"/>
+<item id="180" qus="look at  " yb="" cx="phr." ans="看,观看"/>
+<item id="181" qus="see" yb="[si:]" cx="v" ans="看见,看到"/>
+<item id="182" qus="take" yb="[teik]" cx="v" ans="拿到,带到"/>
+<item id="183" qus="address" yb="[ə'dres]" cx="n" ans="地址"/>
+<item id="184" qus="age" yb="[eidʒ]" cx="n" ans="年龄"/>
+<item id="185" qus="glad" yb="[glæd]" cx="adj" ans="高兴的,乐意的"/>
+<item id="186" qus="forgot[fə'gɔt]" yb="" cx="v" ans="(forget 的过去时)忘记"/>
+<item id="187" qus="now" yb="[nau]" cx="adv" ans="现在"/>
+<item id="188" qus="China" yb="['tʃainə]" cx="n" ans="中国"/>
+<item id="189" qus="or" yb="[ɔ:]" cx="conj" ans="或者,还是"/>
+<item id="190" qus="work" yb="[wə:k]" cx="v" ans="& n 工作"/>
+<item id="191" qus="family" yb="['fæmili]" cx="n" ans="家,家庭"/>
+<item id="192" qus="family tree  " yb="" cx="n" ans="家谱"/>
+<item id="193" qus="grandmother" yb="['grænd,mʌðə]" cx="n" ans="(外)祖母"/>
+<item id="194" qus="grandfather" yb="['grænd,fɑ:ðə]" cx="n" ans="(外)祖父"/>
+<item id="195" qus="grandpa" yb="['grændpɑ:]" cx="n" ans="(口语)爷爷,外公"/>
+<item id="196" qus="dad" yb="[dæd]" cx="n" ans="(口语)爸爸,爹爹"/>
+<item id="197" qus="wife" yb="[waif]" cx="n" ans="妻子"/>
+<item id="198" qus="husband" yb="['hʌzbənd]" cx="n" ans="丈夫"/>
+<item id="199" qus="daughter" yb="['dɔ:tə]" cx="n" ans="女儿"/>
+<item id="200" qus="son" yb="[sʌn]" cx="n" ans="儿子"/>
+<item id="201" qus="parent" yb="['pɛərənt]" cx="n" ans="父(母)亲"/>
+<item id="202" qus="parents  ['pɛərənts] " yb="" cx="n" ans="父母亲,双亲"/>
+<item id="203" qus="big" yb="[big]" cx="adj" ans="大的"/>
+<item id="204" qus="England" yb="['iŋglənd]" cx="n" ans="英格兰"/>
+<item id="205" qus="aunt" yb="[ɑ:nt]" cx="n" ans="姨母,舅母,姑母,伯母,婶母"/>
+<item id="206" qus="uncle" yb="['ʌŋkl]" cx="n" ans="叔,伯,舅,姨父,姑父"/>
+<item id="207" qus="afternoon" yb="['ɑ:ftə'nu:n]" cx="n" ans="下午,午后"/>
+<item id="208" qus="do" yb="[du:]" cx="v" ans="做,干,行动"/>
+<item id="209" qus="seat" yb="[si:t]" cx="n" ans="座位"/>
+<item id="210" qus="like" yb="[laik]" cx="prep" ans="像,跟...一样"/>
+<item id="211" qus="look like " yb="" cx="phr." ans="看起来像"/>
+<item id="212" qus="hat" yb="[hæt]" cx="n" ans="帽子(一般指有边的帽子)"/>
+<item id="213" qus="doctor" yb="['dɔktə]" cx="n" ans="医生"/>
+<item id="214" qus="worker" yb="['wə:kə]" cx="n" ans="工人"/>
+<item id="215" qus="guess" yb="[ges]" cx="v" ans="猜"/>
+<item id="216" qus="behind" yb="[bi'haind]" cx="prep" ans="在...后面"/>
+<item id="217" qus="chair[tʃɛə]" yb="" cx="n" ans="椅子"/>
+<item id="218" qus="ball" yb="[bɔ:l]" cx="n" ans="球"/>
+<item id="219" qus="under" yb="['ʌndə]" cx="prep" ans="在...下面"/>
+<item id="220" qus="floor" yb="[flɔ:]" cx="n" ans="(室内)地,地板"/>
+<item id="221" qus="photo" yb="['fəutəu]" cx="n" ans="照片"/>
+<item id="222" qus="wall" yb="[wɔ:l]" cx="n" ans="墙"/>
+<item id="223" qus="shoe" yb="[ʃu:]" cx="n" ans="鞋"/>
+<item id="224" qus="near" yb="[niə]" cx="prep" ans="在...附近"/>
+<item id="225" qus="door" yb="[dɔ:]" cx="n" ans="门"/>
+<item id="226" qus="of" yb="[ɔv]" cx="prep" ans="...的"/>
+<item id="227" qus="classroom" yb="['klɑ:srum]" cx="n" ans="教室"/>
+<item id="228" qus="answer" yb="['ɑ:nsə]" cx="v" ans="回答"/>
+<item id="229" qus="blackboard" yb="['blækbɔ:d]" cx="n" ans="黑板"/>
+<item id="230" qus="some" yb="[sʌm]" cx="pron" ans="一些,若干"/>
+<item id="231" qus="schoolbag" yb="['sku:l,bæg]" cx="n" ans="书包"/>
+<item id="232" qus="flower" yb="['flauə]" cx="n" ans="花"/>
+<item id="233" qus="find" yb="[faind]" cx="v" ans="找到,发现"/>
+<item id="234" qus="broom" yb="[bru:m]" cx="n" ans="扫帚"/>
+<item id="235" qus="window" yb="['windəu]" cx="n" ans="窗"/>
+<item id="236" qus="raincoat" yb="['reinkəut]" cx="n" ans="雨衣"/>
+<item id="237" qus="cap" yb="[kæp]" cx="n" ans="便帽,军帽"/>
+<item id="238" qus="football" yb="['futbɔ:l]" cx="n" ans="足球"/>
+<item id="239" qus="table" yb="['teibl]" cx="n" ans="桌子"/>
+<item id="240" qus="Macao" yb="[mə'kau]" cx="n" ans="澳门"/>
+<item id="241" qus="SAR " yb="" cx="n" ans="特别行政区"/>
+<item id="242" qus="lock [lɔk] v&" yb="" cx="n" ans="锁"/>
+<item id="243" qus="many" yb="['meni]" cx="adj" ans="许多的,多的"/>
+<item id="244" qus="thing" yb="[θiŋ]" cx="n" ans="东西,事情"/>
+<item id="245" qus="open" yb="['əupən]" cx="v" ans="打开"/>
+<item id="246" qus="get" yb="[get]" cx="v" ans="得到,获得"/>
+<item id="247" qus="help" yb="[help]" cx="v" ans="帮助"/>
+<item id="248" qus="purse" yb="[pə:s]" cx="n" ans="钱包"/>
+<item id="249" qus="money" yb="['mʌni]" cx="n" ans="钱,货币"/>
+<item id="250" qus="worry" yb="['wʌri]" cx="v" ans="(使)担忧"/>
+<item id="251" qus="fifty" yb="['fifti]" cx="num" ans="五十"/>
+<item id="252" qus="colour" yb="['kʌlə]" cx="n" ans="颜色"/>
+<item id="253" qus="black" yb="[blæk]" cx="adj" ans="黑色的"/>
+<item id="254" qus="house" yb="[haus]" cx="n" ans="房子"/>
+<item id="255" qus="small" yb="[smɔ:l]" cx="adj" ans="小的"/>
+<item id="256" qus="playhouse" yb="['pleihaus]" cx="n" ans="儿童游戏房"/>
+<item id="257" qus="like" yb="[laik]" cx="v" ans="喜欢"/>
+<item id="258" qus="play" yb="[plei]" cx="v" ans="玩,打(球)"/>
+<item id="259" qus="up" yb="[ʌp]" cx="adv" ans="在上面,在高处,向上,起来"/>
+<item id="260" qus="with" yb="[wið]" cx="prep" ans="和"/>
+<item id="261" qus="great" yb="[greit]" cx="adv" ans="(口语)好极了,很好"/>
+<item id="262" qus="look" yb="[luk]" cx="n" ans="瞧,看"/>
+<item id="263" qus="have a look  " yb="" cx="phr." ans="看一看"/>
+<item id="264" qus="ping-pong [' piŋpɔŋ]" yb="" cx="n" ans="乒乓球"/>
+<item id="265" qus="how many  " yb="" cx="phr." ans="多少"/>
+<item id="266" qus="kite" yb="[kait]" cx="n" ans="风筝"/>
+<item id="267" qus="young" yb="[jʌŋ]" cx="adj" ans="年轻的,幼小的"/>
+<item id="268" qus="pioneer" yb="[,paiə'niə]" cx="n" ans="先锋"/>
+<item id="269" qus="Young Pioneer  " yb="" cx="n" ans="少先队员"/>
+<item id="270" qus="men" yb="[men]" cx="n" ans="man的缩写形式"/>
+<item id="271" qus="women" yb="['wimin]" cx="n" ans="woman的复数形式"/>
+<item id="272" qus="only" yb="['əunli]" cx="adv" ans="仅仅,只"/>
+<item id="273" qus="work" yb="[wə:k]" cx="n" ans="工作"/>
+<item id="274" qus="at work  " yb="" cx="phr." ans="在工作"/>
+<item id="275" qus="sky" yb="[skai]" cx="n" ans="天空"/>
+<item id="276" qus="count" yb="[kaunt]" cx="v" ans="数,点数"/>
+<item id="277" qus="river" yb="['rivə]" cx="n" ans="江,河"/>
+<item id="278" qus="dog" yb="[dɔg]" cx="n" ans="狗"/>
+<item id="279" qus="light" yb="[lait]" cx="n" ans="灯"/>
+<item id="280" qus="animal" yb="['æniməl]" cx="n" ans="动物"/>
+<item id="281" qus="people" yb="['pi:pl]" cx="n" ans="人,人们"/>
+<item id="282" qus="little" yb="['litl]" cx="adj" ans="& adv 小的,一点儿,稍许"/>
+<item id="283" qus="sheep" yb="[ʃi:p]" cx="n" ans="绵羊"/>
+<item id="284" qus="red" yb="[red]" cx="adj" ans="& n 红色(的)"/>
+<item id="285" qus="yellow" yb="['jeləu]" cx="adj" ans="& n 黄色(的)"/>
+<item id="286" qus="blue" yb="[blu:]" cx="adj" ans="& n 蓝色(的)"/>
+<item id="287" qus="white" yb="[hwait]" cx="adj" ans="& n 白色(的)"/>
+<item id="288" qus="green" yb="[gri:n]" cx="adj" ans="& n 绿色(的)"/>
+<item id="289" qus="purple" yb="['pə:pl]" cx="adj" ans="& n 紫色(的)"/>
+<item id="290" qus="orange" yb="['ɔ:rindʒ]" cx="adj" ans="& n 橙色(的)"/>
+<item id="291" qus="grey" yb="[grei]" cx="adj" ans="& n 灰色(的),灰白(的)"/>
+<item id="292" qus="sweater" yb="['swetə]" cx="n" ans="毛衣,厚运动衫"/>
+<item id="293" qus="light" yb="[lait]" cx="adj" ans="淡(浅)色的,轻的"/>
+<item id="294" qus="want" yb="[wɔnt]" cx="v" ans="要,想要"/>
+<item id="295" qus="which" yb="[hwitʃ]" cx="pron" ans="& adj 哪一个,哪些"/>
+<item id="296" qus="one" yb="[wʌn]" cx="pron" ans="用来代替单数的人或物"/>
+<item id="297" qus="clothes" yb="[kləuðz]" cx="n" ans="衣服"/>
+<item id="298" qus="line" yb="[lain]" cx="n" ans="线,绳索"/>
+<item id="299" qus="whose" yb="[hu:z]" cx="pron" ans="谁的"/>
+<item id="300" qus="blouse" yb="[blauz]" cx="n" ans="女衬衫"/>
+<item id="301" qus="dress" yb="[dres]" cx="n" ans="女服,(统称)衣服"/>
+<item id="302" qus="shirt" yb="[ʃə:t]" cx="n" ans="(男式)衬衫"/>
+<item id="303" qus="trousers" yb="['trauzəz]" cx="n" ans="裤子"/>
+<item id="304" qus="skirt" yb="[skə:t]" cx="n" ans="女裙"/>
+<item id="305" qus="dark" yb="[dɑ:k]" cx="adj" ans="深(浓)色的,黑暗的"/>
+<item id="306" qus="yours" yb="[juəz]" cx="pron" ans="你的,你们的"/>
+<item id="307" qus="mine" yb="[main]" cx="pron" ans="我的"/>
+<item id="308" qus="hers" yb="[hə:z]" cx="pron" ans="她的"/>
+<item id="309" qus="ours" yb="['auəz]" cx="pron" ans="我们的"/>
+<item id="310" qus="glove" yb="[glʌv]" cx="n" ans="手套"/>
+<item id="311" qus="about" yb="[ə'baut]" cx="prep" ans="关于,对于"/>
+<item id="312" qus="What about...? " yb="" cx="phr." ans="(询问消息,征求意 见)…怎么样?"/>
+<item id="313" qus="beside" yb="[bi'said]" cx="prep" ans="在...旁边"/>
+<item id="314" qus="watch" yb="[wɔtʃ]" cx="n" ans="& v  手表、观看,注视"/>
+<item id="315" qus="give" yb="[giv]" cx="v" ans="给"/>
+<item id="316" qus="time" yb="[taim]" cx="n" ans="时间"/>
+<item id="317" qus="about" yb="[ə'baut]" cx="adv" ans="大约"/>
+<item id="318" qus="thirty" yb="['θə:ti]" cx="num" ans="三十"/>
+<item id="319" qus="get up ['get ʌp]" yb="" cx="phr." ans="起床"/>
+<item id="320" qus="late" yb="[leit]" cx="adj" ans="& adv 迟的(地),晚的(地)"/>
+<item id="321" qus="midnight" yb="['midnait]" cx="n" ans="午夜"/>
+<item id="322" qus="noon" yb="[nu:n]" cx="n" ans="中午,正午"/>
+<item id="323" qus="past" yb="[pɑ:st]" cx="prep" ans="(超)过,经过"/>
+<item id="324" qus="half" yb="[hɑ:f]" cx="n" ans="半,一半"/>
+<item id="325" qus="quarter" yb="['kwɔ:tə]" cx="n" ans="一刻钟,四分之一"/>
+<item id="326" qus="for" yb="[fɔ:]" cx="prep" ans="为,给"/>
+<item id="327" qus="break" yb="[breik]" cx="n" ans="(课间)休息,中断"/>
+<item id="328" qus="lunch" yb="[lʌntʃ]" cx="n" ans="午餐"/>
+<item id="329" qus="breakfast" yb="['brekfəst]" cx="n" ans="早餐"/>
+<item id="330" qus="clean" yb="[kli:n]" cx="v" ans="把...弄干净,擦干净"/>
+<item id="331" qus="supper" yb="['sʌpə]" cx="n" ans="晚餐"/>
+<item id="332" qus="have supper  " yb="" cx="phr." ans="吃晚餐"/>
+<item id="333" qus="TV  " yb="" cx="n" ans="电视,电视机"/>
+<item id="334" qus="watch TV " yb="" cx="phr." ans="看电视"/>
+<item id="335" qus="game" yb="[geim]" cx="n" ans="游戏,运动"/>
+<item id="336" qus="go home  " yb="" cx="phr." ans="回家"/>
+<item id="337" qus="London" yb="['lʌndən]" cx="n" ans="伦敦"/>
+<item id="338" qus="Tokyo" yb="['təukiəu]" cx="n" ans="东京"/>
+<item id="339" qus="Sydney" yb="['sidni]" cx="n" ans="悉尼"/>
+<item id="340" qus="hour" yb="[auə]" cx="n" ans="小时"/>
+<item id="341" qus="hundred" yb="['hʌndrəd]" cx="num" ans="百"/>
+<item id="342" qus="yourself" yb="[juə'self]" cx="pron" ans="你自己"/>
+<item id="343" qus="bedroom" yb="['bedrum]" cx="n" ans="卧室"/>
+<item id="344" qus="doll" yb="[dɔl]" cx="n" ans="玩具娃娃"/>
+<item id="345" qus="else" yb="[els]" cx="adv" ans="& adj 别(的),其他(的)"/>
+<item id="346" qus="tall" yb="[tɔ:l]" cx="adj" ans="高的"/>
+<item id="347" qus="funny" yb="['fʌni]" cx="adj" ans="滑稽的,有趣的"/>
+<item id="348" qus="favourite" yb="['feivərit]" cx="adj" ans="特别喜爱的"/>
+<item id="349" qus="e-mail" yb="[i:'meil]" cx="n" ans="电子邮件"/>
+<item id="350" qus="speak" yb="[spi:k]" cx="v" ans="讲,说"/>
+<item id="351" qus="next" yb="['nekst]" cx="adj" ans="下一个"/>
+<item id="352" qus="term" yb="[tə:m]" cx="n" ans="学期"/>
+<item id="353" qus="minute" yb="['minit]" cx="n" ans="分钟,一会儿"/>
+<item id="354" qus="Tuesday" yb="['tju:zdi]" cx="n" ans="星期二"/>
+<item id="355" qus="February" yb="['februəri]" cx="n" ans="二月"/>
+<item id="356" qus="eighteenth" yb="['ei'ti:nθ]" cx="num" ans="第十八"/>
+<item id="357" qus="listen" yb="['lisn]" cx="v" ans="听"/>
+<item id="358" qus="careful" yb="['kɛəfəl]" cx="adj" ans="小心的;仔细的"/>
+<item id="359" qus="carefully" yb="['kɛəfəli]" cx="adv" ans="小心地;仔细地"/>
+<item id="360" qus="draw" yb="[drɔ:]" cx="v" ans="画;绘制"/>
+<item id="361" qus="face" yb="[feis]" cx="n" ans="脸;面孔"/>
+<item id="362" qus="eye" yb="[ai]" cx="n" ans="眼睛"/>
+<item id="363" qus="ear" yb="[iə]" cx="n" ans="耳朵"/>
+<item id="364" qus="leg" yb="[leg]" cx="n" ans="腿"/>
+<item id="365" qus="hand" yb="[hænd]" cx="n" ans="手"/>
+<item id="366" qus="long" yb="[lɔŋ]" cx="adj" ans="长的"/>
+<item id="367" qus="short" yb="[ʃɔ:t]" cx="adj" ans="短的;矮的"/>
+<item id="368" qus="mouth" yb="[mauθ]" cx="n" ans="嘴"/>
+<item id="369" qus="say" yb="[sei]" cx="v" ans="说;讲"/>
+<item id="370" qus="tick" yb="[tik]" cx="n" ans="(钟表等滴嗒的)声音"/>
+<item id="371" qus="heavy" yb="['hevi]" cx="adj" ans="重的"/>
+<item id="372" qus="empty" yb="['empti]" cx="adj" ans="空的"/>
+<item id="373" qus="certainly" yb="['sə:tənli]" cx="adv" ans="当然"/>
+<item id="374" qus="full" yb="[ful]" cx="adj" ans="满的"/>
+<item id="375" qus="be full (of) " yb="" cx="phr." ans="充满....的"/>
+<item id="376" qus="carry" yb="['kæri]" cx="v" ans="携带;搬运;运送"/>
+<item id="377" qus="too" yb="[tu:]" cx="adv" ans="太"/>
+<item id="378" qus="so" yb="[səu]" cx="adv" ans="这么;那么"/>
+<item id="379" qus="listen to  " yb="" cx="phr." ans="听"/>
+<item id="380" qus="tape" yb="[teip]" cx="n" ans="磁带"/>
+<item id="381" qus="all" yb="[ɔ:l]" cx="adj" ans="整个;所有的"/>
+<item id="382" qus="basket" yb="['bɑ:skit]" cx="n" ans="篮子"/>
+<item id="383" qus="bottle" yb="['bɔtl]" cx="n" ans="瓶"/>
+<item id="384" qus="a bottle of  " yb="" cx="phr." ans="一瓶..."/>
+<item id="385" qus="juice" yb="[dʒu:s]" cx="n" ans="(水果;蔬菜;肉等的)汁;水汁"/>
+<item id="386" qus="head" yb="[hed]" cx="n" ans="头;头部"/>
+<item id="387" qus="nose" yb="[nəuz]" cx="n" ans="鼻子"/>
+<item id="388" qus="hair" yb="[hɛə]" cx="n" ans="头发"/>
+<item id="389" qus="arm" yb="[ɑ:m]" cx="n" ans="手臂;胳膊"/>
+<item id="390" qus="foot" yb="[fut]" cx="n" ans="脚(pl.feet)"/>
+<item id="391" qus="wardrobe" yb="['wɔ:drəub]" cx="n" ans="衣柜"/>
+<item id="392" qus="day" yb="[dei]" cx="n" ans="日;天"/>
+<item id="393" qus="from" yb="[frɔm]" cx="prep" ans="从.....起"/>
+<item id="394" qus="America" yb="[ə'merikən]" cx="n" ans="美国"/>
+<item id="395" qus="zoo" yb="[zu:]" cx="n" ans="动物园"/>
+<item id="396" qus="away" yb="[ə'wei]" cx="adv" ans="离开"/>
+<item id="397" qus="put away " yb="" cx="phr." ans="把.....什么收起来(放好)"/>
+<item id="398" qus="out" yb="[aut]" cx="adv" ans="在外"/>
+<item id="399" qus="come out  " yb="" cx="phr." ans="出来"/>
+<item id="400" qus="sock" yb="[sɔk]" cx="n" ans="短袜"/>
+<item id="401" qus="other" yb="['ʌðə]" cx="adj" ans="别的;其他的"/>
+<item id="402" qus="wrong" yb="[rɔ:ŋ]" cx="adj" ans="不正确的;错误的"/>
+<item id="403" qus="broken" yb="['brəukən]" cx="adj" ans="弄坏了的"/>
+<item id="404" qus="so" yb="[səu]" cx="pron" ans="这样;如此"/>
+<item id="405" qus="catch" yb="[kætʃ]" cx="v" ans="捉;抓住"/>
+<item id="406" qus="get down  " yb="" cx="phr." ans="下来;落下"/>
+<item id="407" qus="him" yb="[him]" cx="pron" ans="他(宾格)"/>
+<item id="408" qus="right" yb="[rait]" cx="adv" ans="正好;恰好;正确"/>
+<item id="409" qus="goodness" yb="['gudnis]" cx="n" ans="善良;美德"/>
+<item id="410" qus="plane" yb="[plein]" cx="n" ans="飞机"/>
+<item id="411" qus="with" yb="[wið]" cx="prep" ans="对....;关于"/>
+<item id="412" qus="mend" yb="[mend]" cx="v" ans="修补;修理"/>
+<item id="413" qus="knife" yb="[naif]" cx="n" ans="(pl.knives) 小刀"/>
+<item id="414" qus="robot" yb="['rəubɔt]" cx="n" ans="机器人"/>
+<item id="415" qus="body" yb="['bɔdi]" cx="n" ans="身体"/>
+<item id="416" qus="lost" yb="[lɔst]" cx="adj" ans="丢失的;丢去的"/>
+<item id="417" qus="tell" yb="[tel]" cx="v" ans="告诉;讲述"/>
+<item id="418" qus="round" yb="[raund]" cx="adj" ans="球形的 ;圆的"/>
+<item id="419" qus="mummy" yb="['mʌmi]" cx="n" ans="(口语)妈妈"/>
+<item id="420" qus="pleasure" yb="['pleʒə]" cx="n" ans="愉快;高兴"/>
+<item id="421" qus="food" yb="[fu:d]" cx="n" ans="食物"/>
+<item id="422" qus="drink" yb="[driŋk]" cx="n" ans="& v  饮料   喝"/>
+<item id="423" qus="hungry" yb="['hʌŋgri]" cx="adj" ans="饥饿的"/>
+<item id="424" qus="thirsty" yb="['θə:sti]" cx="adj" ans="口渴的"/>
+<item id="425" qus="water" yb="['wɔ:tə]" cx="n" ans="& v  水;浇水"/>
+<item id="426" qus="eat" yb="[i:t]" cx="v" ans="吃"/>
+<item id="427" qus="rice" yb="[rais]" cx="n" ans="米饭;大米"/>
+<item id="428" qus="bread" yb="[bred]" cx="n" ans="面包"/>
+<item id="429" qus="meat" yb="[mi:t]" cx="n" ans="肉"/>
+<item id="430" qus="tea" yb="[ti:]" cx="n" ans="茶"/>
+<item id="431" qus="milk" yb="[milk]" cx="n" ans="牛奶"/>
+<item id="432" qus="glass" yb="[glɑ:s]" cx="n" ans="玻璃杯"/>
+<item id="433" qus="a glass of  " yb="" cx="phr." ans="一(玻璃)杯"/>
+<item id="434" qus="porridge" yb="['pɔridʒ]" cx="n" ans="粥;稀饭"/>
+<item id="435" qus="fish" yb="[fiʃ]" cx="n" ans="鱼"/>
+<item id="436" qus="dumpling" yb="['dʌmpliŋ]" cx="n" ans="饺子"/>
+<item id="437" qus="fruit" yb="[fru:t]" cx="n" ans="水果"/>
+<item id="438" qus="piece" yb="[pi:s]" cx="n" ans="一张(片;张)"/>
+<item id="439" qus="a piece of  " yb="" cx="phr." ans="一片(一张、块)"/>
+<item id="440" qus="hamburger" yb="['hæmbə:gə]" cx="n" ans="汉堡包"/>
+<item id="441" qus="noodle" yb="['nu:dl]" cx="n" ans="面条"/>
+<item id="442" qus="potato" yb="[pə'teitəu]" cx="n" ans="pl.potatoes 马铃薯;土豆"/>
+<item id="443" qus="chips" yb="[tʃip]" cx="n" ans="(口语)炸士豆儿条"/>
+<item id="444" qus="coke" yb="[kəuk]" cx="n" ans="(口语)可口可乐"/>
+<item id="445" qus="coffee" yb="['kɔfi]" cx="n" ans="咖啡"/>
+<item id="446" qus="madam" yb="['mædəm]" cx="n" ans="夫人;女士"/>
+<item id="447" qus="dear" yb="[diə]" cx="adj" ans="亲爱的;可爱的"/>
+<item id="448" qus="ice" yb="[ais]" cx="n" ans="冰"/>
+<item id="449" qus="cream" yb="[kri:m]" cx="n" ans="奶油;乳脂"/>
+<item id="450" qus="ice cream  " yb="" cx="n" ans="冰淇淋"/>
+<item id="451" qus="USA  " yb="" cx="n" ans="美国"/>
+<item id="452" qus="different" yb="['difərənt]" cx="adj" ans="不同的"/>
+<item id="453" qus="vegetable" yb="['vedʒitəbl]" cx="n" ans="蔬菜"/>
+<item id="454" qus="sometimes" yb="['sʌmtaimz]" cx="adv" ans="有时"/>
+<item id="455" qus="sport" yb="[spɔ:t]" cx="n" ans="运动"/>
+<item id="456" qus="come on  " yb="" cx="phr." ans="来;过来"/>
+<item id="457" qus="be good at  " yb="" cx="phr." ans="在...方面(学得,做得)好; 善于"/>
+<item id="458" qus="basketball " yb="['bæskitbɔ:l]" cx="n" ans="蓝球"/>
+<item id="459" qus="easy" yb="['i:zi]" cx="adj" ans="容易的"/>
+<item id="460" qus="pass" yb="[pɑ:s]" cx="v" ans="传递"/>
+<item id="461" qus="try" yb="[trai]" cx="v" ans="试(做);设法;努力"/>
+<item id="462" qus="yo-yo" yb="['jəujəu]" cx="n" ans="溜溜球 (一种玩具)"/>
+<item id="463" qus="go" yb="[gəu]" cx="n" ans="尝试(做某事)"/>
+<item id="464" qus="throw" yb="[θrəu]" cx="v" ans="投,掷"/>
+<item id="465" qus="hard" yb="[hɑ:d]" cx="adj" ans="困难的"/>
+<item id="466" qus="ride" yb="[raid]" cx="v" ans="骑(自行车,马等)"/>
+<item id="467" qus="swim" yb="[swim]" cx="v" ans="游泳"/>
+<item id="468" qus="skate" yb="[skeit]" cx="v" ans="滑冰,溜冰"/>
+<item id="469" qus="fly" yb="[flai]" cx="v" ans="放(风筝,飞机模型等)"/>
+<item id="470" qus="card" yb="[kɑ:d]" cx="n" ans="纸牌,卡片"/>
+<item id="471" qus="volleyball" yb="['vɔli,bɔ:l]" cx="n" ans="排球"/>
+<item id="472" qus="jump" yb="[dʒʌmp]" cx="v" ans="跳"/>
+<item id="473" qus="sing" yb="[siŋ]" cx="v" ans="唱,唱歌"/>
+<item id="474" qus="run" yb="[rʌn]" cx="v" ans="跑"/>
+<item id="475" qus="high" yb="[hai]" cx="adj" ans="& adv 高的(地)"/>
+<item id="476" qus="then" yb="[ðen]" cx="adv" ans="那么,然后"/>
+<item id="477" qus="question" yb="['kwestʃən]" cx="n" ans="问题"/>
+<item id="478" qus="postal" yb="['pəustəl]" cx="adj" ans="邮政的"/>
+<item id="479" qus="code" yb="[kəud]" cx="n" ans="密码,符号"/>
+<item id="480" qus="ski" yb="[ski:]" cx="v" ans="滑雪"/>
+<item id="481" qus="tennis" yb="['tenis]" cx="n" ans="网球(运动)"/>
+<item id="482" qus="table tennis  " yb="" cx="n" ans="乒乓球"/>
+<item id="483" qus="roller-skating" yb="['rəuləskeitiŋ]" cx="n" ans="滑旱冰"/>
+<item id="484" qus="chess" yb="[tʃes]" cx="n" ans="国际象棋"/>
+<item id="485" qus="fan" yb="[fæn]" cx="n" ans="(口语，电影,运动等的)迷"/>
+<item id="486" qus="player" yb="['pleiə]" cx="n" ans="比赛者,选手"/>
+<item id="487" qus="team" yb="[ti:m]" cx="n" ans="队,组"/>
+<item id="488" qus="every" yb="['evri]" cx="adj" ans="每一,每个的"/>
+<item id="489" qus="Friday" yb="['fraidi]" cx="n" ans="星期五"/>
+<item id="490" qus="make" yb="[meik]" cx="v" ans="做,制作"/>
+<item id="491" qus="make the bed  " yb="" cx="phr." ans="整理床铺"/>
+<item id="492" qus="homework" yb="['həumwə:k]" cx="n" ans="家庭作业"/>
+<item id="493" qus="do homework  " yb="" cx="phr." ans="做作业"/>
+<item id="494" qus="read" yb="[ri:d]" cx="n" ans="读,阅读"/>
+<item id="495" qus="write" yb="[rait]" cx="v" ans="写"/>
+<item id="496" qus="sleep" yb="[sli:p]" cx="v" ans="睡,睡觉"/>
+<item id="497" qus="look for ['luk fər]" yb="" cx="phr." ans="寻找"/>
+<item id="498" qus="cook" yb="[kuk]" cx="v" ans="& n 烹调,煮,烧 炊事员,厨师"/>
+<item id="499" qus="talk" yb="[tɔ:k]" cx="v" ans="说话,谈话"/>
+<item id="500" qus="open" yb="['əupən]" cx="n" ans="打开"/>
+<item id="501" qus="close" yb="[kləuz]" cx="v" ans="关;闭"/>
+<item id="502" qus="take photos  " yb="" cx="phr." ans="照象"/>
+<item id="503" qus="wear" yb="[wɛə]" cx="v" ans="穿"/>
+<item id="504" qus="Sunday" yb="['sʌndi]" cx="n" ans="星期日"/>
+<item id="505" qus="park" yb="[pɑ:k]" cx="n" ans="公园"/>
+<item id="506" qus="toy" yb="[tɔi]" cx="n" ans="玩具;玩物"/>
+<item id="507" qus="lake" yb="[leik]" cx="n" ans="湖"/>
+<item id="508" qus="shop" yb="[ʃɔp]" cx="n" ans="商店"/>
+<item id="509" qus="closed" yb="[kləuzd]" cx="adj" ans="关着的"/>
+<item id="510" qus="day" yb="[dei]" cx="n" ans="日,一天"/>
+<item id="511" qus="Friday" yb="['fraidi]" cx="n" ans="星期五"/>
+<item id="512" qus="early" yb="['ə:li]" cx="adj" ans="& adv  早的(地)初期"/>
+<item id="513" qus="supermarket" yb="['sju:pə,mɑ:kit]" cx="n" ans="超级市场"/>
+<item id="514" qus="Wednesday" yb="['wenzdi]" cx="n" ans="星期三"/>
+<item id="515" qus="borrow" yb="['bɔrəu]" cx="v" ans="借"/>
+<item id="516" qus="from" yb="[frɔm]" cx="prep" ans="从;从....起"/>
+<item id="517" qus="Thursday" yb="['θə:zdi]" cx="n" ans="星期四"/>
+<item id="518" qus="week" yb="[wi:k]" cx="n" ans="周;星期"/>
+<item id="519" qus="Monday" yb="['mʌndei]" cx="n" ans="星期一"/>
+<item id="520" qus="Saturday" yb="['sætədi]" cx="n" ans="星期六"/>
+<item id="521" qus="Sunday" yb="['sʌndi]" cx="n" ans="星期日"/>
+<item id="522" qus="dictionary" yb="['dikʃəneri]" cx="n" ans="字典;词典"/>
+<item id="523" qus="back" yb="[bæk]" cx="adv" ans="回(原处) ;向后"/>
+<item id="524" qus="CD " yb="" cx="n" ans="激光唱片(缩写词)"/>
+<item id="525" qus="lot" yb="[lɔt]" cx="n" ans="许多"/>
+<item id="526" qus="a lot  " yb="" cx="phr." ans="非常"/>
+<item id="527" qus="give...a hand  " yb="" cx="phr." ans="给予.....帮助"/>
+<item id="528" qus="evening" yb="['i:vniŋ]" cx="n" ans="傍晚;晚上"/>
+<item id="529" qus="from…to…  " yb="" cx="phr." ans="…从…到…"/>
+<item id="530" qus="after class  " yb="" cx="phr." ans="课后"/>
+<item id="531" qus="help...with  " yb="" cx="phr." ans="帮助(某人)做(某事)"/>
+<item id="532" qus="model" yb="['mɔdl]" cx="n" ans="模型;模范 ;样式"/>
+<item id="533" qus="park" yb="[pɑ:k]" cx="n" ans="公园"/>
+<item id="534" qus="rest" yb="[rest]" cx="n" ans="休息"/>
+<item id="535" qus="have a (good) rest  " yb="" cx="phr." ans="休息"/>
+<item id="536" qus="maths" yb="[mæθs]" cx="n" ans="(英式拼法)数学"/>
+<item id="537" qus="math" yb="[mæθ]" cx="n" ans="(美式拼法)数学"/>
+<item id="538" qus="all" yb="[ɔ:l]" cx="adv" ans="全体;全部"/>
+<item id="539" qus="hard" yb="[hɑ:d]" cx="adv" ans="努力"/>
+<item id="540" qus="fun" yb="[fʌn]" cx="adj" ans="有趣的;愉快的"/>
+<item id="541" qus="yeah" yb="[jɛə]" cx="adv" ans="(口语)是的;嗯"/>
+<item id="542" qus="take" yb="[teik]" cx="v" ans="花费(时间)"/>
+<item id="543" qus="straight" yb="[streit]" cx="adj" ans="直的"/>
+<item id="544" qus="use" yb="[ju:z]" cx="v" ans="用;使用;应用"/>
+<item id="545" qus="wheel" yb="[hwi:l]" cx="n" ans="轮;机轮"/>
+<item id="546" qus="into" yb="['intu:]" cx="prep" ans="到.....里;向内"/>
+<item id="547" qus="music" yb="['mju:zik]" cx="n" ans="音乐;乐曲"/>
+<item id="548" qus="boat" yb="[bəut]" cx="v" ans="划船"/>
+<item id="549" qus="lake" yb="[leik]" cx="n" ans="湖"/>
+<item id="550" qus="into" yb="['intu:]" cx="prep" ans="到...里,向内"/>
+<item id="551" qus="worried" yb="['wʌrid]" cx="adj" ans="担心的,烦恼的"/>
+<item id="552" qus="save" yb="[seiv]" cx="v" ans="救,挽救,节省"/>
+<item id="553" qus="ticket" yb="['tikit]" cx="n" ans="票,券"/>
+<item id="554" qus="New York" yb="['nju:leid]" cx="n" ans="纽约"/>
+<item id="555" qus="learn" yb="[lə:n]" cx="v" ans="学,学习"/>
+<item id="556" qus="learn...from " yb="" cx="phr." ans="向...学习"/>
+<item id="557" qus="meeting" yb="['mi:tiŋ]" cx="n" ans="会,会议"/>
+<item id="558" qus="bring" yb="[briŋ]" cx="v" ans="带来,拿来"/>
+<item id="559" qus="foreign" yb="['fɔrin]" cx="adj" ans="外国的"/>
+<item id="560" qus="difference" yb="['difərəns]" cx="n" ans="不同,差异"/>
+<item id="561" qus="each" yb="[i:tʃ]" cx="adv" ans="& pron 各自,各个"/>
+<item id="562" qus="each other  " yb="" cx="pron" ans="互相"/>
+<item id="563" qus="talk about  " yb="" cx="phr." ans="谈论,交谈"/>
+<item id="564" qus="USA  " yb="" cx="n" ans="美国"/>
+<item id="565" qus="Australia" yb="[ɔ:s'treiljə]" cx="n" ans="澳大利亚"/>
+<item id="566" qus="Canada" yb="['kænədə]" cx="n" ans="加拿大"/>
+<item id="567" qus="UK " yb="" cx="n" ans="联合王国"/>
+<item id="568" qus="Japan" yb="[dʒə'pæn]" cx="n" ans="日本"/>
+<item id="569" qus="America" yb="[ə'merikə]" cx="n" ans="美国"/>
+<item id="570" qus="a little  " yb="" cx="phr." ans="一点,少量"/>
+<item id="571" qus="French" yb="[frentʃ]" cx="n" ans="法语"/>
+<item id="572" qus="great" yb="[greit]" cx="adj" ans="伟大的,很大的,重要的"/>
+<item id="573" qus="the Great Wall " yb="" cx="n" ans="长城"/>
+<item id="574" qus="hotel" yb="[həu'tel]" cx="n" ans="旅馆,饭馆"/>
+<item id="575" qus="building" yb="['bildiŋ]" cx="n" ans="建筑物"/>
+<item id="576" qus="follow" yb="['fɔləu]" cx="v" ans="跟随"/>
+<item id="577" qus="family name  " yb="" cx="n" ans="姓"/>
+<item id="578" qus="first" yb="[fə:st]" cx="num" ans="& adv 第一,首先,最初"/>
+<item id="579" qus="postcard" yb="['pəust,kɑ:d]" cx="n" ans="明信片"/>
+<item id="580" qus="teach" yb="[ti:tʃ]" cx="v" ans="教,教书"/>
+<item id="581" qus="dinner" yb="['dinə]" cx="n" ans="正餐,晚餐"/>
+<item id="582" qus="soon" yb="[su:n]" cx="adv" ans="不久,一会儿"/>
+<item id="583" qus="stay" yb="[stei]" cx="v" ans="停留(在某处)"/>
+<item id="584" qus="high school  " yb="" cx="n" ans="中学"/>
+<item id="585" qus="Toronto" yb="[tə'rɔntəu]" cx="n" ans="多伦多(加拿大港市)"/>
+<item id="586" qus="schoolboy" yb="['sku:lbɔi]" cx="n" ans="(中小学的)男学生"/>
+<item id="587" qus="country" yb="['kʌntri]" cx="n" ans="国家"/>
+<item id="588" qus="make friends  " yb="" cx="phr." ans="交朋友"/>
+<item id="589" qus="France" yb="[frɑ:ns]" cx="n" ans="法国"/>
+<item id="590" qus="textbook" yb="['tekstbuk]" cx="n" ans="课本"/>
+<item id="591" qus="Canadian" yb="[kə'neidiən]" cx="n" ans="加拿大人"/>
+<item id="592" qus="city" yb="['siti]" cx="n" ans="城市"/>
+<item id="593" qus="foreigner" yb="['fɔ:rinə]" cx="n" ans="外国人"/>
+<item id="594" qus="visit" yb="['vizit]" cx="v" ans="访问,参观,拜访"/>
+<item id="595" qus="word" yb="[wə:d]" cx="n" ans="词,单词"/>
+<item id="596" qus="well" yb="[wel]" cx="adv" ans="好"/>
+<item id="597" qus="why" yb="[hwai]" cx="adv" ans="为什么"/>
+<item id="598" qus="English-speaking " yb="" cx="adj" ans="说英语的"/>
+<item id="599" qus="letter" yb="['letə]" cx="n" ans="信"/>
+<item id="600" qus="hot" yb="[hɔt]" cx="adj" ans="热的,辣的"/>
+<item id="601" qus="hot dog  " yb="" cx="n" ans="热狗(红肠面包)"/>
+<item id="602" qus="not...at all  " yb="" cx="phr." ans="一点也不"/>
+<item id="603" qus="different" yb="['difərənt]" cx="adj" ans="不同的"/>
+<item id="604" qus="kind" yb="[kaind]" cx="n" ans="种,类"/>
+<item id="605" qus="a kind of  " yb="" cx="phr." ans="一种,一类"/>
+<item id="606" qus="every" yb="['evri]" cx="adj" ans="每一的,每个的"/>
+<item id="607" qus="meal" yb="[mi:l]" cx="n" ans="一餐,一顿饭"/>
+<item id="608" qus="noodle" yb="['nu:dl]" cx="n" ans="面条"/>
+<item id="609" qus="vegetable" yb="['vedʒitəbl]" cx="n" ans="蔬菜"/>
+<item id="610" qus="restaurant" yb="['restərɔnt]" cx="n" ans="饭馆"/>
+<item id="611" qus="often" yb="['ɔ:fən]" cx="adv" ans="常常"/>
+<item id="612" qus="potato" yb="[pə'teitəu]" cx="n" ans="马铃薯,土豆"/>
+<item id="613" qus="well" yb="[wel]" cx="adj" ans="& adv 好,(身体)健康"/>
+<item id="614" qus="why" yb="[hwai]" cx="adv" ans="为什么"/>
+<item id="615" qus="because" yb="[bi'kɔ:z]" cx="conj" ans="因为"/>
+<item id="616" qus="housework" yb="['hauswə:k]" cx="n" ans="家务劳动"/>
+<item id="617" qus="machine" yb="[mə'ʃi:n]" cx="n" ans="机器"/>
+<item id="618" qus="again" yb="[ə'gen]" cx="adv" ans="又,再"/>
+<item id="619" qus="make phone calls  " yb="" cx="phr." ans="打电话"/>
+<item id="620" qus="wash" yb="[wɔʃ]" cx="v" ans="洗,漱洗"/>
+<item id="621" qus="dish" yb="[diʃ]" cx="n" ans="一道菜,盘,碟"/>
+<item id="622" qus="electronic" yb="[ilek'trɔnik]" cx="adj" ans="电子的"/>
+<item id="623" qus="mail" yb="[meil]" cx="n" ans="邮政,邮递"/>
+<item id="624" qus="fog" yb="[fɔg]" cx="n" ans="雾"/>
+<item id="625" qus="dance" yb="[dɑ:ns]" cx="v" ans="跳舞"/>
+<item id="626" qus="living room  " yb="" cx="n" ans="起居室"/>
+<item id="627" qus="dining room  " yb="" cx="n" ans="餐厅"/>
+<item id="628" qus="driver" yb="['draivə]" cx="n" ans="司机,驾驶员"/>
+<item id="629" qus="farmer" yb="['fɑ:mə]" cx="n" ans="农民"/>
+<item id="630" qus="soldier" yb="['səuldʒə]" cx="n" ans="士兵,战士"/>
+<item id="631" qus="businessman" yb="['biznismæn]" cx="n" ans="商人"/>
+<item id="632" qus="assistant" yb="[ə'sistənt]" cx="n" ans="助手,助理"/>
+<item id="633" qus="a shop assistant  " yb="" cx="phr." ans="售货员,店员"/>
+<item id="634" qus="nurse" yb="[nə:s]" cx="n" ans="护士"/>
+<item id="635" qus="postman" yb="['pəustmən]" cx="n" ans="邮递员"/>
+<item id="636" qus="factory" yb="['fæktəri]" cx="n" ans="工厂"/>
+<item id="637" qus="station" yb="['steiʃən]" cx="n" ans="车站,所,站"/>
+<item id="638" qus="bus station  " yb="" cx="n" ans="公共汽车站"/>
+<item id="639" qus="hospital ['hɔspitl] " yb="" cx="n" ans="医院"/>
+<item id="640" qus="farm" yb="[fɑ:m]" cx="n" ans="农场"/>
+<item id="641" qus="post" yb="[pəust]" cx="n" ans="邮政,邮寄,邮件"/>
+<item id="642" qus="office" yb="['ɔ:fis]" cx="n" ans="办公室"/>
+<item id="643" qus="post office  " yb="" cx="n" ans="邮局"/>
+<item id="644" qus="study" yb="['stʌdi]" cx="v" ans="学习,研究"/>
+<item id="645" qus="party" yb="['pɑ:ti]" cx="n" ans="聚会"/>
+<item id="646" qus="friendly" yb="['frendli]" cx="adj" ans="友好的"/>
+<item id="647" qus="also" yb="['ɔ:lsəu]" cx="adv" ans="也"/>
+<item id="648" qus="medicine" yb="['medisin]" cx="n" ans="内服药,医学"/>
+<item id="649" qus="in the day  " yb="" cx="phr." ans="在白天"/>
+<item id="650" qus="at night  " yb="" cx="phr." ans="在晚上,在夜里"/>
+<item id="651" qus="make money  " yb="" cx="phr." ans="赚钱"/>
+<item id="652" qus="weekend" yb="['wi:k'end]" cx="n" ans="周末"/>
+<item id="653" qus="job" yb="[dʒɔb]" cx="n" ans="工作"/>
+<item id="654" qus="writer" yb="['raitə]" cx="n" ans="作家,作者"/>
+<item id="655" qus="cleaner" yb="['kli:nə]" cx="n" ans="清洁工"/>
+<item id="656" qus="turn" yb="[tə:n]" cx="n" ans="(依次轮流的)顺序,轮流"/>
+<item id="657" qus="grow" yb="[grəu]" cx="v" ans="种植,生长"/>
+<item id="658" qus="baker" yb="['beikə]" cx="n" ans="面包师"/>
+<item id="659" qus="artist" yb="['ɑ:tist]" cx="n" ans="画家,艺术家"/>
+<item id="660" qus="hobby" yb="['hɔbi]" cx="n" ans="业余爱好"/>
+<item id="661" qus="be" yb="[bi:]" cx="v" ans="(am,is,are)是,成为"/>
+<item id="662" qus="place" yb="[pleis]" cx="n" ans="地点,地方"/>
+<item id="663" qus="weekday" yb="['wi:kdei]" cx="n" ans="工作日,平日(除星期六,日以外)"/>
+<item id="664" qus="when" yb="[hwen]" cx="adv" ans="什么时候,何时"/>
+<item id="665" qus="leave" yb="[li:v]" cx="v" ans="离去,出发"/>
+<item id="666" qus="begin" yb="[bi'gin]" cx="v" ans="开始,着手"/>
+<item id="667" qus="have sports  " yb="" cx="phr." ans="进行体育活动"/>
+<item id="668" qus="go to bed  " yb="" cx="phr." ans="睡觉"/>
+<item id="669" qus="usually" yb="['ju:ʒuəli]" cx="adv" ans="通常"/>
+<item id="670" qus="right now  " yb="" cx="phr." ans="立刻,马上"/>
+<item id="671" qus="sometimes" yb="['sʌmtaimz]" cx="adv" ans="有时"/>
+<item id="672" qus="take off  " yb="" cx="phr." ans="脱衣服"/>
+<item id="673" qus="after school  " yb="" cx="phr." ans="放学后,下课后"/>
+<item id="674" qus="get to  " yb="" cx="phr." ans="到达"/>
+<item id="675" qus="do morning exercises  " yb="" cx="phr." ans="做早操"/>
+<item id="676" qus="shopping" yb="['ʃɔpiŋ]" cx="n" ans="买东西"/>
+<item id="677" qus="go shopping  " yb="" cx="phr." ans="(去)买东西"/>
+<item id="678" qus="garden" yb="['gɑ:dn]" cx="n" ans="花(果,菜)园"/>
+<item id="679" qus="be" yb="[bi:]" cx="v" ans="(am,is,are)是,成为"/>
+<item id="680" qus="over" yb="['əuvə]" cx="adv" ans="结束,完了"/>
+<item id="681" qus="do (some) reading  " yb="" cx="phr." ans="朗读,阅读"/>
+<item id="682" qus="living-room " yb="" cx="n" ans="起居室"/>
+<item id="683" qus="walk" yb="[wɔ:k]" cx="v" ans="走,步行,散步"/>
+<item id="684" qus="news" yb="[nju:z]" cx="n" ans="新闻,消息"/>
+<item id="685" qus="match" yb="[mætʃ]" cx="n" ans="比赛,竞赛"/>
+<item id="686" qus="quickly" yb="['kwikli]" cx="adv" ans="迅速"/>
+<item id="687" qus="sun" yb="[sʌn]" cx="n" ans="太阳"/>
+<item id="688" qus="moon" yb="[mu:n]" cx="n" ans="月亮"/>
+<item id="689" qus="bridge" yb="[bridʒ]" cx="n" ans="桥"/>
+<item id="690" qus="train" yb="[trein]" cx="n" ans="火车"/>
+<item id="691" qus="ship" yb="[ʃip]" cx="n" ans="船,轮船"/>
+<item id="692" qus="on foot  " yb="" cx="phr." ans="走路,步行"/>
+<item id="693" qus="holiday" yb="['hɔlədi]" cx="n" ans="假日,假期"/>
+<item id="694" qus="year" yb="[jiə]" cx="n" ans="年"/>
+<item id="695" qus="by" yb="[bai]" cx="prep" ans="乘车(船等)"/>
+<item id="696" qus="by plane  " yb="" cx="phr." ans="乘飞机"/>
+<item id="697" qus="by ship  " yb="" cx="phr." ans="乘船"/>
+<item id="698" qus="air" yb="[ɛə]" cx="n" ans="天空,空气"/>
+<item id="699" qus="by air  " yb="" cx="phr." ans="乘飞机"/>
+<item id="700" qus="sea" yb="[si:]" cx="n" ans="海,海洋"/>
+<item id="701" qus="by sea  " yb="" cx="phr." ans="乘船"/>
+<item id="702" qus="take time  " yb="" cx="phr." ans="花费(时间)"/>
+<item id="703" qus="how long  " yb="" cx="phr." ans="多久"/>
+<item id="704" qus="walk" yb="[wɔ:k]" cx="v" ans="走,步行,散步"/>
+<item id="705" qus="clean" yb="[kli:n]" cx="adj" ans="干净的,清洁的"/>
+<item id="706" qus="story" yb="['stɔ:ri]" cx="n" ans="故事"/>
+<item id="707" qus="far" yb="[fɑ:]" cx="adj" ans="& adv 远"/>
+<item id="708" qus="problem" yb="['prɔbləm]" cx="n" ans="问题,难题"/>
+<item id="709" qus="earlier" yb="['ə:liə]" cx="adj" ans="& adv ( early的比较级)更早的(地)"/>
+<item id="710" qus="ill" yb="[il]" cx="adj" ans="病的,不健康的"/>
+<item id="711" qus="tear" yb="[tɛə]" cx="n" ans="(常用复数)眼泪,泪珠"/>
+<item id="712" qus="chicken" yb="['tʃikin]" cx="n" ans="鸡,鸡肉"/>
+<item id="713" qus="tofu" yb="['təufu:]" cx="n" ans="豆腐"/>
+<item id="714" qus="fridge" yb="[fridʒ]" cx="n" ans="电冰箱"/>
+<item id="715" qus="list" yb="[list]" cx="n" ans="清单,一览表,名单,目录"/>
+<item id="716" qus="shopping list  " yb="" cx="phr." ans="购物清单"/>
+<item id="717" qus="buy" yb="[bai]" cx="v" ans="买"/>
+<item id="718" qus="kilo" yb="['ki:ləu]" cx="n" ans="千克,公斤"/>
+<item id="719" qus="sell" yb="[sel]" cx="v" ans="卖,售"/>
+<item id="720" qus="how much  " yb="" cx="phr." ans="多少,多少钱"/>
+<item id="721" qus="cheap" yb="[tʃi:p]" cx="adj" ans="便宜的"/>
+<item id="722" qus="expensive" yb="[iks'pensiv]" cx="adj" ans="昂贵的"/>
+<item id="723" qus="onion" yb="['ʌnjən]" cx="n" ans="洋葱"/>
+<item id="724" qus="carrot" yb="['kærət]" cx="n" ans="胡萝卜"/>
+<item id="725" qus="pork" yb="[pɔ:k]" cx="n" ans="猪肉"/>
+<item id="726" qus="all day  " yb="" cx="phr." ans="一整天,一天到晚"/>
+<item id="727" qus="a lot of  " yb="" cx="phr." ans="许多,很多"/>
+<item id="728" qus="open" yb="['əupən]" cx="adj" ans="开着的"/>
+<item id="729" qus="market" yb="['mɑ:kit]" cx="n" ans="市场,集市"/>
+<item id="730" qus="cent" yb="[sent]" cx="n" ans="(货币)分"/>
+<item id="731" qus="pound" yb="[paund]" cx="n" ans="镑(重量单位)"/>
+<item id="732" qus="health" yb="[helθ]" cx="n" ans="健康,卫生"/>
+<item id="733" qus="fast" yb="[fɑ:st]" cx="adj" ans="& adv 快的(地),迅速的(地)"/>
+<item id="734" qus="of course  " yb="" cx="phr." ans="当然,自然的事"/>
+<item id="735" qus="travel" yb="['trævl]" cx="v" ans="& n 旅行"/>
+<item id="736" qus="safe" yb="[seif]" cx="adj" ans="安全的,平安的"/>
+<item id="737" qus="minibus" yb="['mini,bʌs]" cx="n" ans="小型公共汽车"/>
+<item id="738" qus="and so on  " yb="" cx="phr." ans="等等"/>
+<item id="739" qus="price" yb="[prais]" cx="n" ans="价格,价钱"/>
+<item id="740" qus="example" yb="[ig'zɑ:mpl]" cx="n" ans="例子,榜样"/>
+<item id="741" qus="for example " yb="" cx="phr." ans="例如"/>
+<item id="742" qus="stand" yb="[stænd]" cx="v" ans="站,立"/>
+<item id="743" qus="field" yb="[fi:ld]" cx="n" ans="地,田地"/>
+<item id="744" qus="job" yb="[dʒɔb]" cx="n" ans="工作"/>
+<item id="745" qus="bright" yb="[brait]" cx="adj" ans="明亮的,灿烂的"/>
+<item id="746" qus="foreign" yb="['fɔrin]" cx="adj" ans="外国的"/>
+<item id="747" qus="sunglasses" yb="['sʌnglɑ:siz]" cx="n" ans="太阳镜"/>
+<item id="748" qus="each" yb="[i:tʃ]" cx="pron" ans="各自,各个"/>
+<item id="749" qus="language" yb="['læŋgwidʒ]" cx="n" ans="语言"/>
+<item id="750" qus="helpful" yb="['helpfəl]" cx="adj" ans="有帮助的,有益的"/>
+<item id="751" qus="get on (a bus) " yb="" cx="phr." ans="上车"/>
+<item id="752" qus="business" yb="['biznis]" cx="n" ans="商业,生意,事物"/>
+<item id="753" qus="company" yb="['kʌmpəni]" cx="n" ans="公司"/>
+<item id="754" qus="manager" yb="['mænidʒə]" cx="n" ans="经理,负责人"/>
+<item id="755" qus="century" yb="['sentʃuri]" cx="n" ans="世纪,百年"/>
+<item id="756" qus="lesson" yb="['lesn]" cx="n" ans="课,功课"/>
+<item id="757" qus="fun" yb="[fʌn]" cx="n" ans="有趣"/>
+<item id="758" qus="when" yb="[hwen]" cx="conj" ans="当......时"/>
+<item id="759" qus="traffic" yb="['træfik]" cx="n" ans="交通"/>
+<item id="760" qus="bad" yb="[bæd]" cx="adj" ans="坏的"/>
+<item id="761" qus="on time  " yb="" cx="phr." ans="准时"/>
+<item id="762" qus="September" yb="[sep'tembə]" cx="n" ans="九月"/>
+<item id="763" qus="happy" yb="['hæpi]" cx="adj" ans="快乐的,幸福的"/>
+<item id="764" qus="best" yb="[best]" cx="adj" ans="&adv 最好的(地)"/>
+<item id="765" qus="wish" yb="[wiʃ]" cx="n" ans="&v  祝愿,希望,想要"/>
+<item id="766" qus="second" yb="['sekənd]" cx="num" ans="&adj 第二(的)"/>
+<item id="767" qus="idea" yb="[ai'diə]" cx="n" ans="主意,想法,意见"/>
+<item id="768" qus="last" yb="[lɑ:st]" cx="adj" ans="最后的,刚过去的"/>
+<item id="769" qus="given name  " yb="" cx="phr." ans="名字"/>
+<item id="770" qus="mean" yb="[mi:n]" cx="v" ans="表示...的意思,意味着"/>
+<item id="771" qus="meaning" yb="['mi:niŋ]" cx="n" ans="意思,意义,含义"/>
+<item id="772" qus="use" yb="[ju:z]" cx="v" ans="用,使用,运用"/>
+<item id="773" qus="before" yb="[bi'fɔ:]" cx="prep" ans="&adv 在..之前,以前"/>
+<item id="774" qus="never" yb="['nevə]" cx="adv" ans="从来,决不"/>
+<item id="775" qus="just" yb="[dʒʌst]" cx="adv" ans="刚刚,方才"/>
+<item id="776" qus="third" yb="[θə:d]" cx="num" ans="&adj 第三的"/>
+<item id="777" qus="afraid" yb="[ə'freid]" cx="adj" ans="害怕的"/>
+<item id="778" qus="live" yb="[liv]" cx="v" ans="居住"/>
+<item id="779" qus="sound" yb="[saund]" cx="n" ans="& v  声音,听起来"/>
+<item id="780" qus="have to  " yb="" cx="phr." ans="不得不,必须"/>
+<item id="781" qus="time" yb="[taim]" cx="n" ans="次数"/>
+<item id="782" qus="more" yb="[mɔ:]" cx="adv" ans="更,更加"/>
+<item id="783" qus="not...any more  " yb="" cx="phr." ans="不再"/>
+<item id="784" qus="laugh" yb="[lɑ:f]" cx="v" ans="& n 笑,大笑,笑声"/>
+<item id="785" qus="waste" yb="[weist]" cx="n" ans="& v  浪费,废弃物"/>
+<item id="786" qus="a waste of time " yb="" cx="phr." ans="浪费(白费)时间"/>
+<item id="787" qus="fifth" yb="[fifθ]" cx="num" ans="& adj 第五(的)"/>
+<item id="788" qus="trip" yb="[trip]" cx="n" ans="& v  旅游,旅行"/>
+<item id="789" qus="field trip  " yb="" cx="phr." ans="野外旅游"/>
+<item id="790" qus="hometown" yb="['hom'taun]" cx="n" ans="故乡,家乡"/>
+<item id="791" qus="discuss" yb="[di'skʌs]" cx="v" ans="讨论,议论"/>
+<item id="792" qus="fish" yb="[fiʃ]" cx="v" ans="钓鱼"/>
+<item id="793" qus="fishing" yb="['fiʃiŋ]" cx="n" ans="钓鱼"/>
+<item id="794" qus="go fishing  " yb="" cx="phr." ans="去钓鱼"/>
+<item id="795" qus="east" yb="[i:st]" cx="n" ans="& adj 东方(的),东部(的)"/>
+<item id="796" qus="agree" yb="[ə'gri:]" cx="v" ans="同意,赞成"/>
+<item id="797" qus="boating" yb="['bəutiŋ]" cx="n" ans="划船"/>
+<item id="798" qus="go boating  " yb="" cx="phr." ans="去划船"/>
+<item id="799" qus="maybe" yb="['meibi]" cx="adv" ans="也许,大概"/>
+<item id="800" qus="mountain" yb="['mauntin]" cx="n" ans="山,高山"/>
+<item id="801" qus="hike" yb="[haik]" cx="n" ans="& v  远足,徒步旅行"/>
+<item id="802" qus="hiking" yb="[haikin]" cx="n" ans="徒步旅行"/>
+<item id="803" qus="go hiking  " yb="" cx="phr." ans="去徒步旅行"/>
+<item id="804" qus="picnic" yb="['piknik]" cx="n" ans="野餐"/>
+<item id="805" qus="the day after tomorrow " yb="" cx="phr." ans="后天"/>
+<item id="806" qus="top" yb="[tɔp]" cx="n" ans="顶部"/>
+<item id="807" qus="problem" yb="['prɔbləm]" cx="n" ans="问题,难题"/>
+<item id="808" qus="quick" yb="[kwik]" cx="adj" ans="快的,迅速的"/>
+<item id="809" qus="quickly" yb="['kwikli]" cx="adv" ans="快地,迅速地"/>
+<item id="810" qus="start" yb="[stɑ:t]" cx="v" ans="开始,着手"/>
+<item id="811" qus="trip [trip] over  " yb="" cx="phr." ans="(被...)绊倒"/>
+<item id="812" qus="tired" yb="['taiəd]" cx="adj" ans="累,疲乏"/>
+<item id="813" qus="hurry" yb="['hʌri]" cx="v" ans="赶快,慌忙"/>
+<item id="814" qus="hurry up  " yb="" cx="phr." ans="赶快"/>
+<item id="815" qus="tie" yb="[tai]" cx="v" ans="捆,(系,栓)紧"/>
+<item id="816" qus="die" yb="[dai]" cx="v" ans="死亡"/>
+<item id="817" qus="city" yb="['siti]" cx="n" ans="城市"/>
+<item id="818" qus="take" yb="[teik]" cx="v" ans="花费(时间),消耗"/>
+<item id="819" qus="eighth" yb="[eitθ]" cx="num" ans="第八"/>
+<item id="820" qus="salesgirl" yb="['seilzgə:l]" cx="n" ans="女售货员"/>
+<item id="821" qus="far" yb="[fɑ:]" cx="adj" ans="& adv 远的(地)"/>
+<item id="822" qus="beautiful" yb="['bju:təfəl]" cx="adj" ans="美丽的,漂亮的"/>
+<item id="823" qus="together" yb="[tə'geðə]" cx="adv" ans="一起"/>
+<item id="824" qus="autumn" yb="['ɔ:təm]" cx="n" ans="秋天,秋季"/>
+<item id="825" qus="festival" yb="['festəvəl]" cx="n" ans="& adj 节日(的),喜庆(的)"/>
+<item id="826" qus="ninth" yb="[nainθ]" cx="num" ans="&adj 第九(的)"/>
+<item id="827" qus="free" yb="[fri:]" cx="adj" ans="自由的,空闲的"/>
+<item id="828" qus="mid-autumn " yb="" cx="n" ans="中秋"/>
+<item id="829" qus="mooncake " yb="" cx="n" ans="月饼"/>
+<item id="830" qus="nut" yb="[nʌt]" cx="n" ans="坚果,坚果核"/>
+<item id="831" qus="sweet" yb="[swi:t]" cx="adj" ans="甜的,可爱的"/>
+<item id="832" qus="inside [,in'said] " yb="" cx="prep" ans="在...里面"/>
+<item id="833" qus="store" yb="['in'said]" cx="n" ans="(美)商店,大百货公司"/>
+<item id="834" qus="come over  " yb="" cx="phr." ans="过来,顺便来访"/>
+<item id="835" qus="thanksgiving" yb="[,θæŋks'giviŋ]" cx="n" ans="感谢,感恩"/>
+<item id="836" qus="Thanksgiving=Thanksgiving Day " yb="" cx="phr." ans="感恩节"/>
+<item id="837" qus="get together " yb="" cx="phr." ans="相聚"/>
+<item id="838" qus="taste" yb="[teist]" cx="v" ans="品尝,有...味道"/>
+<item id="839" qus="pie" yb="[pai]" cx="n" ans="(用肉或水果做成的)馅饼"/>
+<item id="840" qus="outside" yb="['aut'said]" cx="prep" ans="& adv 在...外"/>
+<item id="841" qus="harvest" yb="['hɑ:vist]" cx="n" ans="收获"/>
+<item id="842" qus="than" yb="[ðæn]" cx="conj" ans="比....,比较...."/>
+<item id="843" qus="delicious" yb="[di'liʃəs]" cx="adj" ans="美味的,可口的"/>
+<item id="844" qus="pumpkin" yb="['pʌmpkin]" cx="n" ans="南瓜"/>
+<item id="845" qus="twelfth" yb="[twelfθ]" cx="num" ans="&adj 第十二(的)"/>
+<item id="846" qus="turkey" yb="['tə:ki]" cx="n" ans="火鸡"/>
+<item id="847" qus="celebrate" yb="['selibreit]" cx="v" ans="庆祝"/>
+<item id="848" qus="wait" yb="[weit]" cx="v" ans="等,等待"/>
+<item id="849" qus="feed" yb="[fi:d]" cx="v" ans="喂,饲养"/>
+<item id="850" qus="cow" yb="[kau]" cx="n" ans="母牛,乳牛"/>
+<item id="851" qus="tractor" yb="['træktə]" cx="n" ans="拖拉机"/>
+<item id="852" qus="taxi" yb="['tæksi]" cx="n" ans="出租汽车"/>
+<item id="853" qus="slow" yb="[sləu]" cx="adj" ans="慢的,缓慢的"/>
+<item id="854" qus="slowly" yb="['sləuli]" cx="adv" ans="缓慢地"/>
+<item id="855" qus="grow" yb="[grəu]" cx="v" ans="种植,生长"/>
+<item id="856" qus="wheat" yb="[hwi:t]" cx="n" ans="小麦"/>
+<item id="857" qus="country" yb="['kʌntri]" cx="n" ans="乡村,郊外"/>
+<item id="858" qus="hear" yb="[hiə]" cx="v" ans="听见,听说"/>
+<item id="859" qus="bleat" yb="[bli:t]" cx="v" ans="& n 羊叫(声)"/>
+<item id="860" qus="corn" yb="[kɔ:n]" cx="n" ans="(美)玉米,谷类庄稼"/>
+<item id="861" qus="summer" yb="['sʌmə]" cx="n" ans="夏天,夏季"/>
+<item id="862" qus="winter" yb="['wintə]" cx="n" ans="冬天,冬季"/>
+<item id="863" qus="stop" yb="[stɔp]" cx="v" ans="停止,中止"/>
+<item id="864" qus="pick" yb="[pik]" cx="v" ans="采摘(花,果实)"/>
+<item id="865" qus="exciting" yb="[ik'saitiŋ]" cx="adj" ans="令人兴奋的"/>
+<item id="866" qus="town" yb="[taun]" cx="n" ans="城镇"/>
+<item id="867" qus="star" yb="[stɑ:]" cx="n" ans="星星,恒星"/>
+<item id="868" qus="college" yb="['kɔlidʒ]" cx="n" ans="学院,高等专科学校"/>
+<item id="869" qus="farming" yb="['fɑ:miŋ]" cx="n" ans="农业,务农"/>
+<item id="870" qus="somebody" yb="['sʌmbədi]" cx="pron" ans="某人,有人"/>
+<item id="871" qus="nobody" yb="['nəubɔdi]" cx="pron" ans="没有人"/>
+<item id="872" qus="shall" yb="[ʃæl]" cx="v" ans="(我,我们)将,会"/>
+<item id="873" qus="zoo" yb="[zu:]" cx="n" ans="动物园"/>
+<item id="874" qus="dolphin" yb="['dɔlfin]" cx="n" ans="海豚"/>
+<item id="875" qus="gate" yb="[geit]" cx="n" ans="大门"/>
+<item id="876" qus="land" yb="[lænd]" cx="n" ans="陆地,土地"/>
+<item id="877" qus="just" yb="[dʒʌst]" cx="adv" ans="仅仅,只有"/>
+<item id="878" qus="grass" yb="[grɑ:s]" cx="n" ans="草,草地"/>
+<item id="879" qus="dangerous" yb="['deindʒərəs]" cx="adj" ans="危险的"/>
+<item id="880" qus="panda" yb="['pændə]" cx="n" ans="熊猫"/>
+<item id="881" qus="lion" yb="['laiən]" cx="n" ans="狮子"/>
+<item id="882" qus="elephant" yb="['elifənt]" cx="n" ans="象"/>
+<item id="883" qus="monkey" yb="['mʌŋki]" cx="n" ans="猴子"/>
+<item id="884" qus="tiger" yb="['taigə]" cx="n" ans="老虎"/>
+<item id="885" qus="deer [diə] (pl.deer) " yb="" cx="n" ans="鹿"/>
+<item id="886" qus="snake" yb="[sneik]" cx="n" ans="蛇"/>
+<item id="887" qus="rabbit" yb="['ræbit]" cx="n" ans="兔子"/>
+<item id="888" qus="duck" yb="[dʌk]" cx="n" ans="鸭"/>
+<item id="889" qus="fox" yb="[fɔks]" cx="n" ans="狐狸"/>
+<item id="890" qus="horse" yb="[hɔ:s]" cx="n" ans="马"/>
+<item id="891" qus="bear" yb="[bɛə]" cx="n" ans="熊"/>
+<item id="892" qus="cage" yb="[keidʒ]" cx="n" ans="笼(子),鸟笼"/>
+<item id="893" qus="forest" yb="['fɔrist]" cx="n" ans="森林"/>
+<item id="894" qus="feel" yb="[fi:l]" cx="v" ans="觉得,感到"/>
+<item id="895" qus="if" yb="[if]" cx="conj" ans="假如,如果"/>
+<item id="896" qus="fall" yb="[fɔ:l]" cx="v" ans="落下,跌倒"/>
+<item id="897" qus="climb" yb="[klaim]" cx="v" ans="爬,攀登"/>
+<item id="898" qus="finish" yb="['finiʃ]" cx="v" ans="完成,结束"/>
+<item id="899" qus="cinema" yb="['sinimə]" cx="n" ans="电影院,电影"/>
+<item id="900" qus="seafood" yb="['sifu:d]" cx="n" ans="海鲜,海产食品"/>
+<item id="901" qus="twentieth" yb="['twentiiθ]" cx="num" ans="第十二"/>
+<item id="902" qus="baby" yb="['beibi]" cx="n" ans="婴儿,幼畜"/>
+<item id="903" qus="back" yb="[bæk]" cx="n" ans="背部,后面"/>
+<item id="904" qus="place" yb="[pleis]" cx="n" ans="地点,地方"/>
+<item id="905" qus="bank" yb="[bæŋk]" cx="n" ans="银行"/>
+<item id="906" qus="bookshop" yb="['bukʃɔp]" cx="n" ans="书店"/>
+<item id="907" qus="toilet" yb="['tɔilit]" cx="n" ans="厕所"/>
+<item id="908" qus="museum" yb="[mju:'ziəm]" cx="n" ans="博物馆"/>
+<item id="909" qus="front" yb="[frʌnt]" cx="adj" ans="& n 前面(的),前部"/>
+<item id="910" qus="in front of  " yb="" cx="phr." ans="在...前面"/>
+<item id="911" qus="left" yb="[left]" cx="n" ans="& adj 左(的),左边(的)"/>
+<item id="912" qus="right" yb="[rait]" cx="n" ans="& adj 右(的),右边(的)"/>
+<item id="913" qus="side" yb="[said]" cx="n" ans="边,面"/>
+<item id="914" qus="on the left/right side  " yb="" cx="phr." ans="在左(右)边"/>
+<item id="915" qus="all the same  " yb="" cx="phr." ans="仍然,还是"/>
+<item id="916" qus="need" yb="[ni:d]" cx="v" ans="需要,必需"/>
+<item id="917" qus="ask for" yb="" cx="phr." ans="请求,询问"/>
+<item id="918" qus="road" yb="[rəud]" cx="n" ans="道路,公路"/>
+<item id="919" qus="turn" yb="[tə:n]" cx="v" ans="(使)转动,(使)翻动"/>
+<item id="920" qus="turning" yb="['tə:niŋ]" cx="n" ans="拐弯处"/>
+<item id="921" qus="metre" yb="['mi:tə]" cx="n" ans="公尺,米"/>
+<item id="922" qus="kilometre" yb="['kilə,mi:tə]" cx="n" ans="公里,千米"/>
+<item id="923" qus="had better (do) " yb="" cx="phr." ans="最好(做...)"/>
+<item id="924" qus="coin" yb="[kɔin]" cx="n" ans="硬币"/>
+<item id="925" qus="keep" yb="[ki:p]" cx="v" ans="保持,留住"/>
+<item id="926" qus="as" yb="[æz]" cx="conj" ans="按照,如同"/>
+<item id="927" qus="moment" yb="['məumənt]" cx="n" ans="片刻,瞬间"/>
+<item id="928" qus="tell" yb="[tel]" cx="v" ans="告述,讲述,吩咐"/>
+<item id="929" qus="street" yb="[stri:t]" cx="n" ans="街道"/>
+<item id="930" qus="next to ['nekst tə]" yb="" cx="phr." ans="相邻,靠近"/>
+<item id="931" qus="around" yb="[ə'raund]" cx="prep" ans="在...周围环绕着"/>
+<item id="932" qus="lift" yb="[lift]" cx="n" ans="电梯"/>
+<item id="933" qus="up and down  " yb="" cx="phr." ans="上上下下,来来回回"/>
+<item id="934" qus="busy" yb="['bizi]" cx="adj" ans="忙的,繁忙的"/>
+<item id="935" qus="team" yb="[ti:m]" cx="n" ans="队,组"/>
+<item id="936" qus="centre ['sɛntɚ] (center" yb="['sentə])" cx="n" ans="中心"/>
+<item id="937" qus="popular" yb="['pɔpjulə]" cx="adj" ans="大众的,流行的"/>
+<item id="938" qus="soccer" yb="['sɔkə]" cx="n" ans="英式足球"/>
+<item id="939" qus="quite" yb="[kwait]" cx="adv" ans="很,十分"/>
+<item id="940" qus="month" yb="[mʌnθ]" cx="n" ans="月"/>
+<item id="941" qus="village" yb="['vilidʒ]" cx="n" ans="村庄,乡村"/>
+<item id="942" qus="strong" yb="[strɔŋ]" cx="adj" ans="强壮的,坚强的"/>
+<item id="943" qus="was" yb="[wɔz]" cx="v" ans="be(am,is,are)的过去式"/>
+<item id="944" qus="yesterday" yb="['jestədi]" cx="n" ans="& adv 昨天"/>
+<item id="945" qus="November" yb="[nəu'vembə]" cx="n" ans="十一月"/>
+<item id="946" qus="ill" yb="[il]" cx="adj" ans="病的"/>
+<item id="947" qus="hope" yb="[həup]" cx="v" ans="希望"/>
+<item id="948" qus="remember" yb="[ri'membə]" cx="v" ans="记起,想起"/>
+<item id="949" qus="were" yb="[wə:]" cx="v" ans="动词be(are)的过去式"/>
+<item id="950" qus="bit" yb="[bit]" cx="n" ans="一点儿,小片"/>
+<item id="951" qus="a bit" yb="[ə'bit]" cx="phr." ans="一点儿"/>
+<item id="952" qus="healthy" yb="['helθi]" cx="adj" ans="健康的,健壮的"/>
+<item id="953" qus="grow up ['grəu ʌp]" yb="" cx="phr." ans="成长,长大"/>
+<item id="954" qus="visit" yb="['vizit]" cx="v" ans="参观,访问,拜访"/>
+<item id="955" qus="ago" yb="[ə'gəu]" cx="adv" ans="以前"/>
+<item id="956" qus="the day before yesterday " yb="" cx="phr." ans="前天"/>
+<item id="957" qus="enjoy" yb="[in'dʒɔi]" cx="v" ans="喜欢,享受...乐趣"/>
+<item id="958" qus="world" yb="[wə:ld]" cx="n" ans="世界"/>
+<item id="959" qus="at the same time  " yb="" cx="phr." ans="同时"/>
+<item id="960" qus="a moment ago  " yb="" cx="phr." ans="刚才"/>
+<item id="961" qus="just now  " yb="" cx="phr." ans="不久以前,刚才"/>
+<item id="962" qus="reply" yb="[ri'plai]" cx="n" ans="& v  答复,回答"/>
+<item id="963" qus="by the way  " yb="" cx="phr." ans="顺便说,顺便问一下"/>
+<item id="964" qus="match" yb="[mætʃ]" cx="n" ans="比赛,竞赛"/>
+<item id="965" qus="cold" yb="[kəuld]" cx="adj" ans="冷的,寒冷的"/>
+<item id="966" qus="drive" yb="[draiv]" cx="v" ans="驾驶"/>
+<item id="967" qus="plan" yb="[plæn]" cx="n" ans="计划"/>
+<item id="968" qus="diary" yb="['daiəri]" cx="n" ans="日记"/>
+<item id="969" qus="make telephone calls  " yb="" cx="phr." ans="打电话"/>
+<item id="970" qus="go out  " yb="" cx="phr." ans="外出,到外面"/>
+<item id="971" qus="India" yb="['indiə]" cx="n" ans="印度"/>
+<item id="972" qus="went" yb="[went]" cx="v" ans="动词go的过去式"/>
+<item id="973" qus="rain" yb="[rein]" cx="v" ans="下雨"/>
+<item id="974" qus="rained  " yb="" cx="v" ans="动词rain的过去式"/>
+<item id="975" qus="memory" yb="['meməri]" cx="n" ans="记忆力,存储器"/>
+<item id="976" qus="pack" yb="[pæk]" cx="v" ans="打包,打行李"/>
+<item id="977" qus="everything" yb="['evriθiŋ]" cx="pron" ans="每件事,每样东西,一切"/>
+<item id="978" qus="umbrella" yb="[ʌm'brelə]" cx="n" ans="伞,雨伞"/>
+<item id="979" qus="dry" yb="[drai]" cx="adj" ans="干的,干燥的"/>
+<item id="980" qus="newspaper" yb="['nju:z,peipə]" cx="n" ans="报纸"/>
+<item id="981" qus="paper" yb="['peipə]" cx="n" ans="纸,报纸"/>
+<item id="982" qus="morning paper  " yb="" cx="n" ans="晨报"/>
+<item id="983" qus="at breakfast  " yb="" cx="phr." ans="早餐时"/>
+<item id="984" qus="say goodbye to  " yb="" cx="phr." ans="告别,告辞"/>
+<item id="985" qus="useful" yb="['ju:sfəl]" cx="adj" ans="有用的,有益的"/>
+<item id="986" qus="scientist" yb="['saiəntist]" cx="n" ans="科学家"/>
+<item id="987" qus="invent" yb="[in'vent]" cx="v" ans="发明,创造"/>
+<item id="988" qus="always" yb="['ɔ:lweiz]" cx="adv" ans="总是,一直,经常"/>
+<item id="989" qus="be born  " yb="" cx="phr." ans="出生于"/>
+<item id="990" qus="May" yb="[mei]" cx="n" ans="五月"/>
+<item id="991" qus="move" yb="[mu:v]" cx="v" ans="移动,搬动,搬家"/>
+<item id="992" qus="understand" yb="[,ʌndə'stænd]" cx="v" ans="懂得,理解"/>
+<item id="993" qus="at first " yb="" cx="phr." ans="起先,首先"/>
+<item id="994" qus="most" yb="[məust]" cx="pron" ans="大部分,大多数"/>
+<item id="995" qus="luck" yb="[lʌk]" cx="n" ans="运气,好运"/>
+<item id="996" qus="April" yb="['eiprəl]" cx="n" ans="四月"/>
+<item id="997" qus="hate" yb="[heit]" cx="v" ans="讨厌,不喜欢,憎恨"/>
+<item id="998" qus="fly" yb="[flai]" cx="v" ans="飞,飞行,乘飞机旅行"/>
+<item id="999" qus="painting" yb="['peintiŋ]" cx="n" ans="油画,水彩画"/>
+<item id="1000" qus="airport" yb="['ɛəpɔ:t]" cx="n" ans="航空站,飞机场"/>
+<item id="1001" qus="Swedish" yb="['swi:diʃ]" cx="adj" ans="瑞典的,瑞典人的"/>
+<item id="1002" qus="rock" yb="[rɔk]" cx="n" ans="摇动,摇滚乐"/>
+<item id="1003" qus="band" yb="[bænd]" cx="n" ans="乐队"/>
+<item id="1004" qus="concert" yb="['kɔnsət]" cx="n" ans="音乐会,演奏会"/>
+<item id="1005" qus="give a concert  " yb="" cx="phr." ans="开音乐会"/>
+<item id="1006" qus="tonight" yb="[tə'nait]" cx="adv" ans="& n 今晚"/>
+<item id="1007" qus="singer" yb="['siŋə]" cx="n" ans="歌唱者,歌手"/>
+<item id="1008" qus="famous" yb="['feiməs]" cx="adj" ans="有名的,著名的"/>
+<item id="1009" qus="Sweden" yb="['swi:dən]" cx="n" ans="瑞典"/>
+<item id="1010" qus="song" yb="[sɔŋ]" cx="n" ans="歌,歌曲,歌谣"/>
+<item id="1011" qus="more than " yb="" cx="phr." ans="多过,...以上,比....更"/>
+<item id="1012" qus="thousand" yb="['θauzənd]" cx="num" ans="千"/>
+<item id="1013" qus="accident" yb="['æksidənt]" cx="n" ans="事故,灾难"/>
+<item id="1014" qus="careless" yb="['kɛəlis]" cx="adj" ans="粗心的,大意的"/>
+<item id="1015" qus="fall down  " yb="" cx="phr." ans="倒下,跌倒,从...落下"/>
+<item id="1016" qus="break" yb="[breik]" cx="v" ans="折断,断裂,破碎"/>
+<item id="1017" qus="go on  " yb="" cx="phr." ans="继续"/>
+<item id="1018" qus="someone" yb="['sʌmwʌn]" cx="pron" ans="某人,有人"/>
+<item id="1019" qus="heart" yb="[hɑ:t]" cx="n" ans="心(脏)"/>
+<item id="1020" qus="past" yb="[pɑ:st]" cx="n" ans="& adj 过去(的)"/>
+<item id="1021" qus="end" yb="[end]" cx="n" ans="& v  末端,终点,结束"/>
+<item id="1022" qus="at the end of  " yb="" cx="phr." ans="在...结尾,到...尽头"/>
+<item id="1023" qus="happen" yb="['hæpən]" cx="v" ans="(偶然)发生,碰巧"/>
+<item id="1024" qus="part" yb="[pɑ:t]" cx="n" ans="部分"/>
+<item id="1025" qus="tourist" yb="['tu:rist]" cx="n" ans="旅游者,观光者"/>
+<item id="1026" qus="go back  " yb="" cx="phr." ans="回去"/>
+<item id="1027" qus="in a hurry  " yb="" cx="phr." ans="匆忙地"/>
+<item id="1028" qus="grape" yb="[greip]" cx="n" ans="葡萄"/>
+<item id="1029" qus="science" yb="['saiəns]" cx="n" ans="(自然)科学"/>
+<item id="1030" qus="marry" yb="['mæri]" cx="v" ans="结婚"/>
+<item id="1031" qus="get married  " yb="" cx="phr." ans="结婚"/>
+<item id="1032" qus="subject" yb="['sʌbdʒikt]" cx="n" ans="题目,题材"/>
+<item id="1033" qus="friendship" yb="['frendʃip]" cx="n" ans="友谊,友情"/>
+<item id="1034" qus="anyone" yb="['eniwʌn]" cx="pron" ans="任何人"/>
+<item id="1035" qus="date" yb="[deit]" cx="n" ans="日期"/>
+<item id="1036" qus="season" yb="['si:zn]" cx="n" ans="季节"/>
+<item id="1037" qus="write down  " yb="" cx="phr." ans="写下,记下"/>
+<item id="1038" qus="January" yb="['dʒænjueri]" cx="n" ans="一月"/>
+<item id="1039" qus="March" yb="[mɑ:tʃ]" cx="n" ans="三月"/>
+<item id="1040" qus="June" yb="[dʒu:n]" cx="n" ans="六月"/>
+<item id="1041" qus="July" yb="[dʒu:'lai]" cx="n" ans="七月"/>
+<item id="1042" qus="August" yb="[ɔ:'gʌst]" cx="n" ans="八月"/>
+<item id="1043" qus="December" yb="[di'sembə]" cx="n" ans="十二月"/>
+<item id="1044" qus="spring" yb="[spriŋ]" cx="n" ans="春天"/>
+<item id="1045" qus="last" yb="[lɑ:st]" cx="v" ans="持续,耐久"/>
+<item id="1046" qus="weather" yb="['weðə]" cx="n" ans="天气"/>
+<item id="1047" qus="warm" yb="[wɔ:m]" cx="adj" ans="暖和的,热情的"/>
+<item id="1048" qus="crop" yb="[krɔp]" cx="n" ans="庄稼,收成"/>
+<item id="1049" qus="really" yb="['riəli]" cx="adv" ans="确实,真正地"/>
+<item id="1050" qus="snow" yb="[snəu]" cx="n" ans="& v  雪,下雪"/>
+<item id="1051" qus="snowman" yb="['snəu,mæn]" cx="n" ans="雪人"/>
+<item id="1052" qus="all the year round  " yb="" cx="phr." ans="一年到头"/>
+<item id="1053" qus="true" yb="[tru:]" cx="adj" ans="真的,真实的"/>
+<item id="1054" qus="nearly" yb="['niəli]" cx="adv" ans="将近,几乎"/>
+<item id="1055" qus="unlike" yb="['ʌn'laik]" cx="prep" ans="不像,和...不同"/>
+<item id="1056" qus="opposite" yb="['ɔpəzit]" cx="adj" ans="对面的,相反的"/>
+<item id="1057" qus="sunny" yb="['sʌni]" cx="adj" ans="晴朗的,阳光充足的"/>
+<item id="1058" qus="cloud" yb="[klaud]" cx="n" ans="云"/>
+<item id="1059" qus="cloudy" yb="['klaudi]" cx="adj" ans="多云的,阴天的"/>
+<item id="1060" qus="wet" yb="[wet]" cx="adj" ans="湿的"/>
+<item id="1061" qus="rainy" yb="['reini]" cx="adj" ans="多雨的,下雨的"/>
+<item id="1062" qus="wind" yb="[waind]" cx="n" ans="风"/>
+<item id="1063" qus="windy" yb="['windi]" cx="adj" ans="有风的,风大的"/>
+<item id="1064" qus="snowy" yb="[snəui]" cx="adj" ans="多雪的,降雪的"/>
+<item id="1065" qus="later" yb="['leitə]" cx="adv" ans="以后,后来"/>
+<item id="1066" qus="later on  " yb="" cx="phr." ans="后来,稍后"/>
+<item id="1067" qus="ring" yb="[riŋ]" cx="v" ans="(钟,铃等)响,摇铃"/>
+<item id="1068" qus="ring up  " yb="" cx="phr." ans="打电话"/>
+<item id="1069" qus="west" yb="[west]" cx="n" ans="& adj 西方、西部(的)"/>
+<item id="1070" qus="strange" yb="[streindʒ]" cx="adj" ans="奇怪的,陌生的"/>
+<item id="1071" qus="sunshine" yb="['sʌnʃain]" cx="n" ans="日光,阳光"/>
+<item id="1072" qus="melon" yb="['melən]" cx="n" ans="瓜"/>
+<item id="1073" qus="radio" yb="['reidiəu]" cx="n" ans="收音机"/>
+<item id="1074" qus="report" yb="[ri'pɔ:t]" cx="n" ans="& v  报导,报告"/>
+<item id="1075" qus="north" yb="[nɔ:θ]" cx="n" ans="& v  北方(的),北部(的)"/>
+<item id="1076" qus="south" yb="[sauθ]" cx="n" ans="& v  南方(的),南部(的)"/>
+<item id="1077" qus="at times  " yb="" cx="phr." ans="有时,偶尔"/>
+<item id="1078" qus="northeast" yb="['nɔ:θ'i:st]" cx="n" ans="东北,东北部"/>
+<item id="1079" qus="temperature" yb="['tempritʃə]" cx="n" ans="温度"/>
+<item id="1080" qus="above" yb="[ə'bʌv]" cx="prep" ans="在...上面"/>
+<item id="1081" qus="daytime" yb="['deitaim]" cx="n" ans="白天"/>
+<item id="1082" qus="below" yb="[bi'ləu]" cx="prep" ans="在...下,低于"/>
+<item id="1083" qus="northwest" yb="['nɔ:θ'west]" cx="n" ans="西北,西北部"/>
+<item id="1084" qus="lift" yb="[lift]" cx="v" ans="(云,雾等)消散,(雨)停止"/>
+<item id="1085" qus="worse" yb="[wə:s]" cx="adj" ans="& adv ( bad,ill的比较级)更坏,更差"/>
+<item id="1086" qus="foggy" yb="['fɔgi]" cx="adj" ans="有雾,多雾的"/>
+<item id="1087" qus="low" yb="[ləu]" cx="adj" ans="低的,浅,矮的"/>
+<item id="1088" qus="birthday" yb="['bə:θdei]" cx="n" ans="生日"/>
+<item id="1089" qus="invite" yb="[in'vait]" cx="v" ans="邀请,招待"/>
+<item id="1090" qus="film" yb="[film]" cx="n" ans="影片,电影"/>
+<item id="1091" qus="hold" yb="[həuld]" cx="v" ans="拿,握"/>
+<item id="1092" qus="hold on ['həuld ɔn]" yb="" cx="phr." ans="(打电话时)等一等,不挂断"/>
+<item id="1093" qus="message" yb="['mesidʒ]" cx="n" ans="消息,信息"/>
+<item id="1094" qus="take/leave a message  " yb="" cx="phr." ans="捎/留口信"/>
+<item id="1095" qus="ready" yb="['redi]" cx="adj" ans="准备好的,乐意的"/>
+<item id="1096" qus="sandwich" yb="['sændwitʃ]" cx="n" ans="三明治,夹心面包片"/>
+<item id="1097" qus="plate" yb="[pleit]" cx="n" ans="盘子,碟子"/>
+<item id="1098" qus="candle" yb="['kændl]" cx="n" ans="蜡烛"/>
+<item id="1099" qus="doorbell" yb="['dɔ:bel]" cx="n" ans="门铃"/>
+<item id="1100" qus="present" yb="['preznt]" cx="n" ans="礼物"/>
+<item id="1101" qus="smile" yb="[smail]" cx="n" ans="& v  微笑"/>
+<item id="1102" qus="telephone(phone [fəun])" yb="['telifəun]" cx="n" ans="电话,电话机"/>
+<item id="1103" qus="but" yb="[bʌt]" cx="prep" ans="除了"/>
+<item id="1104" qus="take out  " yb="" cx="phr." ans="取出"/>
+<item id="1105" qus="the same as  " yb="" cx="phr." ans="和...相同"/>
+<item id="1106" qus="word" yb="[wə:d]" cx="n" ans="词,单词"/>
+<item id="1107" qus="shout" yb="[ʃaut]" cx="v" ans="呼喊,喊叫"/>
+<item id="1108" qus="turn over ['tə:n ,əuvə]" yb="" cx="phr." ans="把...翻过来"/>
+<item id="1109" qus="study" yb="['stʌdi]" cx="n" ans="书房"/>
+<item id="1110" qus="less than  " yb="" cx="phr." ans="不到,少于"/>
+<item id="1111" qus="be late for  " yb="" cx="phr." ans="迟到"/>
+<item id="1112" qus="beef" yb="[bi:f]" cx="n" ans="牛肉"/>
+<item id="1113" qus="help yourself to  " yb="" cx="phr." ans="自取,随便吃"/>
+<item id="1114" qus="Christmas" yb="['krisməs]" cx="n" ans="圣诞节"/>
+<item id="1115" qus="during" yb="['djuəriŋ]" cx="prep" ans="在...的期间"/>
+<item id="1116" qus="Spring Festival " yb="" cx="n" ans="春节"/>
+<item id="1117" qus="exam" yb="[ig'zæm]" cx="n" ans="(口语)考试"/>
+<item id="1118" qus="get-together" yb="['gettə,geðə]" cx="n" ans="聚会"/>
+<item id="1119" qus="put on  " yb="" cx="phr." ans="(戏剧等)上演,放(唱片等)"/>
+<item id="1120" qus="play" yb="[plei]" cx="n" ans="剧,戏剧"/>
+<item id="1121" qus="shower" yb="['ʃauə]" cx="n" ans="降雨,骤雨"/>
+<item id="1122" qus="showery" yb="['ʃauəri]" cx="adj" ans="降雨的,多阵雨的"/>
+<item id="1123" qus="magical" yb="['mædʒikəl]" cx="adj" ans="魔法(似)的"/>
+<item id="1124" qus="Rome" yb="[rəum]" cx="n" ans="罗马(意大利首都)"/>
+<item id="1125" qus="Berlin" yb="[bə:'lin]" cx="n" ans="柏林"/>
+<item id="1126" qus="Moscow" yb="['mɔskəu]" cx="n" ans="莫斯科"/>
+<item id="1127" qus="kitchen" yb="['kitʃin]" cx="n" ans="厨房"/>
+<item id="1128" qus="cupboard" yb="['kʌbəd]" cx="n" ans="碗橱,小橱(柜)"/>
+<item id="1129" qus="few" yb="[fju:]" cx="adj" ans="少数的,不多的"/>
+<item id="1130" qus="a few  " yb="" cx="phr." ans="一些,几个"/>
+<item id="1131" qus="salt" yb="[sɔ:lt]" cx="n" ans="盐"/>
+<item id="1132" qus="sugar" yb="['ʃugə]" cx="n" ans="糖"/>
+<item id="1133" qus="pepper" yb="['pepə]" cx="n" ans="胡椒"/>
+<item id="1134" qus="oil" yb="[ɔil]" cx="n" ans="油"/>
+<item id="1135" qus="wine" yb="[wain]" cx="n" ans="酒"/>
+<item id="1136" qus="beer" yb="[biə]" cx="n" ans="啤酒"/>
+<item id="1137" qus="fork" yb="[fɔ:k]" cx="n" ans="叉,餐叉"/>
+<item id="1138" qus="spoon" yb="[spu:n]" cx="n" ans="匙,调羹"/>
+<item id="1139" qus="chopsticks" yb="['tʃɔpstiks]" cx="n" ans="(常用复数)筷子"/>
+<item id="1140" qus="cabbage" yb="['kæbidʒ]" cx="n" ans="卷心菜,洋白菜"/>
+<item id="1141" qus="pea" yb="[pi:]" cx="n" ans="豌豆"/>
+<item id="1142" qus="butter" yb="['bʌtə]" cx="n" ans="黄油"/>
+<item id="1143" qus="cheese" yb="[tʃi:z]" cx="n" ans="乳酪"/>
+<item id="1144" qus="soup" yb="[su:p]" cx="n" ans="汤"/>
+<item id="1145" qus="Italian" yb="[i'tæljən]" cx="n" ans="& adj意大利人(的),意大利语(的)"/>
+<item id="1146" qus="pizza" yb="['pi:tsə]" cx="n" ans="(意大利)烤馅饼"/>
+<item id="1147" qus="Indian" yb="['indiən]" cx="n" ans="& adj 印度人(的),印第安人(的)"/>
+<item id="1148" qus="kinds of  " yb="" cx="phr." ans="各种各样的"/>
+<item id="1149" qus="workplace" yb="['wə:kpleis]" cx="n" ans="工作场所"/>
+<item id="1150" qus="seem" yb="[si:m]" cx="v" ans="好像,似乎"/>
+<item id="1151" qus="even" yb="['i:vən]" cx="adv" ans="甚至,更"/>
+<item id="1152" qus="Italy" yb="['itəli]" cx="n" ans="意大利"/>
+<item id="1153" qus="chocolate" yb="['tʃɔkəlit]" cx="n" ans="巧克力,巧克力糖"/>
+<item id="1154" qus="ice" yb="[ais]" cx="n" ans="冰"/>
+<item id="1155" qus="make" yb="[meik]" cx="v" ans="使...(发生)"/>
+<item id="1156" qus="laugh" yb="[lɑ:f]" cx="v" ans="(大)笑,发笑"/>
+<item id="1157" qus="both" yb="[bəuθ]" cx="adj" ans="& pron 两个(人....)都"/>
+<item id="1158" qus="either" yb="['i:ðə]" cx="adv" ans="(用于否定句中)也(不)"/>
+<item id="1159" qus="anything" yb="['eni,θiŋ]" cx="pron" ans="任何事(物)"/>
+<item id="1160" qus="neither" yb="['ni:ðə,nai:ðə]" cx="adj" ans="& pron (两者)都不"/>
+<item id="1161" qus="nor" yb="[nɔ:]" cx="conj" ans="也不"/>
+<item id="1162" qus="neither...nor..  " yb="" cx="conj" ans="既不...也不..."/>
+<item id="1163" qus="a bit (of) " yb="" cx="phr." ans="少量(的),一点"/>
+<item id="1164" qus="without" yb="[wi'ðaut]" cx="prep" ans="无,没有,不"/>
+<item id="1165" qus="take a seat [,teik ə 'si:t]" yb="" cx="phr." ans="坐下,就坐"/>
+<item id="1166" qus="waiter" yb="['weitə]" cx="n" ans="服务员"/>
+<item id="1167" qus="madam" yb="['mædəm]" cx="n" ans="女士,夫人,小姐"/>
+<item id="1168" qus="menu" yb="['menju:]" cx="n" ans="(餐厅等的)菜单"/>
+<item id="1169" qus="bill" yb="[bil]" cx="n" ans="帐单,清单,纸币"/>
+<item id="1170" qus="be famous for  " yb="" cx="phr." ans="因...而有名的"/>
+<item id="1171" qus="kind" yb="[kaind]" cx="adj" ans="和蔼的,友好的"/>
+<item id="1172" qus="lady" yb="['leidi]" cx="n" ans="女士,夫人"/>
+<item id="1173" qus="ladies' room  " yb="" cx="n" ans="(妇女)公共厕所"/>
+<item id="1174" qus="tell" yb="[tel]" cx="v" ans="说,告述,吩咐"/>
+<item id="1175" qus="library" yb="['laibrəri]" cx="n" ans="图书馆"/>
+<item id="1176" qus="cross" yb="[krɔ:s]" cx="n" ans="十字形(物),十字记号    v穿过,越过"/>
+<item id="1177" qus="crossing" yb="['krɔ:siŋ]" cx="n" ans="十字路口,交叉点"/>
+<item id="1178" qus="across" yb="[ə'krɔ:s]" cx="prep" ans="穿过,横过"/>
+<item id="1179" qus="miss" yb="[mis]" cx="v" ans="错过"/>
+<item id="1180" qus="church" yb="[tʃə:tʃ]" cx="n" ans="教堂,教会"/>
+<item id="1181" qus="cafe" yb="[kə'fei]" cx="n" ans="小餐馆,咖啡厅"/>
+<item id="1182" qus="video" yb="['vidiəu]" cx="n" ans="录像"/>
+<item id="1183" qus="reach" yb="[ri:tʃ]" cx="v" ans="到达,抵达,达到"/>
+<item id="1184" qus="corner" yb="['kɔ:nə]" cx="n" ans="角落,(街道)拐角"/>
+<item id="1185" qus="on one's way to  " yb="" cx="phr." ans="在..的途中"/>
+<item id="1186" qus="sick" yb="[sik]" cx="adj" ans="患病的"/>
+<item id="1187" qus="pocket" yb="['pɔkit]" cx="n" ans="衣袋"/>
+<item id="1188" qus="still" yb="[stil]" cx="adv" ans="仍旧,更"/>
+<item id="1189" qus="weak" yb="[wi:k]" cx="adj" ans="弱的,差的"/>
+<item id="1190" qus="wait for  " yb="" cx="phr." ans="等候"/>
+<item id="1191" qus="cut" yb="[kʌt]" cx="v" ans="割,砍,切"/>
+<item id="1192" qus="finger" yb="['fiŋgə]" cx="n" ans="手指"/>
+<item id="1193" qus="geography" yb="[dʒi'ɔgrəfi]" cx="n" ans="地理(学)"/>
+<item id="1194" qus="physics" yb="['fiziks]" cx="n" ans="物理(学)"/>
+<item id="1195" qus="history" yb="['histəri]" cx="n" ans="历史(学)"/>
+<item id="1196" qus="key" yb="[ki:]" cx="n" ans="钥匙"/>
+<item id="1197" qus="fix" yb="[fiks]" cx="v" ans="修理,安装"/>
+<item id="1198" qus="suddenly" yb="['sʌdnli]" cx="adv" ans="突然地"/>
+<item id="1199" qus="DVD " yb="" cx="n" ans="光碟,影碟"/>
+<item id="1200" qus="in time [in 'taim]" yb="" cx="phr." ans="及时"/>
+<item id="1201" qus="make one's way to  " yb="" cx="phr." ans="往..走去"/>
+<item id="1202" qus="sign" yb="[sain]" cx="n" ans="标记,符号,痕迹"/>
+<item id="1203" qus="lost" yb="[lɔst]" cx="adj" ans="迷途的,丢失的"/>
+<item id="1204" qus="be/get lost  " yb="" cx="phr." ans="迷失(道路)"/>
+<item id="1205" qus="just then  " yb="" cx="phr." ans="正在那时"/>
+<item id="1206" qus="first of all  " yb="" cx="phr." ans="首先,第一"/>
+<item id="1207" qus="main" yb="[mein]" cx="adj" ans="主要的"/>
+<item id="1208" qus="go wrong [,gəu 'rɔŋ]" yb="" cx="phr." ans="走错路"/>
+<item id="1209" qus="hit" yb="[hit]" cx="v" ans="打,击中,撞"/>
+<item id="1210" qus="noise" yb="[nɔiz]" cx="n" ans="嘈杂声,响声"/>
+<item id="1211" qus="make a noise  " yb="" cx="phr." ans="吵闹"/>
+<item id="1212" qus="disturb" yb="[dis'tə:b]" cx="v" ans="妨碍,打扰"/>
+<item id="1213" qus="passenger" yb="['pæsindʒə]" cx="n" ans="乘客,旅客"/>
+<item id="1214" qus="get on ['get ɔn]" yb="" cx="phr." ans="上(车)"/>
+<item id="1215" qus="get off ['get ɔf]" yb="" cx="phr." ans="下来,从...下来"/>
+<item id="1216" qus="push" yb="[puʃ]" cx="v" ans="推,挤"/>
+<item id="1217" qus="stand in line  " yb="" cx="phr." ans="站(在)队(里)"/>
+<item id="1218" qus="turn" yb="[tə:n]" cx="n" ans="(依次轮流的)顺序"/>
+<item id="1219" qus="necessary['nesə,səri]" yb="" cx="adj" ans="必需的,必要的"/>
+<item id="1220" qus="waiting room " yb="" cx="n" ans="等候室,候诊(车,机)室"/>
+<item id="1221" qus="jumper" yb="['dʒʌmpə]" cx="n" ans="跳跃者"/>
+<item id="1222" qus="queue jumper  " yb="" cx="n" ans="不按次序排队的人"/>
+<item id="1223" qus="patient" yb="['peiʃənt]" cx="n" ans="病人"/>
+<item id="1224" qus="visitor" yb="['vizitə]" cx="n" ans="参观者,访问者"/>
+<item id="1225" qus="live" yb="[liv]" cx="v" ans="居住"/>
+<item id="1226" qus="knee" yb="[ni:]" cx="n" ans="膝盖"/>
+<item id="1227" qus="hurt" yb="[hə:t]" cx="v" ans="使受伤,痛"/>
+<item id="1228" qus="laugh at ['lɑ:f ət]" yb="" cx="phr." ans="嘲笑"/>
+<item id="1229" qus="mistake" yb="[mi'steik]" cx="n" ans="错误"/>
+<item id="1230" qus="quiet" yb="['kwaiət]" cx="adj" ans="安静的,平静的"/>
+<item id="1231" qus="quietly" yb="['kwaiətli]" cx="adv" ans="安静地,平静地"/>
+<item id="1232" qus="reading room  " yb="" cx="n" ans="阅览室"/>
+<item id="1233" qus="alone" yb="[ə'ləun]" cx="adv" ans="独自的,单独的"/>
+<item id="1234" qus="plastic" yb="['plæstik]" cx="n" ans="& adj 塑料(的)"/>
+<item id="1235" qus="change" yb="[tʃeindʒ]" cx="v" ans="变化,变更,改变"/>
+<item id="1236" qus="have a good time  " yb="" cx="phr." ans="过得愉快"/>
+<item id="1237" qus="fact" yb="[fækt]" cx="n" ans="事实,实际"/>
+<item id="1238" qus="in fact [in 'fækt]" yb="" cx="phr." ans="实际上"/>
+<item id="1239" qus="at midnight  " yb="" cx="phr." ans="在半夜"/>
+<item id="1240" qus="arrive" yb="[ə'raiv]" cx="v" ans="到达,抵达某地"/>
+<item id="1241" qus="telephone" yb="['telifəun]" cx="v" ans="打电话给(某人)"/>
+<item id="1242" qus="complain" yb="[kəm'plein]" cx="v" ans="抱怨,发牢骚"/>
+<item id="1243" qus="quarrel" yb="['kwɔrəl]" cx="v" ans="争吵"/>
+<item id="1244" qus="surprise" yb="[sə'praiz]" cx="n" ans="惊奇,惊讶"/>
+<item id="1245" qus="police" yb="[pə'li:s]" cx="n" ans="警察(局)"/>
+<item id="1246" qus="voice" yb="[vɔis]" cx="n" ans="说话声,嗓音"/>
+<item id="1247" qus="themselves" yb="[ðəm'selvz]" cx="pron" ans="他们自己"/>
+<item id="1248" qus="care" yb="[kɛə]" cx="v" ans="介意,在乎,关心"/>
+<item id="1249" qus="half-way  " yb="" cx="adv" ans="在途中,半路上"/>
+<item id="1250" qus="trouble" yb="['trʌbl]" cx="n" ans="麻烦,烦恼"/>
+<item id="1251" qus="headache" yb="['hedeik]" cx="n" ans="头痛"/>
+<item id="1252" qus="have a headache  " yb="" cx="phr." ans="(患)头痛"/>
+<item id="1253" qus="cough" yb="[kɔf]" cx="v" ans="& n 咳嗽"/>
+<item id="1254" qus="have a cough  " yb="" cx="phr." ans="(患)咳嗽"/>
+<item id="1255" qus="serious" yb="['siəriəs]" cx="adj" ans="严重的,严肃"/>
+<item id="1256" qus="pain" yb="[pein]" cx="n" ans="疼痛,疼"/>
+<item id="1257" qus="dream" yb="[dri:m]" cx="n" ans="& v梦,梦想 做梦,向往"/>
+<item id="1258" qus="worst" yb="[wə:st]" cx="adj" ans="最坏的,最恶劣的"/>
+<item id="1259" qus="wake" yb="[weik]" cx="v" ans="(使)醒来"/>
+<item id="1260" qus="wake up  " yb="" cx="phr." ans="醒来,唤醒"/>
+<item id="1261" qus="as soon as  " yb="" cx="conj" ans="一...就"/>
+<item id="1262" qus="asleep" yb="[ə'sli:p]" cx="adj" ans="睡着的,熟睡的"/>
+<item id="1263" qus="fall asleep  " yb="" cx="phr." ans="睡觉,入睡"/>
+<item id="1264" qus="plant" yb="[plɑ:nt]" cx="n" ans="& v  植物  种植"/>
+<item id="1265" qus="storm" yb="[stɔ:m]" cx="n" ans="暴风雨"/>
+<item id="1266" qus="stop...from " yb="" cx="phr." ans="阻止...做"/>
+<item id="1267" qus="difficult" yb="['difikəlt]" cx="adj" ans="困难的,难的"/>
+<item id="1268" qus="pill" yb="[pil]" cx="n" ans="药丸,药片"/>
+<item id="1269" qus="awake" yb="[ə'weik]" cx="adj" ans="清醒的"/>
+<item id="1270" qus="be awake  " yb="" cx="phr." ans="醒着的"/>
+<item id="1271" qus="relax" yb="[ri'læks]" cx="v" ans="放松,轻松"/>
+<item id="1272" qus="again and again" yb="" cx="phr." ans="再三地,一再地,反复地"/>
+<item id="1273" qus="angry" yb="['æŋgri]" cx="adj" ans="发怒的,生气的"/>
+<item id="1274" qus="hard" yb="[hɑ:d]" cx="adj" ans="硬的"/>
+<item id="1275" qus="smell" yb="[smel]" cx="v" ans="闻,嗅,散发(气味)"/>
+<item id="1276" qus="rich" yb="[ritʃ]" cx="adj" ans="有钱的,富裕的,丰富的"/>
+<item id="1277" qus="become" yb="[bi'kʌm]" cx="v" ans="变得,变成,成为"/>
+<item id="1278" qus="instead" yb="[in'sted]" cx="adv" ans="代替,顶替"/>
+<item id="1279" qus="instead of [in'sted əv]" yb="" cx="phr." ans="代替"/>
+<item id="1280" qus="look over  " yb="" cx="phr." ans="(仔细)检查"/>
+<item id="1281" qus="enough" yb="[i'nʌf]" cx="adj" ans="足够的,充分的"/>
+<item id="1282" qus="take exercise  " yb="" cx="phr." ans="做运动"/>
+<item id="1283" qus="fat" yb="[fæt]" cx="adj" ans="肥胖的"/>
+<item id="1284" qus="thin" yb="[θin]" cx="adj" ans="瘦的,薄的"/>
+<item id="1285" qus="island" yb="['ailənd]" cx="n" ans="岛,岛状物"/>
+<item id="1286" qus="somewhere" yb="['sʌmhwɛə]" cx="adv" ans="某处,在某处"/>
+<item id="1287" qus="land" yb="[lænd]" cx="v" ans="登陆,上岸,降落"/>
+<item id="1288" qus="pull" yb="[pul]" cx="v" ans="拉,拖,拔"/>
+<item id="1289" qus="out of  " yb="" cx="prep" ans="从..向外,从..往外"/>
+<item id="1290" qus="cool" yb="[ku:l]" cx="adj" ans="凉快的"/>
+<item id="1291" qus="anybody" yb="['eni,bɔdi]" cx="pron" ans="任何人"/>
+<item id="1292" qus="ourselves" yb="[,auə'selvz]" cx="pron" ans="我们自己"/>
+<item id="1293" qus="all by oneself  " yb="" cx="phr." ans="独立,单独"/>
+<item id="1294" qus="perhaps" yb="[pə'hæps]" cx="adv" ans="也许,可能"/>
+<item id="1295" qus="happily" yb="['hæpili]" cx="adv" ans="高兴地,快乐地"/>
+<item id="1296" qus="lots of  " yb="" cx="phr." ans="许许多多的"/>
+<item id="1297" qus="no longer  " yb="" cx="phr." ans="不再"/>
+<item id="1298" qus="missing" yb="['misiŋ]" cx="adj" ans="丢失的,失踪的"/>
+<item id="1299" qus="cry" yb="[krai]" cx="v" ans="哭,叫喊"/>
+<item id="1300" qus="get back ['get bæk]" yb="" cx="phr." ans="回来,取回"/>
+<item id="1301" qus="too...to " yb="" cx="phr." ans="太...而不能"/>
+<item id="1302" qus="anywhere" yb="['enihwɛə]" cx="adv" ans="任何地方"/>
+<item id="1303" qus="solve" yb="[sɔlv]" cx="v" ans="解决,解答"/>
+<item id="1304" qus="believe" yb="[bi'li:v]" cx="v" ans="相信,认为"/>
+<item id="1305" qus="everybody" yb="['evribɔdi]" cx="pron" ans="每人,人人"/>
+<item id="1306" qus="sooner or later  " yb="" cx="phr." ans="迟早"/>
+<item id="1307" qus="drop" yb="[drɔp]" cx="n" ans="& v  滴,水滴  掉下,落下"/>
+<item id="1308" qus="run away  " yb="" cx="phr." ans="逃跑"/>
+<item id="1309" qus="as" yb="[æz]" cx="conj" ans="因为,由于"/>
+<item id="1310" qus="eat up  " yb="" cx="phr." ans="吃完,吃光"/>
+<item id="1311" qus="bank" yb="[bæŋk]" cx="n" ans="(海,河,湖的)岸,堤"/>
+<item id="1312" qus="circle" yb="['sə:kl]" cx="n" ans="圈子,圆"/>
+<item id="1313" qus="yet" yb="[jet]" cx="adv" ans="(用于否定句)还(没)"/>
+<item id="1314" qus="myself" yb="[mai'self]" cx="pron" ans="我自己"/>
+<item id="1315" qus="cousin" yb="['kʌzn]" cx="n" ans="堂(表)兄弟,堂(表)姐妹"/>
+<item id="1316" qus="engineer" yb="[,endʒi'niə]" cx="n" ans="工程师"/>
+<item id="1317" qus="cancer" yb="['kænsə]" cx="n" ans="癌症"/>
+<item id="1318" qus="care" yb="[kɛə]" cx="n" ans="小心,照料,保护"/>
+<item id="1319" qus="take care of  " yb="" cx="phr." ans="照顾,照料,注意"/>
+<item id="1320" qus="sad" yb="[sæd]" cx="adj" ans="难过的,悲哀的"/>
+<item id="1321" qus="death" yb="[deθ]" cx="n" ans="死,死亡"/>
+<item id="1322" qus="page" yb="[peidʒ]" cx="n" ans="(书的)页"/>
+<item id="1323" qus="palace" yb="['pælis]" cx="n" ans="宫,宫殿"/>
+<item id="1324" qus="the Summer Palace  " yb="" cx="n" ans="颐和园"/>
+<item id="1325" qus="herself" yb="[hə:'self]" cx="pron" ans="她自己"/>
+<item id="1326" qus="while" yb="[hwail]" cx="n" ans="一会儿"/>
+<item id="1327" qus="after a while  " yb="" cx="phr." ans="过了一会儿"/>
+<item id="1328" qus="any more  " yb="" cx="phr." ans="再,更"/>
+<item id="1329" qus="make faces  " yb="" cx="phr." ans="做鬼脸,做苦脸"/>
+<item id="1330" qus="whole" yb="[həul]" cx="adj" ans="全部的"/>
+<item id="1331" qus="have a cold  " yb="" cx="phr." ans="(患)感冒"/>
+<item id="1332" qus="once" yb="[wʌns]" cx="adv" ans="曾经,以前"/>
+<item id="1333" qus="himself" yb="[him'self]" cx="pron" ans="他自己"/>
+<item id="1334" qus="tooth" yb="[tu:θ]" cx="n" ans="牙齿"/>
+<item id="1335" qus="kill" yb="[kil]" cx="v" ans="杀死,弄死"/>
+<item id="1336" qus="teach oneself " yb="" cx="phr." ans="自学"/>
+<item id="1337" qus="fall off ['fɔ:l ɔf]" yb="" cx="phr." ans="(从...)掉下"/>
+<item id="1338" qus="clever" yb="['klevə]" cx="adj" ans="聪明的,机灵的"/>
+<item id="1339" qus="yourselves" yb="[jɔ:'sɛlvz]" cx="pron" ans="你们自己"/>
+<item id="1340" qus="find out ['faind aut]" yb="" cx="phr." ans="找出,查出"/>
+<item id="1341" qus="piano" yb="[pi'ænəu]" cx="n" ans="钢琴"/>
+<item id="1342" qus="moonlight" yb="['mu:n,lait]" cx="n" ans="& adj 月光(的)"/>
+<item id="1343" qus="poor" yb="[puə]" cx="adj" ans="贫穷的,可怜的"/>
+<item id="1344" qus="knock" yb="[nɔk]" cx="v" ans="敲,击"/>
+<item id="1345" qus="knock at  " yb="" cx="phr." ans="敲(门,窗等)"/>
+<item id="1346" qus="dim" yb="[dim]" cx="adj" ans="微暗的,昏暗的"/>
+<item id="1347" qus="pardon" yb="['pɑ:dn]" cx="v" ans="原谅(某人),宽恕"/>
+<item id="1348" qus="to one's surprise  " yb="" cx="phr." ans="令(某人)惊讶"/>
+<item id="1349" qus="blind" yb="[blaind]" cx="adj" ans="瞎的,盲的"/>
+<item id="1350" qus="shine" yb="[ʃain]" cx="v" ans="照亮,发亮"/>
+<item id="1351" qus="bright" yb="[brait]" cx="adj" ans="明亮的,晴朗的"/>
+<item id="1352" qus="brightly" yb="['braitli]" cx="adv" ans="明亮地,闪亮地"/>
+<item id="1353" qus="through" yb="[θru:]" cx="prep" ans="通过,穿过,经过"/>
+<item id="1354" qus="look up ['luk ʌp]" yb="" cx="phr." ans="向上看,抬头看"/>
+<item id="1355" qus="silently" yb="['sailəntli]" cx="adv" ans="寂静地,沉默地"/>
+<item id="1356" qus="come along come along" yb="" cx="phr." ans="来,随同"/>
+<item id="1357" qus="return" yb="[ri'tə:n]" cx="v" ans="回来,归还"/>
+<item id="1358" qus="cookie" yb="['kuki]" cx="n" ans="小甜饼"/>
+<item id="1359" qus="leave...behind " yb="" cx="phr." ans="把...遗留在(留下)"/>
+<item id="1360" qus="hold a sports meeting  " yb="" cx="phr." ans="举行运动会"/>
+<item id="1361" qus="race" yb="[reis]" cx="n" ans="赛跑"/>
+<item id="1362" qus="100-metre race  " yb="" cx="phr." ans="100米赛跑"/>
+<item id="1363" qus="win" yb="[win]" cx="v" ans="获胜,赢"/>
+<item id="1364" qus="high jump  " yb="" cx="n" ans="跳高"/>
+<item id="1365" qus="long jump  " yb="" cx="n" ans="跳远"/>
+<item id="1366" qus="neck" yb="[nek]" cx="n" ans="颈,脖子"/>
+<item id="1367" qus="active" yb="['æktiv]" cx="adj" ans="积极的"/>
+<item id="1368" qus="relay" yb="[ri'lei]" cx="n" ans="接力,赛跑"/>
+<item id="1369" qus="starting/finishing line " yb="" cx="phr." ans="起点/终点线"/>
+<item id="1370" qus="runner" yb="['rʌnə]" cx="n" ans="赛跑的人"/>
+<item id="1371" qus="loud" yb="[laud]" cx="adj" ans="大声的,响亮的"/>
+<item id="1372" qus="loudly" yb="['laudli]" cx="adv" ans="大声地,高声地"/>
+<item id="1373" qus="lap" yb="[læp]" cx="n" ans="(竞赛场的)一圈"/>
+<item id="1374" qus="pass on ['pɑ:s ɔn]" yb="" cx="phr." ans="传递,转移到..."/>
+<item id="1375" qus="stick" yb="[stik]" cx="n" ans="棒,棍"/>
+<item id="1376" qus="catch up with  " yb="" cx="phr." ans="赶上"/>
+<item id="1377" qus="neck and neck  " yb="" cx="phr." ans="(竞赛等)并驾齐驱"/>
+<item id="1378" qus="as...as " yb="" cx="conj" ans="与...一样"/>
+<item id="1379" qus="a moment later " yb="" cx="phr." ans="片刻之后"/>
+<item id="1380" qus="go on doing sth " yb="" cx="phr." ans="继续做(某事)"/>
+<item id="1381" qus="fall behind " yb="" cx="phr." ans="落在...后面,输给别人"/>
+<item id="1382" qus="winner" yb="['winə]" cx="n" ans="获胜者"/>
+<item id="1383" qus="well done  " yb="" cx="phr." ans="做得好"/>
+<item id="1384" qus="congratulation[kən,grætju'leiʃən]" yb="" cx="n" ans="(常用复数)祝贺,庆贺"/>
+<item id="1385" qus="not as/so...as " yb="" cx="conj" ans="与...不一样"/>
+<item id="1386" qus="rather" yb="['rɑ:ðə]" cx="adv" ans="相当"/>
+<item id="1387" qus="result" yb="[ri'zʌlt]" cx="n" ans="结果"/>
+<item id="1388" qus="dance" yb="[dɑ:ns]" cx="v" ans="跳舞"/>
+<item id="1389" qus="headmaster" yb="['hed'mɑ:stə]" cx="n" ans="校长"/>
+<item id="1390" qus="take turns [,teik 'tə:nz]" yb="" cx="phr." ans="轮流"/>
+<item id="1391" qus="do one's best  " yb="" cx="phr." ans="尽最大努力,尽力"/>
+<item id="1392" qus="person" yb="['pə:sn]" cx="n" ans="人"/>
+<item id="1393" qus="speed" yb="[spi:d]" cx="n" ans="迅速,速度"/>
+<item id="1394" qus="thought" yb="[θɔ:t]" cx="n" ans="思考,思想,想法"/>
+<item id="1395" qus="technology" yb="[tek'nɔlədʒi]" cx="n" ans="技术,工艺学"/>
+<item id="1396" qus="best-seller " yb="" cx="n" ans="畅销货(书)"/>
+<item id="1397" qus="interested" yb="['intəristid]" cx="adj" ans="感兴趣的"/>
+<item id="1398" qus="be interested in  " yb="" cx="phr." ans="对..感兴趣"/>
+<item id="1399" qus="Washington" yb="['wɔʃiŋtən]" cx="n" ans="华盛顿"/>
+<item id="1400" qus="future" yb="['fju:tʃə]" cx="n" ans="将来,未来"/>
+<item id="1401" qus="in the future  " yb="" cx="phr." ans="将来"/>
+<item id="1402" qus="large" yb="[lɑ:dʒ]" cx="adj" ans="大的,(数量)多的"/>
+<item id="1403" qus="spend" yb="[spend]" cx="v" ans="花(时间,钱),度过"/>
+<item id="1404" qus="in the end  " yb="" cx="phr." ans="最后"/>
+<item id="1405" qus="work out  " yb="" cx="phr." ans="算出,制定出"/>
+<item id="1406" qus="software" yb="['sɔftwɛə]" cx="n" ans="(电脑)软件"/>
+<item id="1407" qus="university" yb="[,ju:ni'və:siti]" cx="n" ans="综合性大学"/>
+<item id="1408" qus="develop" yb="[di'veləp]" cx="v" ans="发展,研制,开发"/>
+<item id="1409" qus="BASIC" yb="['beisik]" cx="n" ans="(电脑)初学者通用符号指令码"/>
+<item id="1410" qus="microcomputer" yb="['maikrəukəm'pju:tə]" cx="n" ans="微型计算机"/>
+<item id="1411" qus="Microsoft" yb="['maikrəusɔft]" cx="n" ans="微软公司"/>
+<item id="1412" qus="tool" yb="[tu:l]" cx="n" ans="工具"/>
+<item id="1413" qus="personal" yb="['pə:sənl]" cx="adj" ans="私人的,个人的"/>
+<item id="1414" qus="improve" yb="[im'pru:v]" cx="v" ans="提高,改善"/>
+<item id="1415" qus="golf" yb="[gɔlf]" cx="n" ans="高尔夫球"/>
+<item id="1416" qus="bridge" yb="[bridʒ]" cx="n" ans="桥牌"/>
+<item id="1417" qus="pleased" yb="[pli:zd]" cx="adj" ans="高兴的,愉快的"/>
+<item id="1418" qus="T-shirt" yb="['ti:ʃə:t]" cx="n" ans="短袖无领汗杉,T恤(杉)"/>
+<item id="1419" qus="disease" yb="[di'zi:z]" cx="n" ans="疾病"/>
+<item id="1420" qus="million" yb="['miljən]" cx="n" ans="百万,百万元"/>
+<item id="1421" qus="decide" yb="[di'said]" cx="v" ans="决定,决心"/>
+<item id="1422" qus="billion" yb="['biljən]" cx="n" ans="十亿"/>
+<item id="1423" qus="lucky" yb="['lʌki]" cx="adj" ans="幸运的,侥幸的"/>
+<item id="1424" qus="unlucky" yb="[ʌn'lʌki]" cx="adj" ans="不走运的,不幸的"/>
+<item id="1425" qus="size" yb="[saiz]" cx="n" ans="尺寸,大小"/>
+<item id="1426" qus="almost" yb="['ɔ:lməust]" cx="adv" ans="几乎,差不多"/>
+<item id="1427" qus="speaker" yb="['spi:kə]" cx="n" ans="演讲者,说话者"/>
+<item id="1428" qus="joke" yb="[dʒəuk]" cx="n" ans="笑话,玩笑"/>
+<item id="1429" qus="play a joke on  " yb="" cx="phr." ans="戏弄人,对某人恶作剧"/>
+<item id="1430" qus="lose" yb="[lu:z]" cx="v" ans="丢失,失去,迷失(方向)"/>
+<item id="1431" qus="hide" yb="[haid]" cx="v" ans="躲藏"/>
+<item id="1432" qus="check" yb="[tʃek]" cx="v" ans="检查,核对"/>
+<item id="1433" qus="lie" yb="[lai]" cx="v" ans="躺,平躺"/>
+<item id="1434" qus="deaf" yb="[def]" cx="adj" ans="聋的"/>
+<item id="1435" qus="painter" yb="['peintə]" cx="n" ans="画家"/>
+<item id="1436" qus="get on well with " yb="" cx="phr." ans="与...相处融洽"/>
+<item id="1437" qus="neighbour" yb="['neibə]" cx="n" ans="邻居"/>
+<item id="1438" qus="ever" yb="['evə]" cx="adv" ans="曾经"/>
+<item id="1439" qus="upstairs" yb="['ʌp'stɛəz]" cx="adj" ans="& adv (在)楼上,(往)楼上"/>
+<item id="1440" qus="take off  " yb="" cx="phr." ans="脱下(衣,帽,鞋等)"/>
+<item id="1441" qus="boot" yb="[bu:t]" cx="n" ans="长统鞋"/>
+<item id="1442" qus="downstairs" yb="[,daun'stɛəz]" cx="adj" ans="& adv(在)楼下,(往)楼下"/>
+<item id="1443" qus="bang" yb="[bæŋ]" cx="v" ans="猛敲,猛撞,砰砰作响"/>
+<item id="1444" qus="be angry with  " yb="" cx="phr." ans="对(某人)发脾气"/>
+<item id="1445" qus="usual" yb="['ju:ʒuəl]" cx="adj" ans="通常的,平常的"/>
+<item id="1446" qus="as usual [əz 'ju:ʒuəl]" yb="" cx="phr." ans="像平常一样"/>
+<item id="1447" qus="sound" yb="[saund]" cx="n" ans="声音"/>
+<item id="1448" qus="PE  " yb="" cx="n" ans="体育"/>
+<item id="1449" qus="chemistry" yb="['kemistri]" cx="n" ans="化学"/>
+<item id="1450" qus="sweep" yb="[swi:p]" cx="v" ans="扫,扫地"/>
+<item id="1451" qus="choose" yb="[tʃu:z]" cx="v" ans="选择,挑选"/>
+<item id="1452" qus="truck" yb="[trʌk]" cx="n" ans="卡车"/>
+<item id="1453" qus="seller" yb="['selə]" cx="n" ans="卖者,售货员"/>
+<item id="1454" qus="biology" yb="[bai'ɔlədʒi]" cx="n" ans="生物(学)"/>
+<item id="1455" qus="be fed up with  " yb="" cx="phr." ans="厌倦"/>
+<item id="1456" qus="knock on  " yb="" cx="phr." ans="敲(门,窗等)"/>
+<item id="1457" qus="refuse" yb="[ri'fju:z]" cx="v" ans="拒绝"/>
+<item id="1458" qus="politely" yb="[pə'laitli]" cx="adv" ans="有礼貌地"/>
+<item id="1459" qus="pair" yb="[pɛə]" cx="n" ans="一对,一双"/>
+<item id="1460" qus="a pair of  " yb="" cx="phr." ans="一对,一双"/>
+<item id="1461" qus="scissors" yb="['sizəz]" cx="n" ans="(复数)剪刀"/>
+<item id="1462" qus="racket" yb="['rækit]" cx="n" ans="(网球,羽毛球等的)球拍"/>
+<item id="1463" qus="review" yb="[ri'vju:]" cx="v" ans="复习(功课等)"/>
+<item id="1464" qus="novel" yb="['nɔvəl]" cx="n" ans="(长篇)小说"/>
+<item id="1465" qus="wallet" yb="['wɔlit]" cx="n" ans="钱夹,皮夹"/>
+<item id="1466" qus="ground" yb="[graund]" cx="n" ans="地面,土地"/>
+<item id="1467" qus="cause" yb="[kɔ:z]" cx="v" ans="引起"/>
+<item id="1468" qus="suddenly" yb="['sʌdnli]" cx="adv" ans="突然地"/>
+<item id="1469" qus="luckily" yb="['lʌkili]" cx="adv" ans="好运地,幸运地"/>
+<item id="1470" qus="gatekeeper" yb="['geit,ki:pə]" cx="n" ans="看门人,门卫"/>
+<item id="1471" qus="mention" yb="['menʃən]" cx="v" ans="提到,说起"/>
+<item id="1472" qus="crow" yb="[krəu]" cx="v" ans="拥挤"/>
+<item id="1473" qus="imagine" yb="[i'mædʒin]" cx="v" ans="设想,想像"/>
+<item id="1474" qus="while" yb="[hwail]" cx="conj" ans="当..时候,和..同时"/>
+<item id="1475" qus="repair" yb="[ri'pɛə]" cx="v" ans="修理,修补"/>
+<item id="1476" qus="steer" yb="[stiə]" cx="n" ans="& v  驾驶,掌舵"/>
+<item id="1477" qus="steering wheel  " yb="" cx="n" ans="驾驶盘"/>
+<item id="1478" qus="dive" yb="[daiv]" cx="v" ans="潜入(水中),跳水"/>
+<item id="1479" qus="diver" yb="['daivə]" cx="n" ans="潜入水中的人,潜水员"/>
+<item id="1480" qus="at once  " yb="" cx="phr." ans="立刻,马上"/>
+<item id="1481" qus="breathe" yb="[bri:ð]" cx="v" ans="呼吸"/>
+<item id="1482" qus="come to oneself " yb="" cx="phr." ans="苏醒,恢复知觉"/>
+<item id="1483" qus="rob" yb="[rɔb]" cx="v" ans="抢劫"/>
+<item id="1484" qus="hard-working " yb="" cx="adj" ans="辛勤工作的,用功的"/>
+<item id="1485" qus="art" yb="[ɑ:t]" cx="n" ans="艺术,艺术品"/>
+<item id="1486" qus="at the moment " yb="" cx="phr." ans="此刻"/>
+<item id="1487" qus="Titanic" yb="[tai'tænik]" cx="n" ans="泰坦尼克(船名)"/>
+<item id="1488" qus="set" yb="[set]" cx="v" ans="使开始,安置"/>
+<item id="1489" qus="set off ['set ɔf]" yb="" cx="phr." ans="出发,动身,起初"/>
+<item id="1490" qus="pleasant" yb="['pleznt]" cx="adj" ans="愉快的,快乐的"/>
+<item id="1491" qus="iceberg" yb="['aisbə:g]" cx="n" ans="冰山"/>
+<item id="1492" qus="here and there  " yb="" cx="phr." ans="到处,处处"/>
+<item id="1493" qus="on watch  " yb="" cx="phr." ans="值班,守望"/>
+<item id="1494" qus="look out  " yb="" cx="phr." ans="留神,注意"/>
+<item id="1495" qus="in front  " yb="" cx="phr." ans="前方,正对面"/>
+<item id="1496" qus="hole" yb="[həul]" cx="n" ans="洞,孔,坑"/>
+<item id="1497" qus="sink" yb="[siŋk]" cx="v" ans="下沉,沉没"/>
+<item id="1498" qus="life" yb="[laif]" cx="n" ans="生命,生活"/>
+<item id="1499" qus="lifeboat" yb="['laifbəut]" cx="n" ans="救生船(艇)"/>
+<item id="1500" qus="make room for  " yb="" cx="phr." ans="给..腾出地方"/>
+<item id="1501" qus="thankful" yb="['θæŋkfəl]" cx="adj" ans="感激的,感谢的"/>
+<item id="1502" qus="Boston" yb="['bɔstən]" cx="n" ans="波士顿(美国马萨诸塞州的首府)"/>
+<item id="1503" qus="war" yb="[wɔ:]" cx="n" ans="战争 "/>
+<item id="1504" qus="information" yb="[,infə'meiʃən]" cx="n" ans="信息,情报"/>
+<item id="1505" qus="noisy" yb="['nɔizi]" cx="adj" ans="喧闹的,嘈杂的"/>
+<item id="1506" qus="penguin" yb="['peŋgwin]" cx="n" ans="企鹅"/>
+<item id="1507" qus="pink" yb="[piŋk]" cx="adj" ans="粉红色的,桃红色的"/>
+<item id="1508" qus="shellfish" yb="['ʃelfiʃ]" cx="n" ans="贝类,甲壳虫"/>
+<item id="1509" qus="lay" yb="[lei]" cx="v" ans="下蛋,产蛋 "/>
+<item id="1510" qus="pretty" yb="['priti]" cx="adj" ans="漂亮的,美丽的"/>
+<item id="1511" qus="toe" yb="[təu]" cx="n" ans="脚趾  "/>
+<item id="1512" qus="rub" yb="[rʌb]" cx="v" ans="磨,擦"/>
+<item id="1513" qus="human" yb="['hju:mən]" cx="n" ans="& adj 人(的),人类(的)"/>
+<item id="1514" qus="CD player  " yb="" cx="phr." ans="激光唱机"/>
+<item id="1515" qus="several" yb="['sevərəl]" cx="adj" ans="& pron 几个；若干"/>
+<item id="1516" qus="shelf [ʃelf] (pl. shelves[ʃelvz]) " yb="" cx="n" ans="架子；搁板"/>
+<item id="1517" qus="already" yb="[ɔ:l'redi]" cx="adv" ans="已经"/>
+<item id="1518" qus="used to  " yb="" cx="phr." ans="过去常常"/>
+<item id="1519" qus="on" yb="[ɔn]" cx="prep" ans="关于"/>
+<item id="1520" qus="knowledge" yb="['nɔlidʒ]" cx="n" ans="知识；学问"/>
+<item id="1521" qus="yard" yb="[jɑ:d]" cx="n" ans="院子"/>
+<item id="1522" qus="schoolyard" yb="['sku:ljɑ:d]" cx="n" ans="校园"/>
+<item id="1523" qus="step" yb="[step]" cx="n" ans="& v  脚步；走；踏入；踩"/>
+<item id="1524" qus="librarian" yb="[lai'brɛəriən]" cx="n" ans="图书管理员"/>
+<item id="1525" qus="probably" yb="['prɔbəbli]" cx="adv" ans="很可能；大概"/>
+<item id="1526" qus="pay for ['pei fə(r)]" yb="" cx="phr." ans="付钱；支付"/>
+<item id="1527" qus="sadly" yb="['sædli]" cx="adv" ans="难过地；悲哀地 "/>
+<item id="1528" qus="come up with   " yb="" cx="phr." ans="找到；提出（答案，办法） "/>
+<item id="1529" qus="mark" yb="[mɑ:k]" cx="n" ans="记号；标记；痕迹    "/>
+<item id="1530" qus="bookmark" yb="['buk,mɑ:k]" cx="n" ans="书签"/>
+<item id="1531" qus="think of  " yb="" cx="phr." ans="想起   "/>
+<item id="1532" qus="encourage" yb="[in'kʌridʒ]" cx="v" ans="鼓励"/>
+<item id="1533" qus="get…back  " yb="" cx="phr." ans="退还；送 回去；取 回"/>
+<item id="1534" qus="pick…up  " yb="" cx="phr." ans="拾起；捡起"/>
+<item id="1535" qus="once" yb="[wʌns]" cx="adv" ans="一次"/>
+<item id="1536" qus="abroad" yb="[ə'brɔ:d]" cx="adv" ans="到国外；在国外"/>
+<item id="1537" qus="copy" yb="['kɔpi]" cx="v" ans="抄写；"/>
+<item id="1538" qus="as" yb="[æz]" cx="prep" ans="作为"/>
+<item id="1539" qus="screen" yb="[skri:n]" cx="n" ans="屏幕"/>
+<item id="1540" qus="spoil" yb="[spɔil](spoilt[spɔilt],spoil的过去式与过去分词)" cx="v" ans="糟蹋"/>
+<item id="1541" qus="surf" yb="[sə:f]" cx="v" ans="冲浪"/>
+<item id="1542" qus="surfing" yb="['sə:fiŋ]" cx="n" ans="冲浪运动"/>
+<item id="1543" qus="surfer" yb="['sə:fə]" cx="n" ans="冲浪者"/>
+<item id="1544" qus="wave" yb="[weiv]" cx="n" ans="浪；波浪"/>
+<item id="1545" qus="beach" yb="[bi:tʃ]" cx="n" ans="海（河、湖）滩"/>
+<item id="1546" qus="have a try  " yb="" cx="phr." ans="尝试；努力；射击"/>
+<item id="1547" qus="twice" yb="[twais]" cx="adv" ans="两次；两倍"/>
+<item id="1548" qus="none" yb="[nʌn]" cx="pron" ans="一个人也没有；没有任何东 西"/>
+<item id="1549" qus="water-ski" yb="['wɔ:təski:]" cx="v" ans="做滑水运动"/>
+<item id="1550" qus="canoe" yb="[kə'nu:]" cx="v" ans="乘独木舟"/>
+<item id="1551" qus="describe" yb="[di'skraib]" cx="v" ans="描写；叙述"/>
+<item id="1552" qus="all over  " yb="" cx="phr." ans="遍及"/>
+<item id="1553" qus="especially" yb="[is'peʃəli]" cx="adv" ans="特别；尤其"/>
+<item id="1554" qus="attract" yb="[ə'trækt]" cx="v" ans="吸引"/>
+<item id="1555" qus="large numbers of  " yb="" cx="phr." ans="许多"/>
+<item id="1556" qus="no matter  " yb="" cx="phr." ans="不论"/>
+<item id="1557" qus="so-called" yb="['səu'kɔ:ld]" cx="adj" ans="所谓的"/>
+<item id="1558" qus="possible" yb="['pɔsəbl]" cx="adj" ans="可能的"/>
+<item id="1559" qus="both…and… " yb="" cx="phr." ans="...和...都"/>
+<item id="1560" qus="give up  " yb="" cx="phr." ans="放弃"/>
+<item id="1561" qus="since" yb="[sins]" cx="adv" ans="& conj 此后;自..以来"/>
+<item id="1562" qus="ever since  " yb="" cx="phr." ans="从那时起；此后一直"/>
+<item id="1563" qus="although" yb="[ɔ:l'ðəu]" cx="conj" ans="虽然；尽管"/>
+<item id="1564" qus="fit" yb="[fit]" cx="adj" ans="& v  健康的；适合的；（使）适 合"/>
+<item id="1565" qus="prize" yb="[praiz]" cx="n" ans="奖品；奖赏"/>
+<item id="1566" qus="competition" yb="[,kɔmpi'tiʃən]" cx="n" ans="比赛；竞争"/>
+<item id="1567" qus="event" yb="[i'vent]" cx="n" ans="大事；事件"/>
+<item id="1568" qus="Olympic" yb="[əu'limpik]" cx="adj" ans="奥林匹克的"/>
+<item id="1569" qus="the Olympic Games  " yb="" cx="phr." ans="奥林匹克运动会"/>
+<item id="1570" qus="such" yb="[sʌtʃ]" cx="adj" ans="这样的"/>
+<item id="1571" qus="fail" yb="[feil]" cx="v" ans="失败；不及格"/>
+<item id="1572" qus="business" yb="['biznis]" cx="n" ans="商业；生意；事务"/>
+<item id="1573" qus="so far  " yb="" cx="phr." ans="到目前为止"/>
+<item id="1574" qus="cross" yb="[krɔ:s]" cx="v" ans="越过；穿过"/>
+<item id="1575" qus="channel" yb="['tʃænl]" cx="n" ans="海峡；航道；频道；波段"/>
+<item id="1576" qus="come true [,kʌm 'tru:]" yb="" cx="phr." ans="实现"/>
+<item id="1577" qus="mainland" yb="['meinlənd]" cx="n" ans="大陆；本土"/>
+<item id="1578" qus="slow" yb="[sləu]" cx="v" ans="放慢；减速"/>
+<item id="1579" qus="slow down  " yb="" cx="phr." ans="减缓；减速"/>
+<item id="1580" qus="journey" yb="['dʒə:ni]" cx="n" ans="旅程；旅行；路程"/>
+<item id="1581" qus="among" yb="[ə'mʌŋ]" cx="prep" ans="在……当中"/>
+<item id="1582" qus="proud" yb="[praud]" cx="adj" ans="自豪的；骄傲的"/>
+<item id="1583" qus="be proud of  " yb="" cx="phr." ans="以……自豪（兴奋）"/>
+<item id="1584" qus="speak highly of  " yb="" cx="phr." ans="称赞"/>
+<item id="1585" qus="not only…but also " yb="" cx="phr." ans="不但……而且"/>
+<item id="1586" qus="pride" yb="[praid]" cx="n" ans="自豪；骄傲"/>
+<item id="1587" qus="unless" yb="[ən'les]" cx="conj" ans="除非；如果不"/>
+<item id="1588" qus="shot" yb="[ʃɔt]" cx="n" ans="尝试；努力；射击"/>
+<item id="1589" qus="truth" yb="[tru:θ]" cx="n" ans="真理，真相，事实"/>
+<item id="1590" qus="pour" yb="[pɔ:]" cx="v" ans="倒；灌；倾泻"/>
+<item id="1591" qus="waste" yb="[weist]" cx="adj" ans="& n 废弃的；无用的；垃圾；废物"/>
+<item id="1592" qus="dirty" yb="['də:ti]" cx="adj" ans="脏的"/>
+<item id="1593" qus="be afraid of  " yb="" cx="phr." ans="害怕"/>
+<item id="1594" qus="member" yb="['membə]" cx="n" ans="成员"/>
+<item id="1595" qus="join" yb="[dʒɔin]" cx="v" ans="加入；参加"/>
+<item id="1596" qus="environment" yb="[in'vaiərənmənt]" cx="n" ans="环境"/>
+<item id="1597" qus="harm" yb="[hɑ:m]" cx="v" ans="损害；伤害"/>
+<item id="1598" qus="rubbish" yb="['rʌbiʃ]" cx="n" ans="垃圾；废物"/>
+<item id="1599" qus="collect" yb="[kə'lekt]" cx="v" ans="收集；搜集"/>
+<item id="1600" qus="produce" yb="[prə'dju:s]" cx="v" ans="产生；生产；制造"/>
+<item id="1601" qus="wherever" yb="[hwɛər'evə]" cx="conj" ans="& adv 无论在（到）哪里；在任何地方"/>
+<item id="1602" qus="litter" yb="['litə]" cx="n" ans="& v  垃圾，废物；乱丢杂物"/>
+<item id="1603" qus="onto" yb="['ɔntu:]" cx="prep" ans="在…上面；到…上面"/>
+<item id="1604" qus="public" yb="['pʌblik]" cx="adj" ans="公共的；公众的"/>
+<item id="1605" qus="cut down ['kʌt daun]" yb="" cx="phr." ans="砍倒"/>
+<item id="1606" qus="protect" yb="[prə'tekt]" cx="v" ans="保护"/>
+<item id="1607" qus="tidy" yb="['taidi]" cx="adj" ans="整洁的；整齐的"/>
+<item id="1608" qus="dustbin" yb="['dʌstbin]" cx="n" ans="垃圾箱"/>
+<item id="1609" qus="recycle" yb="[ri:'saikl]" cx="v" ans="再循环；回收再用"/>
+<item id="1610" qus="contribution" yb="[,kɔntri'bju:ʃən]" cx="n" ans="贡献"/>
+<item id="1611" qus="make a contribution to  " yb="" cx="phr." ans="贡献给；捐赠"/>
+<item id="1612" qus="suppose" yb="[sə'pəuz]" cx="v" ans="猜想"/>
+<item id="1613" qus="riddle" yb="['ridl]" cx="n" ans="谜语"/>
+<item id="1614" qus="do well in  " yb="" cx="phr." ans="在……某方面干得好"/>
+<item id="1615" qus="nearby" yb="['niəbai]" cx="adv" ans="附近"/>
+<item id="1616" qus="headmaster" yb="['hed'mɑ:stə]" cx="n" ans="（英)中小学校长"/>
+<item id="1617" qus="mount" yb="[maunt]" cx="n" ans="…山；…峰"/>
+<item id="1618" qus="as soon as possible  " yb="" cx="phr." ans="尽可能早地；尽快"/>
+<item id="1619" qus="except" yb="[ik'sept]" cx="prep" ans="除…之外"/>
+<item id="1620" qus="province" yb="['prɔvins]" cx="n" ans="省"/>
+<item id="1621" qus="enjoyable" yb="[in'dʒɔiəbl]" cx="adj" ans="愉快的；有趣的"/>
+<item id="1622" qus="rush" yb="[rʌʃ]" cx="v" ans="冲；奔跑"/>
+<item id="1623" qus="rail" yb="[reil]" cx="n" ans="轨道；铁路"/>
+<item id="1624" qus="railway" yb="['reilwei]" cx="n" ans="（英）铁路"/>
+<item id="1625" qus="lively" yb="['laivli]" cx="adj" ans="热闹的；有生气的"/>
+<item id="1626" qus="all kinds of  " yb="" cx="phr." ans="各种各样的"/>
+<item id="1627" qus="comfortable" yb="['kʌmfətəbl]" cx="adj" ans="舒适的；舒服的"/>
+<item id="1628" qus="keep doing something  " yb="" cx="phr." ans="一直做某事"/>
+<item id="1629" qus="scenery" yb="['si:nəri]" cx="n" ans="风景；景色"/>
+<item id="1630" qus="offer" yb="['ɔ:fə]" cx="v" ans="& n 拿出；提供"/>
+<item id="1631" qus="magazine" yb="[,mægə'zi:n]" cx="n" ans="杂志"/>
+<item id="1632" qus="practise" yb="['præktis]" cx="v" ans="实践；练习"/>
+<item id="1633" qus="click" yb="[klik]" cx="n" ans="& v  咔哒声;发出咔哒声"/>
+<item id="1634" qus="pity" yb="['piti]" cx="n" ans="遗憾的事，可惜的事"/>
+<item id="1635" qus="score" yb="[skɔ:]" cx="n" ans="& v  （比赛）得分"/>
+<item id="1636" qus="own" yb="[əun]" cx="adj" ans="自己的"/>
+<item id="1637" qus="least" yb="[li:st]" cx="adj" ans="最小的；最少的"/>
+<item id="1638" qus="kid" yb="[kid]" cx="n" ans="（口语）小伙子"/>
+<item id="1639" qus="scuba" yb="['skju:bə]" cx="n" ans="水肺（潜水者用的水下呼吸器）"/>
+<item id="1640" qus="Internet" yb="['intə,net]" cx="n" ans="因特网，互联网络"/>
+<item id="1641" qus="search" yb="[sə:tʃ]" cx="v" ans="搜查，搜索"/>
+<item id="1642" qus="double" yb="['dʌbl]" cx="adj" ans="& v  双重的，双倍的"/>
+<item id="1643" qus="icon" yb="['aikɔn]" cx="n" ans="图象符号，图标"/>
+<item id="1644" qus="type" yb="[taip]" cx="v" ans="(用打字机或电脑)打字"/>
+<item id="1645" qus="press" yb="[pres]" cx="v" ans="按，压"/>
+<item id="1646" qus="enter" yb="['entə]" cx="v" ans="进入"/>
+<item id="1647" qus="button" yb="['bʌtn]" cx="n" ans="按钮，纽扣"/>
+<item id="1648" qus="capital" yb="['kæpitl]" cx="n" ans="首都"/>
+<item id="1649" qus="population" yb="[,pɔpju'leiʃən]" cx="n" ans="人口，人数"/>
+<item id="1650" qus="ridge" yb="[ridʒ]" cx="n" ans="山脉"/>
+<item id="1651" qus="tomb" yb="[tu:m]" cx="n" ans="坟墓"/>
+<item id="1652" qus="whether" yb="['hweðə]" cx="conj" ans="是否"/>
+<item id="1653" qus="edge" yb="[edʒ]" cx="n" ans="边，边缘"/>
+<item id="1654" qus="rim" yb="[rim]" cx="n" ans="边，缘"/>
+<item id="1655" qus="cool" yb="[ku:l]" cx="adj" ans="（俚语）了不起"/>
+<item id="1656" qus="cost" yb="[kɔst]" cx="v" ans="价钱为，花费（金钱、时间等）"/>
+<item id="1657" qus="one-way" yb="['wʌn,wei]" cx="adj" ans="单程的，单行的"/>
+<item id="1658" qus="flight" yb="[flait]" cx="n" ans="航班，飞行"/>
+<item id="1659" qus="book" yb="[buk]" cx="v" ans="预定（戏票、车票等）"/>
+<item id="1660" qus="instruction" yb="[in'strʌkʃən]" cx="n" ans="说明，须知"/>
+<item id="1661" qus="straight" yb="[streit]" cx="adv" ans="一直地"/>
+<item id="1662" qus="go straight along   " yb="" cx="phr." ans="沿着…一直往前走"/>
+<item id="1663" qus="whom" yb="[hu:m]" cx="pron" ans="谁，哪个人（who的宾格）"/>
+<item id="1664" qus="think about  " yb="" cx="phr." ans="考虑"/>
+<item id="1665" qus="chance" yb="[tʃɑ:ns]" cx="n" ans="机会"/>
+<item id="1666" qus="coral" yb="['kɔrəl]" cx="n" ans="珊瑚"/>
+<item id="1667" qus="reef" yb="[ri:f]" cx="n" ans="岩礁"/>
+<item id="1668" qus="coral reef  " yb="" cx="n" ans="珊瑚礁"/>
+<item id="1669" qus="sound" yb="[saund]" cx="v" ans="听起来"/>
+<item id="1670" qus="brochure" yb="[brəu'ʃjuə]" cx="n" ans="小册子"/>
+<item id="1671" qus="pool" yb="[pu:l]" cx="n" ans="水池，水坑"/>
+<item id="1672" qus="outdoor" yb="['autdɔ:]" cx="adj" ans="户外的，野外的"/>
+<item id="1673" qus="badly" yb="['bædli]" cx="adv" ans="严重地，恶劣地"/>
+<item id="1674" qus="allow" yb="[ə'lau]" cx="v" ans="允许，准许"/>
+<item id="1675" qus="deep" yb="[di:p]" cx="adj" ans="深的"/>
+<item id="1676" qus="explore" yb="[iks'plɔ:]" cx="v" ans="探测，探险"/>
+<item id="1677" qus="explorer" yb="[iks'plɔ:rə]" cx="n" ans="探测者，探险者"/>
+<item id="1678" qus="undersea" yb="['ʌndə'si:]" cx="adj" ans="海底的"/>
+<item id="1679" qus="amaze" yb="[ə'meiz]" cx="v" ans="使…大为惊讶，使惊"/>
+<item id="1680" qus="be amazed at  " yb="" cx="phr." ans="对…感到惊讶"/>
+<item id="1681" qus="however" yb="[hau'evə]" cx="conj" ans="然而，可是"/>
+<item id="1682" qus="colourful" yb="['kʌləfəl]" cx="adj" ans="颜色艳丽的"/>
+<item id="1683" qus="dead" yb="[ded]" cx="adj" ans="死的"/>
+<item id="1684" qus="society" yb="[sə'saiəti]" cx="n" ans="社会"/>
+<item id="1685" qus="since" yb="[sins]" cx="conj" ans="由于，既然"/>
+<item id="1686" qus="cover" yb="['kʌvə]" cx="v" ans="覆盖"/>
+<item id="1687" qus="earth" yb="[ə:θ]" cx="n" ans="陆地，大地，地球"/>
+<item id="1688" qus="clean up ['kli:n ʌp]" yb="" cx="phr." ans="清除，收拾干净"/>
+<item id="1689" qus="ocean" yb="['əuʃən]" cx="n" ans="海洋，大洋"/>
+<item id="1690" qus="pollute" yb="[pə'lu:t]" cx="v" ans="污染，弄脏"/>
+<item id="1691" qus="group" yb="[gru:p]" cx="n" ans="组，群，团队"/>
+<item id="1692" qus="terrific" yb="[tə'rifik]" cx="adj" ans="（口语）很棒的，极好的"/>
+<item id="1693" qus="as long as  " yb="" cx="phr." ans="长达…"/>
+<item id="1694" qus="sometime" yb="['sʌmtaim]" cx="adv" ans="（未来的）某时"/>
+<item id="1695" qus="deal" yb="[di:l]" cx="n" ans="（口语）协议，交易"/>
+<item id="1696" qus="shark" yb="['ʃɑ:k]" cx="n" ans="鲨鱼"/>
+<item id="1697" qus="on earth [ɔn 'ə:θ]" yb="" cx="phr." ans="在地球上"/>
+<item id="1698" qus="alike" yb="[ə'laik]" cx="adj" ans="相似的，相像的"/>
+<item id="1699" qus="attack" yb="[ə'tæk]" cx="n" ans="& v  攻击，袭击"/>
+<item id="1700" qus="Africa" yb="['æfrikə]" cx="n" ans="非洲"/>
+<item id="1701" qus="South Africa  " yb="" cx="n" ans="南非"/>
+<item id="1702" qus="watchtower" yb="['wɔtʃ'tauə]" cx="n" ans="监视塔，瞭望塔"/>
+<item id="1703" qus="warn" yb="[wɔ:n]" cx="v" ans="警告，提醒"/>
+<item id="1704" qus="appear" yb="[ə'piə]" cx="v" ans="出现，露面"/>
+<item id="1705" qus="able" yb="['eibl]" cx="adj" ans="有能力的，能干的"/>
+<item id="1706" qus="be able to  " yb="" cx="phr." ans="能，会"/>
+<item id="1707" qus="neatly" yb="['ni:tli]" cx="adv" ans="整洁地"/>
+<item id="1708" qus="own" yb="[əun]" cx="v" ans="拥有，所有"/>
+<item id="1709" qus="spirit" yb="['spirit]" cx="n" ans="精神"/>
+<item id="1710" qus="inventor" yb="[in'ventə]" cx="n" ans="发明者，创造者"/>
+<item id="1711" qus="try out ['trai aut]" yb="" cx="phr." ans="实验，尝试"/>
+<item id="1712" qus="pupil" yb="['pju:pl]" cx="n" ans="小学生，学生"/>
+<item id="1713" qus="build" yb="[bild]" cx="v" ans="建立，建造，建设"/>
+<item id="1714" qus="at the age of  " yb="" cx="phr." ans="在…岁时"/>
+<item id="1715" qus="print" yb="[print]" cx="v" ans="印刷，印制"/>
+<item id="1716" qus="track" yb="[træk]" cx="n" ans="(火车等的)轨道，跑道"/>
+<item id="1717" qus="frighten" yb="['fraitən]" cx="v" ans="惊恐，吓唬"/>
+<item id="1718" qus="frightened" yb="['fraitnd]" cx="adj" ans="受惊的，害怕的"/>
+<item id="1719" qus="rush out ['rʌʃ aut]" yb="" cx="phr." ans="冲出去"/>
+<item id="1720" qus="safety" yb="['seifti]" cx="n" ans="安全"/>
+<item id="1721" qus="telegraph" yb="['teligrɑf]" cx="n" ans="电报"/>
+<item id="1722" qus="invention" yb="[in'venʃən]" cx="n" ans="发明，创造"/>
+<item id="1723" qus="open up ['əupən ʌp]" yb="" cx="phr." ans="开设，开业，开放"/>
+<item id="1724" qus="lifetime" yb="['laiftaim]" cx="n" ans="一生，终生"/>
+<item id="1725" qus="graduate" yb="['grædjueit]" cx="v" ans="毕业"/>
+<item id="1726" qus="turn down ['tə:n daun]" yb="" cx="phr." ans="关小，调低"/>
+<item id="1727" qus="healthily" yb="['helθili]" cx="adv" ans="健康地"/>
+<item id="1728" qus="clearly" yb="['kliəli]" cx="adv" ans="清楚地"/>
+<item id="1729" qus="frustrate" yb="[frʌs'treit]" cx="v" ans="使沮丧，使失败"/>
+<item id="1730" qus="frustrated" yb="[frʌs'treitid]" cx="adj" ans="感到灰心丧气的"/>
+<item id="1731" qus="wonder" yb="['wʌndə]" cx="v" ans="惊奇，惊讶,（对...）感到怀疑"/>
+<item id="1732" qus="worth" yb="[wə:θ]" cx="adj" ans="有…的价值，值得"/>
+<item id="1733" qus="confidence" yb="['kɔnfidəns]" cx="n" ans="信心，自信"/>
+<item id="1734" qus="merry" yb="['meri]" cx="adj" ans="愉快的；欢乐的"/>
+<item id="1735" qus="decorate" yb="['dekəreit]" cx="v" ans="装饰，修饰"/>
+<item id="1736" qus="put up ['put ʌp]" yb="" cx="phr." ans="挂起，举起"/>
+<item id="1737" qus="angel" yb="['eindʒəl]" cx="n" ans="天使，守护神"/>
+<item id="1738" qus="circle" yb="['sə:kl]" cx="v" ans="& n 环绕，绕行    圆，圈子"/>
+<item id="1739" qus="eve" yb="[i:v]" cx="n" ans="（节日或重大事件发生的）前夕"/>
+<item id="1740" qus="stocking" yb="['stɔkiŋ]" cx="n" ans="长统袜"/>
+<item id="1741" qus="pet" yb="[pet]" cx="n" ans="宠爱的动物"/>
+<item id="1742" qus="as well [əz 'wel]" yb="" cx="adv" ans="又，同样地"/>
+<item id="1743" qus="kind-hearted  " yb="" cx="adj" ans="好心的"/>
+<item id="1744" qus="chimney" yb="['tʃimni]" cx="n" ans="烟囱，烟筒"/>
+<item id="1745" qus="single" yb="['siŋgl]" cx="adj" ans="单个的，只有一个的"/>
+<item id="1746" qus="base" yb="[beis]" cx="v" ans="以…作根据，基于"/>
+<item id="1747" qus="base on  " yb="" cx="phr." ans="以…（为）根据"/>
+<item id="1748" qus="real" yb="['ri:əl]" cx="adj" ans="真正的，真实的"/>
+<item id="1749" qus="Turkey" yb="['tə:ki]" cx="n" ans="土耳其"/>
+<item id="1750" qus="shy" yb="[ʃai]" cx="adj" ans="害羞的，腼腆的"/>
+<item id="1751" qus="hang" yb="[hæŋ]" cx="v" ans="吊着，悬挂"/>
+<item id="1752" qus="fireplace" yb="['faiəpleis]" cx="n" ans="壁炉"/>
+<item id="1753" qus="dry" yb="[drai]" cx="v" ans="把…弄干，晒干"/>
+<item id="1754" qus="though" yb="[ðəu]" cx="conj" ans="虽然…，尽管…"/>
+<item id="1755" qus="even though  " yb="" cx="conj" ans="即使…"/>
+<item id="1756" qus="generosity" yb="[,dʒenə'rɔsiti]" cx="n" ans="慷慨，豁达"/>
+<item id="1757" qus="live on  " yb="" cx="phr." ans="继续存在，继续活着"/>
+<item id="1758" qus="relative" yb="['relətiv]" cx="n" ans="亲属，亲人"/>
+<item id="1759" qus="greet" yb="[gri:t]" cx="v" ans="问候，向（人）打招呼"/>
+<item id="1760" qus="hug" yb="[hʌg]" cx="n" ans="拥抱，紧抱"/>
+<item id="1761" qus="western" yb="['westən]" cx="adj" ans="西方的，西部的"/>
+<item id="1762" qus="traditional" yb="[trə'diʃənəl]" cx="adj" ans="传统的，惯例的"/>
+<item id="1763" qus="once upon a time  " yb="" cx="phr." ans="从前，很早以前"/>
+<item id="1764" qus="special" yb="['speʃəl]" cx="adj" ans="特别的，特殊的"/>
+<item id="1765" qus="at last [ət 'lɑ:st]" yb="" cx="phr." ans="终于，最后"/>
+<item id="1766" qus="owner" yb="['əunə]" cx="n" ans="拥有者，所有者"/>
+<item id="1767" qus="barn" yb="[bɑ:n]" cx="n" ans="谷仓，堆物房；马房，牛舍"/>
+<item id="1768" qus="give birth to  " yb="" cx="phr." ans="生（孩子）"/>
+<item id="1769" qus="shepherd" yb="['ʃepəd]" cx="n" ans="牧羊人"/>
+<item id="1770" qus="be made in  " yb="" cx="phr." ans="在…生产或制造"/>
+<item id="1771" qus="be made of  " yb="" cx="phr." ans="由…组成，由…构成"/>
+<item id="1772" qus="brush" yb="[brʌʃ]" cx="n" ans="刷子，毛笔，画笔"/>
+<item id="1773" qus="writing brush  " yb="" cx="n" ans="毛笔"/>
+<item id="1774" qus="bamboo" yb="[bæm'bu:]" cx="n" ans="竹子"/>
+<item id="1775" qus="be used for  " yb="" cx="phr." ans="用于"/>
+<item id="1776" qus="pan" yb="[pæn]" cx="n" ans="平底锅"/>
+<item id="1777" qus="metal" yb="['metl]" cx="n" ans="金属"/>
+<item id="1778" qus="stamp" yb="[stæmp]" cx="n" ans="邮票"/>
+<item id="1779" qus="wool" yb="[wul]" cx="n" ans="羊毛，绒线"/>
+<item id="1780" qus="wood" yb="[wud]" cx="n" ans="木头，木材"/>
+<item id="1781" qus="lock" yb="[lɔk]" cx="n" ans="& v  锁；上锁"/>
+<item id="1782" qus="store" yb="[stɔ:]" cx="v" ans="储藏，存储"/>
+<item id="1783" qus="widely" yb="['waidli]" cx="adv" ans="广泛地，广阔地"/>
+<item id="1784" qus="Britain" yb="['britən]" cx="n" ans="英国，不列颠"/>
+<item id="1785" qus="set" yb="[set]" cx="n" ans="装置，设备"/>
+<item id="1786" qus="a TV set  " yb="" cx="phr." ans="一台电视"/>
+<item id="1787" qus="Germany" yb="['dʒə:məni]" cx="n" ans="德国"/>
+<item id="1788" qus="Frenchman" yb="['frentʃmən]" cx="n" ans="法国人"/>
+<item id="1789" qus="traveller" yb="['trævlə]" cx="n" ans="旅行者"/>
+<item id="1790" qus="cotton" yb="['kɔtn]" cx="n" ans="棉花"/>
+<item id="1791" qus="silk" yb="[silk]" cx="n" ans="（蚕）丝"/>
+<item id="1792" qus="camera" yb="['kæmərə]" cx="n" ans="照相机"/>
+<item id="1793" qus="digital" yb="['didʒitəl]" cx="adj" ans="数字似的"/>
+<item id="1794" qus="ordinary" yb="['ɔ:dnri]" cx="adj" ans="普通的，通常的"/>
+<item id="1795" qus="aeroplane" yb="['ɛərəplein]" cx="n" ans="飞机"/>
+<item id="1796" qus="satellite" yb="['sætəlait]" cx="n" ans="卫星"/>
+<item id="1797" qus="rocket" yb="['rɔkit]" cx="n" ans="火箭"/>
+<item id="1798" qus="on show [ɔn 'ʃəu]" yb="" cx="phr." ans="展出"/>
+<item id="1799" qus="dinosaur" yb="['dainəsɔ:]" cx="n" ans="恐龙"/>
+<item id="1800" qus="display" yb="[di'splei]" cx="n" ans="陈列"/>
+<item id="1801" qus="on display [ɔn dis'plei]" yb="" cx="phr." ans="陈列，展览"/>
+<item id="1802" qus="natural" yb="['nætʃərəl]" cx="adj" ans="自然界的，天然的"/>
+<item id="1803" qus="guide" yb="[gaid]" cx="n" ans="& v  向导，导游者；指导，引导"/>
+<item id="1804" qus="underground" yb="['ʌndəgraund]" cx="adj" ans="地下的"/>
+<item id="1805" qus="fossil" yb="['fɔsl]" cx="n" ans="化石"/>
+<item id="1806" qus="desert" yb="['dezət]" cx="n" ans="沙漠"/>
+<item id="1807" qus="Gobi Desert  " yb="" cx="n" ans="戈壁沙漠"/>
+<item id="1808" qus="human being  " yb="" cx="n" ans="人"/>
+<item id="1809" qus="disappear" yb="[,disə'piə]" cx="v" ans="消失"/>
+<item id="1810" qus="disappearance" yb="[,disə'piərəns]" cx="n" ans="消失"/>
+<item id="1811" qus="discover" yb="[dis'kʌvə]" cx="v" ans="发现，发觉"/>
+<item id="1812" qus="feather" yb="['feðə]" cx="n" ans="羽毛"/>
+<item id="1813" qus="found" yb="[faund]" cx="v" ans="成立，建立"/>
+<item id="1814" qus="entrance" yb="['entrəns]" cx="n" ans="入口，进口，入场"/>
+<item id="1815" qus="exit" yb="['eksit]" cx="n" ans="出口"/>
+<item id="1816" qus="fragile" yb="['frædʒil]" cx="adj" ans="易碎的"/>
+<item id="1817" qus="park" yb="[pɑ:k]" cx="v" ans="（将车）停放"/>
+<item id="1818" qus="parking" yb="['pɑ:kiŋ]" cx="n" ans="停车（处）"/>
+<item id="1819" qus="danger" yb="['deindʒə]" cx="n" ans="危险"/>
+<item id="1820" qus="pause" yb="[pɔ:z]" cx="v" ans="& n 中止，暂停"/>
+<item id="1821" qus="teapot" yb="['ti:pɔt]" cx="n" ans="茶壶"/>
+<item id="1822" qus="bowl" yb="[bəul]" cx="n" ans="碗"/>
+<item id="1823" qus="serve" yb="[sə:v]" cx="v" ans="上（酒、菜等），开（饭）；服务"/>
+<item id="1824" qus="fill" yb="[fil]" cx="v" ans="装满，填充"/>
+<item id="1825" qus="be filled with  " yb="" cx="phr." ans="用…充满"/>
+<item id="1826" qus="object" yb="['ɔbdʒikt]" cx="n" ans="物体"/>
+<item id="1827" qus="dig" yb="[dig]" cx="v" ans="挖，掘"/>
+<item id="1828" qus="so that  " yb="" cx="conj" ans="以便，以致"/>
+<item id="1829" qus="hear of  " yb="" cx="phr." ans="听说"/>
+<item id="1830" qus="drought" yb="[draut]" cx="n" ans="旱灾，干旱"/>
+<item id="1831" qus="drop" yb="[drɔp]" cx="n" ans="滴，水滴"/>
+<item id="1832" qus="soil" yb="[sɔil]" cx="n" ans="土壤，土地"/>
+<item id="1833" qus="directly" yb="[di'rektli]" cx="adv" ans="直接地"/>
+<item id="1834" qus="leaf" yb="[li:f]" cx="n" ans="叶子，树木、草的叶子"/>
+<item id="1835" qus="in this way  " yb="" cx="phr." ans="用这种方法"/>
+<item id="1836" qus="flood" yb="[flʌd]" cx="n" ans="& v  洪水，水灾；淹没，泛滥"/>
+<item id="1837" qus="prevent" yb="[pri'vent]" cx="v" ans="防止，阻止"/>
+<item id="1838" qus="northern" yb="['nɔ:ðən]" cx="adj" ans="北部的，北方的"/>
+<item id="1839" qus="wide" yb="[waid]" cx="adj" ans="宽的"/>
+<item id="1840" qus="blow(blew[blu:],blow的过去式;blown[bləun],blow的过去分词)" yb="[bləu]" cx="v" ans="吹"/>
+<item id="1841" qus="sand" yb="[sænd]" cx="n" ans="沙，沙子"/>
+<item id="1842" qus="towards" yb="[tə'wɔ:dz]" cx="prep" ans="向，朝"/>
+<item id="1843" qus="farmland" yb="['fɑ:mlænd]" cx="n" ans="农田"/>
+<item id="1844" qus="point" yb="[pɔint]" cx="v" ans="指，指向…"/>
+<item id="1845" qus="point to ['pɔint tə]" yb="" cx="phr." ans="指向…"/>
+<item id="1846" qus="far away  " yb="" cx="phr." ans="很远，遥远"/>
+<item id="1847" qus="thanks to ['θæŋks tə]" yb="" cx="phr." ans="由于，幸亏"/>
+<item id="1848" qus="correct" yb="[kə'rekt]" cx="adj" ans="改正"/>
+<item id="1849" qus="hand in  " yb="" cx="phr." ans="交上来"/>
+<item id="1850" qus="more or less  " yb="" cx="phr." ans="多少有点，或多或少"/>
+<item id="1851" qus="grand" yb="[grænd]" cx="adj" ans="豪华的，庄重的，雄伟的"/>
+<item id="1852" qus="hall" yb="[hɔ:l]" cx="n" ans="大厅，会堂，会馆"/>
+<item id="1853" qus="notice" yb="['nəutis]" cx="n" ans="通告，布告"/>
+<item id="1854" qus="audience" yb="['ɔ:diəns]" cx="n" ans="听众"/>
+<item id="1855" qus="slipper" yb="['slipə]" cx="n" ans="(常用复数)拖鞋,便鞋"/>
+<item id="1856" qus="height" yb="[hait]" cx="n" ans="高度"/>
+<item id="1857" qus="beeper" yb="['bi:pə]" cx="n" ans="袖珍无线电传呼机,电话呼叫机"/>
+<item id="1858" qus="someday" yb="['sʌmdei]" cx="adv" ans="（今后）有一天"/>
+<item id="1859" qus="printer" yb="['printə]" cx="n" ans="打印机"/>
+<item id="1860" qus="print" yb="[print]" cx="v" ans="打印"/>
+<item id="1861" qus="document" yb="['dɔkjumənt]" cx="n" ans="公文，文件"/>
+<item id="1862" qus="connect" yb="[kə'nekt]" cx="v" ans="连接，相连，联系"/>
+<item id="1863" qus="modem" yb="['məudem]" cx="n" ans="调制解调器"/>
+<item id="1864" qus="provide" yb="[prə'vaid]" cx="v" ans="提供"/>
+<item id="1865" qus="monitor" yb="['mɔnitə]" cx="n" ans="显示器"/>
+<item id="1866" qus="point at  " yb="" cx="phr." ans="指示，指向"/>
+<item id="1867" qus="universe" yb="['ju:nivə:s]" cx="n" ans="宇宙"/>
+<item id="1868" qus="man-made" yb="['mænmeid]" cx="adj" ans="人造的，人工的"/>
+<item id="1869" qus="satellite" yb="['sætəlait]" cx="n" ans="卫星"/>
+<item id="1870" qus="space" yb="[speis]" cx="n" ans="空间，太空"/>
+<item id="1871" qus="spaceship" yb="['speisʃip]" cx="n" ans="宇宙飞船"/>
+<item id="1872" qus="send" yb="[send]" cx="v" ans="送，寄，派（遣）"/>
+<item id="1873" qus="send up  " yb="" cx="phr." ans="发射，把…往上送"/>
+<item id="1874" qus="receive" yb="[ri'si:v]" cx="v" ans="接受，收到，得到"/>
+<item id="1875" qus="shut" yb="[ʃʌt]" cx="v" ans="关（门等）"/>
+<item id="1876" qus="shut down ['ʃʌt daun]" yb="" cx="phr." ans="把…关上"/>
+<item id="1877" qus="woolen" yb="['wulin]" cx="adj" ans="羊毛的，毛织的"/>
+<item id="1878" qus="impossible" yb="[im'pɔsəbl]" cx="adj" ans="不可能的"/>
+<item id="1879" qus="mind" yb="[maind]" cx="n" ans="& v  思想，想法；关心，介意"/>
+<item id="1880" qus="set one's mind to do  " yb="" cx="phr." ans="一心想做…"/>
+<item id="1881" qus="put off  " yb="" cx="phr." ans="推迟，拖延"/>
+<item id="1882" qus="worm ['put ɔf]" yb="" cx="n" ans="虫，蠕虫"/>
+<item id="1883" qus="activity" yb="[æk'tiviti]" cx="n" ans="活动"/>
+<item id="1884" qus="increase" yb="[in'kri:s]" cx="v" ans="增加，增长"/>
+<item id="1885" qus="if" yb="[if]" cx="conj" ans="是否"/>
+<item id="1886" qus="hour after hour   " yb="" cx="phr." ans="一小时又一小时,连续地"/>
+<item id="1887" qus="multiply" yb="['mʌltiplai]" cx="v" ans="（将…）乘…"/>
+<item id="1888" qus="multiply…by…  " yb="" cx="phr." ans="…乘以…"/>
+<item id="1889" qus="challenge" yb="['tʃælindʒ]" cx="n" ans="挑战"/>
+<item id="1890" qus="beginning" yb="[bi'giniŋ]" cx="n" ans="开始，开端"/>
+<item id="1891" qus="at the beginning of  " yb="" cx="phr." ans="…起初，开始"/>
+<item id="1892" qus="square" yb="[skwɛə]" cx="n" ans="平方，（方形的）广场"/>
+<item id="1893" qus="hardly" yb="['hɑ:dli]" cx="adv" ans="几乎不"/>
+<item id="1894" qus="more and more  " yb="" cx="phr." ans="越来越…"/>
+<item id="1895" qus="prefer" yb="[pri'fə:]" cx="v" ans="宁愿（选择），更喜欢"/>
+<item id="1896" qus="prefer to  " yb="" cx="phr." ans="宁愿（选择），更喜欢"/>
+<item id="1897" qus="used" yb="[ju:st]" cx="adj" ans="用过的，半旧的"/>
+<item id="1898" qus="beg" yb="[beg]" cx="v" ans="恳求，乞求"/>
+<item id="1899" qus="beg one's pardon  " yb="" cx="phr." ans="请原谅，对不起"/>
+<item id="1900" qus="worth" yb="[wə:θ]" cx="adj" ans="值得..的，有..的价值"/>
+<item id="1901" qus="secondhand" yb="['sekənd'hænd]" cx="adj" ans="二手的，用过的"/>
+<item id="1902" qus="diagram" yb="['daiəgræm]" cx="n" ans="图表"/>
+<item id="1903" qus="discussion" yb="[di'skʌʃən]" cx="n" ans="讨论"/>
+<item id="1904" qus="be busy doing  " yb="" cx="phr." ans="忙于做…"/>
+<item id="1905" qus="chart" yb="[tʃɑ:t]" cx="n" ans="图表"/>
+<item id="1906" qus="download" yb="['daunləud]" cx="v" ans="下载"/>
+<item id="1907" qus="path" yb="[pɑ:θ]" cx="n" ans="路线，去路"/>
+<item id="1908" qus="Brazil" yb="[brə'zil]" cx="n" ans="巴西"/>
+<item id="1909" qus="excited" yb="[ik'saitid]" cx="adj" ans="兴奋的，激动的"/>
+<item id="1910" qus="be excited about  " yb="" cx="phr." ans="对…感到兴奋"/>
+<item id="1911" qus="leather" yb="['leðə]" cx="n" ans="皮革"/>
+<item id="1912" qus="wear out ['wɛər aut]" yb="" cx="phr." ans="把…穿旧，磨坏"/>
+<item id="1913" qus="yen" yb="[jen]" cx="n" ans="元，日元"/>
+<item id="1914" qus="online" yb="[,ɔn'lain]" cx="adj" ans="& adv 在线，上网"/>
+<item id="1915" qus="ad" yb="[æd]" cx="n" ans="广告"/>
+<item id="1916" qus="Canon" yb="['kænən]" cx="n" ans="佳能（照相机牌名）"/>
+<item id="1917" qus="shape" yb="[ʃeip]" cx="n" ans="形状，外形"/>
+<item id="1918" qus="decision" yb="[di'siʒən]" cx="n" ans="决定"/>
+<item id="1919" qus="make a decision  " yb="" cx="phr." ans="作出决定"/>
+<item id="1920" qus="screen" yb="[skri:n]" cx="n" ans="屏幕"/>
+<item id="1921" qus="form" yb="[fɔ:m]" cx="n" ans="表格"/>
+<item id="1922" qus="credit" yb="['kredit]" cx="n" ans="信用"/>
+<item id="1923" qus="credit card  " yb="" cx="n" ans="信用卡"/>
+<item id="1924" qus="successfully" yb="[sək'sesfəli]" cx="adv" ans="圆满地,顺利地,成功地"/>
+<item id="1925" qus="interest" yb="['intərist]" cx="n" ans="兴趣"/>
+<item id="1926" qus="a place of interest  " yb="" cx="phr." ans="名胜"/>
+<item id="1927" qus="forever" yb="[fə'revə]" cx="adv" ans="永远，总是"/>
+<item id="1928" qus="go over ['gəu ,əuvə(r)]" yb="" cx="phr." ans="过一遍，仔细检查"/>
+<item id="1929" qus="make a mistake [,meik ə mis 'teik]" yb="" cx="phr." ans="犯错误"/>
+<item id="1930" qus="suit" yb="[su:t]" cx="n" ans="一套衣服"/>
+<item id="1931" qus="drop off ['drɔp ɔf]" yb="" cx="phr." ans="放下（某物），下车"/>
+<item id="1932" qus="opera" yb="['ɔpərə]" cx="n" ans="歌剧"/>
+<item id="1933" qus="Peking opera  " yb="" cx="n" ans="京剧"/>
+<item id="1934" qus="the Great Hall of the people  " yb="" cx="n" ans="人民大会堂"/>
+<item id="1935" qus="huge" yb="[hju:dʒ]" cx="adj" ans="巨大的"/>
+<item id="1936" qus="the Palace Museum " yb="" cx="n" ans="故宫博物院"/>
+<item id="1937" qus="rewarding" yb="[ri'wɔ:diŋ]" cx="adj" ans="值得作的"/>
+<item id="1938" qus="grateful" yb="['greitfəl]" cx="adj" ans="感激的，感谢的"/>
+<item id="1939" qus="wag" yb="[wæg]" cx="v" ans="摆动，摇动（尾巴等）"/>
+<item id="1940" qus="tail" yb="[teil]" cx="n" ans="尾巴，尾部"/>
+<item id="1941" qus="lonely" yb="['ləunli]" cx="adj" ans="孤独的，寂寞的"/>
+<item id="1942" qus="success" yb="[sək'ses]" cx="n" ans="成就，成功"/>
+<item id="1943" qus="Scotland" yb="['skɔtlənd]" cx="n" ans="苏格兰"/>
+<item id="1944" qus="make up one's mind  " yb="" cx="phr." ans="下决心"/>
+<item id="1945" qus="vet" yb="[vet]" cx="n" ans="（口语）兽医"/>
+<item id="1946" qus="mostly" yb="['məustli]" cx="adv" ans="主要地，大部分"/>
+<item id="1947" qus="heal" yb="[hi:l]" cx="v" ans="使（伤、病）痊愈"/>
+<item id="1948" qus="pig" yb="[pig]" cx="n" ans="猪"/>
+<item id="1949" qus="education" yb="[,edjukeiʃn]" cx="n" ans="教育，培养"/>
+<item id="1950" qus="countryside" yb="['kʌntri'said]" cx="n" ans="乡下，农村"/>
+<item id="1951" qus="treat" yb="[tri:t]" cx="v" ans="治疗，对待"/>
+<item id="1952" qus="before long [bi ,fɔ: 'lɔŋ]" yb="" cx="phr." ans="不久以后"/>
+<item id="1953" qus="regard" yb="[ri'gɑ:d]" cx="v" ans="看待，当作"/>
+<item id="1954" qus="regard… as  " yb="" cx="phr." ans="把…当作，当作"/>
+<item id="1955" qus="exactly" yb="[ig'zæktli]" cx="adv" ans="准确地，严格地"/>
+<item id="1956" qus="keep" yb="[ki:p]" cx="v" ans="饲养，照顾"/>
+<item id="1957" qus="experience" yb="[iks'piəriəns]" cx="n" ans="经验，体验"/>
+<item id="1958" qus="injection" yb="[in'dʒekʃən]" cx="n" ans="注射，打针"/>
+<item id="1959" qus="painful" yb="['peinfəl]" cx="adj" ans="疼痛的，痛苦的"/>
+<item id="1960" qus="earthquake" yb="['ə:θkweik]" cx="n" ans="地震"/>
+<item id="1961" qus="rock" yb="[rɔk]" cx="v" ans="震动，摇动"/>
+<item id="1962" qus="as if [əz 'if]" yb="" cx="conj" ans="好像,似乎"/>
+<item id="1963" qus="at sea [ət 'si:]" yb="" cx="phr." ans="在大海上"/>
+<item id="1964" qus="story" yb="['stɔ:ri]" cx="n" ans="（房屋的）层"/>
+<item id="1965" qus="two-story " yb="" cx="n" ans="两层"/>
+<item id="1966" qus="grab" yb="[græb]" cx="v" ans="抓取…，夺取"/>
+<item id="1967" qus="crash" yb="[kræʃ]" cx="v" ans="坠落，冲撞"/>
+<item id="1968" qus="mobile" yb="['məubil]" cx="adj" ans="可移动的"/>
+<item id="1969" qus="mobile phone  " yb="" cx="n" ans="可移动电话"/>
+<item id="1970" qus="at all [ət 'ɔ:l]" yb="" cx="phr." ans="（用否定句）一点也不"/>
+<item id="1971" qus="least" yb="[li:st]" cx="n" ans="最少，最小"/>
+<item id="1972" qus="at least  " yb="" cx="phr." ans="至少，起码"/>
+<item id="1973" qus="beat" yb="[bi:t]" cx="v" ans="打败，敲打"/>
+<item id="1974" qus="goal" yb="[gəul]" cx="n" ans="（足球）球门，得分"/>
+<item id="1975" qus="by the time  " yb="" cx="phr." ans="到…的时候"/>
+<item id="1976" qus="realize" yb="['riəlaiz]" cx="v" ans="察觉，领悟，了解"/>
+<item id="1977" qus="train" yb="[trein]" cx="v" ans="训练，培养"/>
+<item id="1978" qus="training" yb="['treiniŋ]" cx="n" ans="训练，培养"/>
+<item id="1979" qus="captain" yb="['kæptin]" cx="n" ans="（足球队等）队长"/>
+<item id="1980" qus="deserve" yb="[di'zə:v]" cx="v" ans="应得，值得…"/>
+<item id="1981" qus="confident" yb="['kɔnfidənt]" cx="adj" ans="有自信的，确信的"/>
+<item id="1982" qus="striker" yb="['straikə]" cx="n" ans="（足球）前锋"/>
+<item id="1983" qus="midfield" yb="['midfi:ld]" cx="n" ans="中场"/>
+<item id="1984" qus="midfield player  " yb="" cx="n" ans="中场球员"/>
+<item id="1985" qus="excellent" yb="['eksələnt]" cx="adj" ans="极好的，优秀的"/>
+<item id="1986" qus="shot" yb="[ʃɔt]" cx="n" ans="（球赛中）击，射门，投篮，发射"/>
+<item id="1987" qus="nervous" yb="['nə:vəs]" cx="adj" ans="紧张不安的"/>
+<item id="1988" qus="lazy" yb="['leizi]" cx="adj" ans="懒惰的"/>
+<item id="1989" qus="carry on ['kæri ɔn]" yb="" cx="phr." ans="坚持下去，继续下去"/>
+<item id="1990" qus="final" yb="['fainl]" cx="adj" ans="最后的"/>
+<item id="1991" qus="amazing" yb="[ə'meiziŋ]" cx="adj" ans="令人惊奇的"/>
+<item id="1992" qus="be pleased with  " yb="" cx="phr." ans="对…感到满意"/>
+<item id="1993" qus="performance" yb="[pə'fɔ:məns]" cx="n" ans="演出，成果，成绩"/>
+<item id="1994" qus="teamwork" yb="['ti:mwə:k]" cx="n" ans="合作，协同工作"/>
+<item id="1995" qus="baseball" yb="['beis,bɔ:l]" cx="n" ans="棒球"/>
+<item id="1996" qus="never mind [,nevə 'maind]" yb="" cx="phr." ans="没关系"/>
+<item id="1997" qus="boring" yb="['bɔ:riŋ]" cx="adj" ans="令人厌烦的"/>
+<item id="1998" qus="spill(spilt[spilt],spill的过去式和过去分词)" yb="[spil]" cx="v" ans="溢出，溅出，洒出"/>
+<item id="1999" qus="from now on [frəm 'nau ɔn]" yb="" cx="phr." ans="从现在起，今后"/>
+<item id="2000" qus="rule" yb="[ru:l]" cx="n" ans="规则，规定"/>
+<item id="2001" qus="against" yb="[ə'genst]" cx="prep" ans="与…对抗，对着"/>
+<item id="2002" qus="expect" yb="[iks'pekt]" cx="v" ans="期望，预期"/>
+<item id="2003" qus="rough" yb="[rʌf]" cx="adj" ans="粗鲁的，激烈的"/>
+<item id="2004" qus="necklace" yb="['neklis]" cx="n" ans="项链"/>
+<item id="2005" qus="steal(stole[stəul],steal的过去式;stolen['stəulən]steal的过去分词)" yb="[sti:l]" cx="v" ans="偷，窃取"/>
+<item id="2006" qus="hands up  " yb="" cx="phr." ans="举手"/>
+<item id="2007" qus="shoot(shot[ʃɔt],shoot的过去式和过去分词)[ʃu:t]" yb="" cx="v" ans="射击，射死"/>
+<item id="2008" qus="detective" yb="[di'tektiv]" cx="n" ans="侦探"/>
+<item id="2009" qus="inspector" yb="[in'spektə]" cx="n" ans="警官，监督员"/>
+<item id="2010" qus="thief" yb="[θi:f]" cx="n" ans="贼"/>
+<item id="2011" qus="notice" yb="['nəutis]" cx="v" ans="注意，通知"/>
+<item id="2012" qus="robber" yb="['rɔbə]" cx="n" ans="强盗，盗贼"/>
+<item id="2013" qus="come down ['kʌm daun]" yb="" cx="phr." ans="下来，落"/>
+<item id="2014" qus="escape [i'skeip] " yb="" cx="n" ans="& v 逃亡，逃走，逃避"/>
+<item id="2015" qus="victim" yb="['viktim]" cx="n" ans="受害者，受骗者"/>
+<item id="2016" qus="conversation" yb="[,kɔnvə'seiʃən]" cx="n" ans="会话，谈话"/>
+<item id="2017" qus="robbery ['rɔbəri] " yb="" cx="n" ans="抢劫案，抢劫"/>
+<item id="2018" qus="description [di'skripʃən] " yb="" cx="n" ans="描述，描写"/>
+<item id="2019" qus="excuse[ik'skju:s]" yb="" cx="n" ans="借口，托词"/>
+<item id="2020" qus="steep" yb="[sti:p]" cx="adj" ans="陡峭的，险峻的"/>
+<item id="2021" qus="British ['britiʃ] " yb="" cx="adj" ans="英国人的"/>
+<item id="2022" qus="misty" yb="['misti]" cx="adj" ans="有雾的，雾大的"/>
+<item id="2023" qus="mist [mist] " yb="" cx="n" ans="雾"/>
+<item id="2024" qus="wonder ['wʌndə] " yb="" cx="v" ans="惊奇，惊讶（对. . . . ）感到怀"/>
+<item id="2025" qus="club [klʌb] " yb="" cx="n" ans="俱乐部，社团"/>
+<item id="2026" qus="expert" yb="[ek'spə:t]" cx="n" ans="专家，内行"/>
+<item id="2027" qus="trap" yb="[træp]" cx="v" ans="使…陷入困境，设陷阱捕捉"/>
+<item id="2028" qus="tent" yb="[tent]" cx="n" ans="帐篷"/>
+<item id="2029" qus="freeze [fri:z] (froze [frəuz], frozen ['frəuzn]) " yb="" cx="v" ans="结冰，凝结"/>
+<item id="2030" qus="alive [ə'laiv] " yb="" cx="adj" ans="活着的"/>
+<item id="2031" qus="anytime ['enitaim] " yb="" cx="adv" ans="在任何时候"/>
+<item id="2032" qus="progress" yb="['prəuɡres]" cx="v" ans="进步，提高，前进"/>
+<item id="2033" qus="self-respect ['selfri'spekt] " yb="" cx="n" ans="自尊，自重"/>
+<item id="2034" qus="essential [i'senʃəl] " yb="" cx="adj" ans="本质的，主要的，必需的"/>
+
+</table>
+
+
+
+
+
+
+
+
