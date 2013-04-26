@@ -2,6 +2,33 @@ ps -m -o tid,cpu,time -p 41308
 ps H -e -o pid,tid,pcpu,cmd --sort=pcpu |grep xxx
 ps -m -o tid,cpu,time -p 41308
 ps -m -o tid,cpu,time -p 41308
+top -H -p pid 41308
+ps -T -p 41308
+ps -eH -p 41308
+ps H -e -o pid,pcpu -p 41308
+ps -H -p 41308
+ps -L -p 41308
+ps -eLf
+$  ps -eH -p 41308
+ps: Process environment requires procfs(5)
+  PID  TT  STAT      TIME COMMAND
+41308  p0- I    5287:15.03  zsds
+41308  p0- I    5287:15.03  zsds
+41308  p0- I    5287:15.03  zsds
+41308  p0- I    5287:15.03  zsds
+41308  p0- S    5287:15.03  zsds
+41308  p0- R    5287:15.03  zsds
+41308  p0- S    5287:15.03  zsds
+41308  p0- S    5287:15.03  zsds
+$
+
+$ ps --help
+ps: illegal option -- -
+usage: ps [-aCcefHhjlmrSTuvwXxZ] [-O fmt | -o fmt] [-G gid[,gid...]]
+          [-M core] [-N system]
+          [-p pid[,pid...]] [-t tty[,tty...]] [-U user[,user...]]
+       ps [-L]
+$ ps
 
 $ ps -mT -o pid,cpu,time -p 41308
   PID CPU      TIME
@@ -11,6 +38,33 @@ $ ps -mT -o pid,cpu,time -p 41308
 16319   0   0:00.00
 37544   0   0:00.01
 37843   1   0:00.00
+ps -p 41308
+top -H -p pid 41308
+$ top -H -p pid 41308
+top: illegal option -- p
+Top version 3.5beta12
+Usage: top [-abCHIijnqStuv] [-d count] [-m io | cpu] [-o field] [-s time]
+       [-U username] [number]
+$
+$ ps -mT -p 41308
+  PID  TT  STAT      TIME COMMAND
+16346  p0- S    1921:23.71 /usr/local/mysql/libexec/mysqld --basedir=/usr/local/
+
+16394  p0- S      2:33.21 zs
+41308  p0- S    5278:28.70 zsds
+16319  p0- I      0:00.00 /bin/sh /usr/local/mysql/bin/mysqld_safe --datadir=/u
+37544  p0  Ss     0:00.02 -sh (sh)
+37972  p0  R+     0:00.00 ps -mT -p 41308
+$ ps -T -p 41308
+  PID  TT  STAT      TIME COMMAND
+16319  p0- I      0:00.00 /bin/sh /usr/local/mysql/bin/mysqld_safe --datadir=/u
+16346  p0- S    1921:23.72 /usr/local/mysql/libexec/mysqld --basedir=/usr/local/
+
+16394  p0- S      2:33.21 zs
+37544  p0  Ss     0:00.02 -sh (sh)
+37973  p0  R+     0:00.00 ps -T -p 41308
+41308  p0- S    5278:38.23 zsds
+$
 
 (gdb) bt
 #0  0x284560db in kevent () from /lib/libc.so.7
@@ -56,3 +110,540 @@ ess<int>, std::allocator<int> >::clear (this=0x488ef100) at stl_set.h:397
 #6  0x00000000 in ?? ()
 (gdb)
 
+
+$ man ps
+PS(1)                   FreeBSD General Commands Manual                  PS(1)
+
+NAME
+     ps -- process status
+
+SYNOPSIS
+     ps [-aCcefHhjlmrSTuvwXxZ] [-O fmt | -o fmt] [-G gid[,gid...]] [-M core]
+        [-N system] [-p pid[,pid...]] [-t tty[,tty...]] [-U user[,user...]]
+     ps [-L]
+
+DESCRIPTION
+     The ps utility displays a header line, followed by lines containing
+     information about all of your processes that have controlling terminals.
+
+     A different set of processes can be selected for display by using any
+     combination of the -a, -G, -p, -T, -t, and -U options.  If more than one
+     of these options are given, then ps will select all processes which are
+     matched by at least one of the given options.
+
+     For the processes which have been selected for display, ps will usually
+     display one line per process.  The -H option may result in multiple out-
+     put lines (one line per thread) for some processes.  By default all of
+     these output lines are sorted first by controlling terminal, then by
+     process ID.  The -m, -r, -u, and -v options will change the sort order.
+     If more than one sorting option was given, then the selected processes
+     will be sorted by the last sorting option which was specified.
+
+     For the processes which have been selected for display, the information
+     to display is selected based on a set of keywords (see the -L, -O, and -o
+     options).  The default output format includes, for each process, the
+     process' ID, controlling terminal, CPU time (including both user and sys-
+     tem time), state, and associated command.
+
+     The process file system (see procfs(5)) should be mounted when ps is exe-
+     cuted, otherwise not all information will be available.
+
+     The options are as follows:
+
+     -a      Display information about other users' processes as well as your
+             own.  This will skip any processes which do not have a control-
+             ling terminal, unless the -x option is also specified.  This can
+             be disabled by setting the security.bsd.see_other_uids sysctl to
+             zero.
+
+     -c      Change the ``command'' column output to just contain the exe-
+             cutable name, rather than the full command line.
+
+     -C      Change the way the CPU percentage is calculated by using a
+             ``raw'' CPU calculation that ignores ``resident'' time (this nor-
+             mally has no effect).
+
+     -e      Display the environment as well.
+
+     -f      Show commandline and environment information about swapped out
+             processes.  This option is honored only if the UID of the user is
+             0.
+
+     -G      Display information about processes which are running with the
+             specified real group IDs.
+
+     -H      Show all of the kernel visible threads associated with each
+             process.  Depending on the threading package that is in use, this
+             may show only the process, only the kernel scheduled entities, or
+             all of the process threads.
+
+     -h      Repeat the information header as often as necessary to guarantee
+             one header per page of information.
+
+     -j      Print information associated with the following keywords: user,
+             pid, ppid, pgid, sid, jobc, state, tt, time, and command.
+
+     -L      List the set of keywords available for the -O and -o options.
+
+     -l      Display information associated with the following keywords: uid,
+             pid, ppid, cpu, pri, nice, vsz, rss, mwchan, state, tt, time, and
+             command.
+
+     -M      Extract values associated with the name list from the specified
+             core instead of the currently running system.
+
+     -m      Sort by memory usage, instead of the combination of controlling
+             terminal and process ID.
+
+     -N      Extract the name list from the specified system instead of the
+             default, which is the kernel image the system has booted from.
+
+     -O      Add the information associated with the space or comma separated
+             list of keywords specified, after the process ID, in the default
+             information display.  Keywords may be appended with an equals
+             (`=') sign and a string.  This causes the printed header to use
+             the specified string instead of the standard header.
+
+     -o      Display information associated with the space or comma separated
+             list of keywords specified.  The last keyword in the list may be
+             appended with an equals (`=') sign and a string that spans the
+             rest of the argument, and can contain space and comma characters.
+--More--(byte 5332)
+     -o      Display information associated with the space or comma separated
+             list of keywords specified.  The last keyword in the list may be
+             appended with an equals (`=') sign and a string that spans the
+             rest of the argument, and can contain space and comma characters.
+             This causes the printed header to use the specified string
+             instead of the standard header.  Multiple keywords may also be
+             given in the form of more than one -o option.  So the header
+             texts for multiple keywords can be changed.  If all keywords have
+             empty header texts, no header line is written.
+
+     -p      Display information about processes which match the specified
+             process IDs.
+
+     -r      Sort by current CPU usage, instead of the combination of control-
+             ling terminal and process ID.
+
+     -S      Change the way the process time is calculated by summing all
+             exited children to their parent process.
+
+     -T      Display information about processes attached to the device asso-
+             ciated with the standard input.
+
+     -t      Display information about processes attached to the specified
+             terminal devices.
+
+     -U      Display the processes belonging to the specified usernames.
+
+     -u      Display information associated with the following keywords: user,
+             pid, %cpu, %mem, vsz, rss, tt, state, start, time, and command.
+             The -u option implies the -r option.
+
+     -v      Display information associated with the following keywords: pid,
+             state, time, sl, re, pagein, vsz, rss, lim, tsiz, %cpu, %mem, and
+             command.  The -v option implies the -m option.
+
+     -w      Use 132 columns to display information, instead of the default
+             which is your window size.  If the -w option is specified more
+             than once, ps will use as many columns as necessary without
+             regard for your window size.
+
+     -X      When displaying processes matched by other options, skip any pro-
+             cesses which do not have a controlling terminal.
+
+     -x      When displaying processes matched by other options, include pro-
+             cesses which do not have a controlling terminal.  This is the
+             opposite of the -X option.  If both -X and -x are specified in
+             the same command, then ps will use the one which was specified
+             last.
+
+     -Z      Add mac(4) label to the list of keywords for which ps will dis-
+             play information.
+
+     A complete list of the available keywords are listed below.  Some of
+     these keywords are further specified as follows:
+
+     %cpu      The CPU utilization of the process; this is a decaying average
+               over up to a minute of previous (real) time.  Since the time
+               base over which this is computed varies (since processes may be
+               very young) it is possible for the sum of all %cpu fields to
+               exceed 100%.
+
+     %mem      The percentage of real memory used by this process.
+
+     flags     The flags associated with the process as in the include file
+               <sys/proc.h>:
+
+               P_ADVLOCK           0x00001      Process may hold a POSIX
+                                                advisory lock
+               P_CONTROLT          0x00002      Has a controlling terminal
+               P_KTHREAD           0x00004      Kernel thread
+               P_NOLOAD            0x00008      Ignore during load avg
+                                                calculations
+               P_PPWAIT            0x00010      Parent is waiting for child to
+                                                exec/exit
+               P_PROFIL            0x00020      Has started profiling
+               P_STOPPROF          0x00040      Has thread in requesting to
+                                                stop prof
+               P_SUGID             0x00100      Had set id privileges since
+                                                last exec
+               P_SYSTEM            0x00200      System proc: no sigs, stats or
+                                                swapping
+               P_SINGLE_EXIT       0x00400      Threads suspending should
+                                                exit, not wait
+               P_TRACED            0x00800      Debugged process being traced
+               P_WAITED            0x01000      Someone is waiting for us
+               P_WEXIT             0x02000      Working on exiting
+               P_EXEC              0x04000      Process called exec
+               P_SA                0x08000      Using scheduler activations
+               P_CONTINUED         0x10000      Proc has continued from a
+                                                stopped state
+               P_STOPPED_SIG       0x20000      Stopped due to SIGSTOP/SIGTSTP
+               P_STOPPED_TRACE     0x40000      Stopped because of tracing
+               P_STOPPED_SINGLE    0x80000      Only one thread can continue
+               P_PROTECTED         0x100000     Do not kill on memory
+                                                overcommit
+               P_SIGEVENT          0x200000     Process pending signals
+                                                changed
+               P_JAILED            0x1000000    Process is in jail
+               P_INEXEC            0x4000000    Process is in execve()
+
+     label     The MAC label of the process.
+
+     lim       The soft limit on memory used, specified via a call to
+               setrlimit(2).
+
+     lstart    The exact time the command started, using the `%c' format
+               described in strftime(3).
+
+     lockname  The name of the lock that the process is currently blocked on.
+               If the name is invalid or unknown, then ``???'' is displayed.
+
+     logname   The login name associated with the session the process is in
+               (see getlogin(2)).
+
+     mwchan    The event name if the process is blocked normally, or the lock
+               name if the process is blocked on a lock.  See the wchan and
+               lockname keywords for details.
+
+     nice      The process scheduling increment (see setpriority(2)).
+
+     rss       the real memory (resident set) size of the process (in 1024
+               byte units).
+
+     start     The time the command started.  If the command started less than
+--More--(byte 11956)
+     rss       the real memory (resident set) size of the process (in 1024
+               byte units).
+
+     start     The time the command started.  If the command started less than
+               24 hours ago, the start time is displayed using the
+               ``%l:ps.1p'' format described in strftime(3).  If the command
+               started less than 7 days ago, the start time is displayed using
+               the ``%a6.15p'' format.  Otherwise, the start time is displayed
+               using the ``%e%b%y'' format.
+
+     state     The state is given by a sequence of characters, for example,
+               ``RWNA''.  The first character indicates the run state of the
+               process:
+
+               D       Marks a process in disk (or other short term, uninter-
+                       ruptible) wait.
+               I       Marks a process that is idle (sleeping for longer than
+                       about 20 seconds).
+               L       Marks a process that is waiting to acquire a lock.
+               R       Marks a runnable process.
+               S       Marks a process that is sleeping for less than about 20
+                       seconds.
+               T       Marks a stopped process.
+               W       Marks an idle interrupt thread.
+               Z       Marks a dead process (a ``zombie'').
+
+               Additional characters after these, if any, indicate additional
+               state information:
+
+               +       The process is in the foreground process group of its
+                       control terminal.
+               <       The process has raised CPU scheduling priority.
+               E       The process is trying to exit.
+               J       Marks a process which is in jail(2).  The hostname of
+                       the prison can be found in /proc/<pid>/status.
+               L       The process has pages locked in core (for example, for
+                       raw I/O).
+               N       The process has reduced CPU scheduling priority (see
+                       setpriority(2)).
+               s       The process is a session leader.
+               V       The process is suspended during a vfork(2).
+               W       The process is swapped out.
+               X       The process is being traced or debugged.
+
+     tt        An abbreviation for the pathname of the controlling terminal,
+               if any.  The abbreviation consists of the three letters follow-
+               ing /dev/tty, or, for the console, ``con''.  This is followed
+               by a `-' if the process can no longer reach that controlling
+               terminal (i.e., it has been revoked).
+
+     wchan     The event (an address in the system) on which a process waits.
+               When printed numerically, the initial part of the address is
+               trimmed off and the result is printed in hex, for example,
+               0x80324000 prints as 324000.
+
+     When printing using the command keyword, a process that has exited and
+     has a parent that has not yet waited for the process (in other words, a
+     zombie) is listed as ``<defunct>'', and a process which is blocked while
+     trying to exit is listed as ``<exiting>''.  If the arguments cannot be
+     located (usually because it has not been set, as is the case of system
+     processes and/or kernel threads) the command name is printed within
+     square brackets.  The ps utility first tries to obtain the arguments
+     cached by the kernel (if they were shorter than the value of the
+     kern.ps_arg_cache_limit sysctl).  The process can change the arguments
+     shown with setproctitle(3).  Otherwise, ps makes an educated guess as to
+     the file name and arguments given when the process was created by examin-
+     ing memory or the swap area.  The method is inherently somewhat unreli-
+     able and in any event a process is entitled to destroy this information.
+     The ucomm (accounting) keyword can, however, be depended on.  If the
+     arguments are unavailable or do not agree with the ucomm keyword, the
+     value for the ucomm keyword is appended to the arguments in parentheses.
+
+KEYWORDS
+     The following is a complete list of the available keywords and their
+     meanings.  Several of them have aliases (keywords which are synonyms).
+
+     %cpu       percentage CPU usage (alias pcpu)
+     %mem       percentage memory usage (alias pmem)
+     acflag     accounting flag (alias acflg)
+     args       command and arguments
+     comm       command
+     command    command and arguments
+     cpu        short-term CPU usage factor (for scheduling)
+     etime      elapsed running time
+     flags      the process flags, in hexadecimal (alias f)
+     inblk      total blocks read (alias inblock)
+     jid        jail ID
+     jobc       job control count
+     ktrace     tracing flags
+     label      MAC label
+     lim        memoryuse limit
+     lockname   lock currently blocked on (as a symbolic name)
+     logname    login name of user who started the session
+     lstart     time started
+     majflt     total page faults
+     minflt     total page reclaims
+     msgrcv     total messages received (reads from pipes/sockets)
+     msgsnd     total messages sent (writes on pipes/sockets)
+     mwchan     wait channel or lock currently blocked on
+     nice       nice value (alias ni)
+     nivcsw     total involuntary context switches
+     nsigs      total signals taken (alias nsignals)
+     nswap      total swaps in/out
+     nvcsw      total voluntary context switches
+     nwchan     wait channel (as an address)
+     oublk      total blocks written (alias oublock)
+     paddr      swap address
+     pagein     pageins (same as majflt)
+     pgid       process group number
+     pid        process ID
+     poip       pageouts in progress
+     ppid       parent process ID
+     pri        scheduling priority
+     re         core residency time (in seconds; 127 = infinity)
+     rgid       real group ID
+     rgroup     group name (from rgid)
+     rlink      reverse link on run queue, or 0
+     rss        resident set size
+     rtprio     realtime priority (101 = not a realtime process)
+     ruid       real user ID
+     ruser      user name (from ruid)
+     sid        session ID
+     sig        pending signals (alias pending)
+     sigcatch   caught signals (alias caught)
+     sigignore  ignored signals (alias ignored)
+     sigmask    blocked signals (alias blocked)
+     sl         sleep time (in seconds; 127 = infinity)
+     start      time started
+     state      symbolic process state (alias stat)
+     svgid      saved gid from a setgid executable
+     svuid      saved UID from a setuid executable
+     tdev       control terminal device number
+     time       accumulated CPU time, user + system (alias cputime)
+     tpgid      control terminal process group ID
+     tsid       control terminal session ID
+     tsiz       text size (in Kbytes)
+     tt         control terminal name (two letter abbreviation)
+     tty        full name of control terminal
+     uprocp     process pointer
+     ucomm      name to be used for accounting
+     uid        effective user ID
+     upr        scheduling priority on return from system call (alias usrpri)
+     user       user name (from UID)
+     vsz        virtual size in Kbytes (alias vsize)
+     wchan      wait channel (as a symbolic name)
+     xstat      exit or stop status (valid only for stopped or zombie process)
+
+ENVIRONMENT
+     The following environment variables affect the execution of ps:
+
+     COLUMNS  If set, specifies the user's preferred output width in column
+              positions.  By default, ps attempts to automatically determine
+              the terminal width.
+
+FILES
+     /boot/kernel/kernel  default system namelist
+     /proc                the mount point of procfs(5)
+
+SEE ALSO
+     kill(1), pgrep(1), pkill(1), w(1), kvm(3), strftime(3), mac(4),
+     procfs(5), pstat(8), sysctl(8), mutex(9)
+
+STANDARDS
+     For historical reasons, the ps utility under FreeBSD supports a different
+     set of options from what is described by IEEE Std 1003.2 (``POSIX.2''),
+     and what is supported on non-BSD operating systems.
+
+HISTORY
+     The ps command appeared in Version 4 AT&T UNIX.
+
+BUGS
+     Since ps cannot run faster than the system and is run as any other sched-
+--More--(byte 21206)
+
+$ ps -L -p 41308
+%cpu %mem acflag acflg args blocked caught comm command cpu cputime emul etime
+f flags ignored inblk inblock jid jobc ktrace label lim lockname login logname
+lstart lwp majflt minflt msgrcv msgsnd mwchan ni nice nivcsw nlwp nsignals
+nsigs nswap nvcsw nwchan oublk oublock paddr pagein pcpu pending pgid pid pmem
+ppid pri re rgid rgroup rss rtprio ruid ruser sid sig sigcatch sigignore
+sigmask sl start stat state svgid svuid tdev time tpgid tsid tsiz tt tty ucomm
+uid upr uprocp user usrpri vsize vsz wchan xstat
+
+(gdb) bt
+#0  0x08058bc9 in std::_Rb_tree<int, std::pair<int const, int>, std::_Select1st<
+std::pair<int const, int> >, std::less<int>, std::allocator<std::pair<int const,
+ int> > >::end (this=0x488dd084) at stl_tree.h:618
+#1  0x08059065 in std::_Rb_tree<int, std::pair<int const, int>, std::_Select1st<
+std::pair<int const, int> >, std::less<int>, std::allocator<std::pair<int const,
+ int> > >::find (this=0x488dd084, __k=@0xbf4f9f54) at stl_tree.h:1384
+#2  0x080590d8 in std::map<int, int, std::less<int>, std::allocator<std::pair<in
+t const, int> > >::find (this=0x488dd084, __x=@0xbf4f9f54) at stl_map.h:542
+#3  0x080638eb in c_usersock::nobyuid (this=0x488dd080, u=-1)
+    at cmd_buf/usersock.cpp:57
+#4  0x0805d7f2 in c_cmd_buf::start_bc (this=0x488df000)
+    at cmd_buf/cmd_buf_pk.cpp:230
+#5  0x0805d940 in c_cmd_buf::_recv_bc (this=0x488df000)
+    at cmd_buf/cmd_buf_pk.cpp:254
+#6  0x0805d677 in _th_cmd_buf (ptr=0x488ef0dc) at cmd_buf/cmd_buf_pk.cpp:287
+#7  0x2827ab1f in pthread_getprio () from /lib/libthr.so.3
+#8  0x00000000 in ?? ()
+(gdb)
+
+
+(gdb) thre 1
+[Switching to thread 1 (Thread 0x28501d00 (LWP 100309))]#0  0x284560db in kevent
+ () from /lib/libc.so.7
+(gdb) bt
+#0  0x284560db in kevent () from /lib/libc.so.7
+#1  0x0804cb63 in c_sock::_wait_event (this=0x28508800) at sock/sock.cpp:486
+#2  0x0804bec7 in _th_sock (ptr=0x285089f0) at sock/sock.cpp:650
+#3  0x2827ab1f in pthread_getprio () from /lib/libthr.so.3
+#4  0x00000000 in ?? ()
+(gdb) thre 2
+[Switching to thread 2 (Thread 0x28501c00 (LWP 100308))]#0  0x08058bc9 in std::_
+Rb_tree<int, std::pair<int const, int>, std::_Select1st<std::pair<int const, int
+> >, std::less<int>, std::allocator<std::pair<int const, int> > >::end (
+    this=0x488dd084) at stl_tree.h:618
+618           { return iterator(static_cast<_Link_type>(&this->_M_impl._M_header
+)); }
+(gdb) bt
+#0  0x08058bc9 in std::_Rb_tree<int, std::pair<int const, int>, std::_Select1st<
+std::pair<int const, int> >, std::less<int>, std::allocator<std::pair<int const,
+ int> > >::end (this=0x488dd084) at stl_tree.h:618
+#1  0x08059065 in std::_Rb_tree<int, std::pair<int const, int>, std::_Select1st<
+std::pair<int const, int> >, std::less<int>, std::allocator<std::pair<int const,
+ int> > >::find (this=0x488dd084, __k=@0xbf4f9f54) at stl_tree.h:1384
+#2  0x080590d8 in std::map<int, int, std::less<int>, std::allocator<std::pair<in
+t const, int> > >::find (this=0x488dd084, __x=@0xbf4f9f54) at stl_map.h:542
+#3  0x080638eb in c_usersock::nobyuid (this=0x488dd080, u=-1)
+    at cmd_buf/usersock.cpp:57
+#4  0x0805d7f2 in c_cmd_buf::start_bc (this=0x488df000)
+    at cmd_buf/cmd_buf_pk.cpp:230
+#5  0x0805d940 in c_cmd_buf::_recv_bc (this=0x488df000)
+    at cmd_buf/cmd_buf_pk.cpp:254
+#6  0x0805d677 in _th_cmd_buf (ptr=0x488ef0dc) at cmd_buf/cmd_buf_pk.cpp:287
+#7  0x2827ab1f in pthread_getprio () from /lib/libthr.so.3
+#8  0x00000000 in ?? ()
+(gdb)
+
+(gdb) thre 3
+[Switching to thread 3 (Thread 0x28501b00 (LWP 100302))]#0  0x283e032b in _umtx_
+op () from /lib/libc.so.7
+(gdb) bt
+#0  0x283e032b in _umtx_op () from /lib/libc.so.7
+#1  0x28282b18 in pthread_cleanup_push () from /lib/libthr.so.3
+#2  0x2828131e in pthread_cond_init () from /lib/libthr.so.3
+#3  0x08056ecb in c_mutex::wait (this=0x488dc118) at mutex.h:20
+#4  0x0805df28 in c_cmd_buf::_wait_rover (this=0x488df000)
+    at cmd_buf/cmd_buf_pk.cpp:124
+#5  0x0805d677 in _th_cmd_buf (ptr=0x488ef0d0) at cmd_buf/cmd_buf_pk.cpp:287
+#6  0x2827ab1f in pthread_getprio () from /lib/libthr.so.3
+#7  0x00000000 in ?? ()
+(gdb)
+
+(gdb) thre 4
+[Switching to thread 4 (Thread 0x28501500 (LWP 100294))]#0  0x283e032b in _umtx_
+op () from /lib/libc.so.7
+(gdb) bt
+#0  0x283e032b in _umtx_op () from /lib/libc.so.7
+#1  0x28282b18 in pthread_cleanup_push () from /lib/libthr.so.3
+#2  0x2828131e in pthread_cond_init () from /lib/libthr.so.3
+#3  0x08056ecb in c_mutex::wait (this=0x28598108) at mutex.h:20
+#4  0x08051d81 in c_bufio::_close (this=0x28600000) at bufio/bufio.cpp:152
+#5  0x08050a17 in _th_bufio (ptr=0x3860f0c4) at bufio/bufio.cpp:641
+#6  0x2827ab1f in pthread_getprio () from /lib/libthr.so.3
+#7  0x00000000 in ?? ()
+
+(gdb) thre 5
+[Switching to thread 5 (Thread 0x28501400 (LWP 100273))]#0  0x283e032b in _umtx_
+op () from /lib/libc.so.7
+(gdb) bt
+#0  0x283e032b in _umtx_op () from /lib/libc.so.7
+#1  0x28282b18 in pthread_cleanup_push () from /lib/libthr.so.3
+#2  0x2828131e in pthread_cond_init () from /lib/libthr.so.3
+#3  0x08056ecb in c_mutex::wait (this=0x28598100) at mutex.h:20
+#4  0x08051c61 in c_bufio::_accept (this=0x28600000) at bufio/bufio.cpp:174
+#5  0x08050a17 in _th_bufio (ptr=0x3860f0b8) at bufio/bufio.cpp:641
+#6  0x2827ab1f in pthread_getprio () from /lib/libthr.so.3
+#7  0x00000000 in ?? ()
+(gdb) thre 6
+[Switching to thread 6 (Thread 0x28501300 (LWP 100268))]#0  0x283e032b in _umtx_
+op () from /lib/libc.so.7
+(gdb) bt
+#0  0x283e032b in _umtx_op () from /lib/libc.so.7
+#1  0x28282b18 in pthread_cleanup_push () from /lib/libthr.so.3
+#2  0x2828131e in pthread_cond_init () from /lib/libthr.so.3
+#3  0x08056ecb in c_mutex::wait (this=0x285980f8) at mutex.h:20
+#4  0x0805195a in c_bufio::_push_read (this=0x28600000) at bufio/bufio.cpp:283
+#5  0x08050a17 in _th_bufio (ptr=0x3860f0ac) at bufio/bufio.cpp:641
+#6  0x2827ab1f in pthread_getprio () from /lib/libthr.so.3
+#7  0x00000000 in ?? ()
+(gdb) thre 7
+[Switching to thread 7 (Thread 0x28501200 (LWP 100140))]#0  0x283e032b in _umtx_
+op () from /lib/libc.so.7
+(gdb) bt
+#0  0x283e032b in _umtx_op () from /lib/libc.so.7
+#1  0x28282b18 in pthread_cleanup_push () from /lib/libthr.so.3
+#2  0x2828131e in pthread_cond_init () from /lib/libthr.so.3
+#3  0x08056ecb in c_mutex::wait (this=0x285980f0) at mutex.h:20
+#4  0x08051be1 in c_bufio::_flush_write (this=0x28600000)
+    at bufio/bufio.cpp:194
+#5  0x08050a17 in _th_bufio (ptr=0x3860f0a0) at bufio/bufio.cpp:641
+#6  0x2827ab1f in pthread_getprio () from /lib/libthr.so.3
+#7  0x00000000 in ?? ()
+(gdb) thre 8
+[Switching to thread 8 (Thread 0x28501100 (LWP 100413))]#0  0x28472353 in select
+ () from /lib/libc.so.7
+(gdb) bt
+#0  0x28472353 in select () from /lib/libc.so.7
+#1  0x28279600 in select () from /lib/libthr.so.3
+#2  0x081adf94 in c_tm::run (this=0x2850f160, val=10) at tm.cpp:100
+#3  0x0804b8a5 in main () at main.cpp:33
