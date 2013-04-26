@@ -1,3 +1,4 @@
+40349 mwjx          8   4    0   529M   519M kqread 0   0:01  0.00% zsds
 ps -m -o tid,cpu,time -p 41308
 ps H -e -o pid,tid,pcpu,cmd --sort=pcpu |grep xxx
 ps -m -o tid,cpu,time -p 41308
@@ -647,3 +648,59 @@ op () from /lib/libc.so.7
 #1  0x28279600 in select () from /lib/libthr.so.3
 #2  0x081adf94 in c_tm::run (this=0x2850f160, val=10) at tm.cpp:100
 #3  0x0804b8a5 in main () at main.cpp:33
+
+
+------------------
+  2 Thread 0x28501c00 (LWP 100279)  0x2827c5a5 in _spinunlock ()
+   from /lib/libthr.so.3
+* 1 Thread 0x28501d00 (LWP 100290)  0x284560db in kevent ()
+   from /lib/libc.so.7
+(gdb) thread 2
+[Switching to thread 2 (Thread 0x28501c00 (LWP 100279))]#0  0x2827c5a5 in _spinu
+nlock () from /lib/libthr.so.3
+(gdb) bt
+#0  0x2827c5a5 in _spinunlock () from /lib/libthr.so.3
+#1  0x283fca19 in malloc_usable_size () from /lib/libc.so.7
+#2  0x283fce1e in malloc () from /lib/libc.so.7
+#3  0x2834a187 in operator new () from /usr/lib/libstdc++.so.6
+#4  0x0804f45d in __gnu_cxx::new_allocator<std::_Rb_tree_node<int> >::allocate
+    (this=0x488ef100, __n=1) at new_allocator.h:91
+#5  0x0804f481 in std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, s
+td::allocator<int> >::_M_get_node (this=0x488ef100) at stl_tree.h:367
+#6  0x0804f9f2 in std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, s
+td::allocator<int> >::_M_create_node (this=0x488ef100, __x=@0x48af2890)
+    at stl_tree.h:376
+#7  0x080502e1 in std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, s
+td::allocator<int> >::_M_insert (this=0x488ef100, __x=0x0, __p=0x488ef104,
+    __v=@0x48af2890) at stl_tree.h:838
+#8  0x08050443 in std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, s
+td::allocator<int> >::_M_insert_unique (this=0x488ef100, __v=@0x48af2890)
+    at stl_tree.h:986
+#9  0x08050558 in std::set<int, std::less<int>, std::allocator<int> >::insert
+    (this=0x488ef100, __x=@0x48af2890) at stl_set.h:307
+#10 0x080645bb in c_broadcastlist::get_ul (this=0x488f0040, o=@0x488ef100)
+    at class_broadcastlist.cpp:168
+#11 0x0805d91e in c_cmd_buf::_recv_bc (this=0x488df000)
+    at cmd_buf/cmd_buf_pk.cpp:253
+#12 0x0805d677 in _th_cmd_buf (ptr=0x488ef0dc) at cmd_buf/cmd_buf_pk.cpp:287
+---Type <return> to continue, or q <return> to quit---
+#13 0x2827ab1f in pthread_getprio () from /lib/libthr.so.3
+#14 0x00000000 in ?? ()
+(gdb)
+
+(gdb) thread 2
+[Switching to thread 2 (Thread 0x28501c00 (LWP 100279))]#0  0x08053979 in std::_
+Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::em
+pty (this=0x488ef100) at stl_tree.h:645
+645           { return _M_impl._M_node_count == 0; }
+(gdb) bt
+#0  0x08053979 in std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, s
+td::allocator<int> >::empty (this=0x488ef100) at stl_tree.h:645
+#1  0x080539a1 in std::set<int, std::less<int>, std::allocator<int> >::empty (
+    this=0x488ef100) at stl_set.h:262
+#2  0x0805d92e in c_cmd_buf::_recv_bc (this=0x488df000)
+    at cmd_buf/cmd_buf_pk.cpp:254
+#3  0x0805d677 in _th_cmd_buf (ptr=0x488ef0dc) at cmd_buf/cmd_buf_pk.cpp:287
+#4  0x2827ab1f in pthread_getprio () from /lib/libthr.so.3
+#5  0x00000000 in ?? ()
+(gdb)
