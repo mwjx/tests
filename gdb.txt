@@ -1,0 +1,58 @@
+ps -m -o tid,cpu,time -p 41308
+ps H -e -o pid,tid,pcpu,cmd --sort=pcpu |grep xxx
+ps -m -o tid,cpu,time -p 41308
+ps -m -o tid,cpu,time -p 41308
+
+$ ps -mT -o pid,cpu,time -p 41308
+  PID CPU      TIME
+16346  19 1920:38.66
+16394   0   2:33.12
+41308   0 5267:36.07
+16319   0   0:00.00
+37544   0   0:00.01
+37843   1   0:00.00
+
+(gdb) bt
+#0  0x284560db in kevent () from /lib/libc.so.7
+#1  0x0804cb63 in c_sock::_wait_event (this=0x28508800) at sock/sock.cpp:486
+#2  0x0804bec7 in _th_sock (ptr=0x285089f0) at sock/sock.cpp:650
+#3  0x2827ab1f in pthread_getprio () from /lib/libthr.so.3
+#4  0x00000000 in ?? ()
+(gdb) info threads
+  8 Thread 0x28501100 (LWP 100413)  0x28472353 in select ()
+   from /lib/libc.so.7
+  7 Thread 0x28501200 (LWP 100140)  0x283e032b in _umtx_op ()
+   from /lib/libc.so.7
+  6 Thread 0x28501300 (LWP 100268)  0x283e032b in _umtx_op ()
+   from /lib/libc.so.7
+  5 Thread 0x28501400 (LWP 100273)  0x283e032b in _umtx_op ()
+   from /lib/libc.so.7
+  4 Thread 0x28501500 (LWP 100294)  0x283e032b in _umtx_op ()
+   from /lib/libc.so.7
+  3 Thread 0x28501b00 (LWP 100302)  0x283e032b in _umtx_op ()
+   from /lib/libc.so.7
+  2 Thread 0x28501c00 (LWP 100308)  std::set<int, std::less<int>, std::allocator
+<int> >::clear (this=0x488ef100) at stl_set.h:397
+* 1 Thread 0x28501d00 (LWP 100309)  0x284560db in kevent ()
+   from /lib/libc.so.7
+(gdb) thread 2
+
+
+(gdb) thread 2
+[Switching to thread 2 (Thread 0x28501c00 (LWP 100308))]#0  std::set<int, std::l
+ess<int>, std::allocator<int> >::clear (this=0x488ef100) at stl_set.h:397
+397           clear()
+(gdb) bt
+#0  std::set<int, std::less<int>, std::allocator<int> >::clear (
+    this=0x488ef100) at stl_set.h:397
+#1  0x0805d747 in c_cmd_buf::init_bc (this=0x488df000)
+    at cmd_buf/cmd_buf_pk.cpp:214
+#2  0x0805d89d in c_cmd_buf::start_bc (this=0x488df000)
+    at cmd_buf/cmd_buf_pk.cpp:238
+#3  0x0805d940 in c_cmd_buf::_recv_bc (this=0x488df000)
+    at cmd_buf/cmd_buf_pk.cpp:254
+#4  0x0805d677 in _th_cmd_buf (ptr=0x488ef0dc) at cmd_buf/cmd_buf_pk.cpp:287
+#5  0x2827ab1f in pthread_getprio () from /lib/libthr.so.3
+#6  0x00000000 in ?? ()
+(gdb)
+
