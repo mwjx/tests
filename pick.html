@@ -7,54 +7,101 @@
   <meta name="Keywords" content="">
   <meta name="Description" content="">
 <script type="text/javascript">
+var m_cxkey = {"n":true,"v":true,"adj":true,"adv":true,"prep":true,"conj":true,"phr.":true,"num":true,"pron":true,"vt.":true,"n.":true,"a.":true,"ad.":true,"vi.":true,"prep.":true,"v.":true,"adj.":true,"adv.":true,"conj.":true,"num.":true,"pron.":true};
+var m_pattn=new RegExp("^[a-z]{1,5}[.]{1}");
 function pick()
 {
+//	alert(m_pattn.test("vssssd.(使)加快；促进"));
+//	return;
 	var arr = $$("txt_src").value.split("\n");
 	var len = arr.length;
 	var row,lenrow;
 	var patt1=new RegExp("^第.*册$");
-	var pattn=new RegExp("^[0-9]+$");
+	var pattn=new RegExp("^[0-9.]+$");
+//	var pattyb=new RegExp("[aa]");
+//	alert(pattyb.test("[aa]"));
+//	return;
 	var arrtbl = [];
 	var tblno = -1;
-	var cxkey = {"n":true,"v":true,"adj":true,"adv":true,"prep":true,"conj":true,"phr.":true,"num":true,"pron":true};
-	var qus,yb,cx,ans,nocx=-1,nowd=-1;
+	//var cxkey = {"n":true,"v":true,"adj":true,"adv":true,"prep":true,"conj":true,"phr.":true,"num":true,"pron":true,"vt.":true,"n.":true,"a.":true,"ad.":true,"vi.":true,"prep.":true,"v.":true,"adj.":true,"adv.":true,"conj.":true,"num.":true,"pron.":true};
+	var qus,yb,cx,ans,pos,ret,nocx=-1,nowd=-1,tmp;
 	var out = []; //[[qus,yb,cx,ans]]
 	for(var i =0;i<len;++i){
-		//glog(arr[i]);
-		row = arr[i].split(" ");
+		row = arr[i].split(/\s+/);
+		//tmp = row["	"]
 		lenrow = row.length;
-		if(2==lenrow){
-			glog("2:"+arr[i]);
-			var ret = patt1.test(row[0]);
-			if(ret){
-				arrtbl.push([]);
-				tblno = arrtbl.length-1;
-				glog("new tbl="+tblno);
-			}
+		//glog("lenrow="+lenrow+","+row.join(";"));
+		if(0==i%900){//四级分表
+			arrtbl.push([]);
+			tblno = arrtbl.length-1;
+			//glog("new tbl="+tblno);
 		}
-		continue;
+//		if(2==lenrow || 3==lenrow){
+//			//初中分表
+//			var ret = patt1.test(row[0]);
+//			if(ret){
+//				arrtbl.push([]);
+//				tblno = arrtbl.length-1;
+//				//glog("new tbl="+tblno);
+//			}
+//		}
+		//continue;
 		if(-1==tblno){continue;}
 		if(lenrow<3){continue;}
+		//glog(row[0]);
 		if(!pattn.test(row[0])){continue;} //glog("not n:"+arr[i]);
 		//glog("had n:"+arr[i]);
 		//find cx
+		//打词性
 		nocx = -1;
 		cx = "";
 		for(var j=2;j<lenrow;++j){
-			if(cxkey[row[j]]){
+			//if(cxkey[row[j]]){
+			if((ret=is_cx(row[j]))>0){
 				nocx = j;
 				cx = row[nocx];
+				if(2==ret){
+					pos = row[j].indexOf(".");
+					++pos;
+					cx = row[j].substr(0,(pos));
+					if(null==row[j+1]){
+						row[j+1] = row[j].substr((pos),(row[j].length-pos));
+						lenrow = row.length;
+					}
+					else{
+						row[j+1] = (row[j].substr((pos),(row[j].length-pos))+row[j+1]);
+					}
+				}
 				break;
 			}
 		}
-		if(-1==nocx){continue;} //glog("not cx:"+arr[i]);
 		//find yb
 		nowd = nocx;
 		yb = "";
-		if('['==row[nocx-1].substr(0,1)){
-			nowd = nocx-1;
-			yb = row[nocx-1];
+		for(var j=2;j<lenrow;++j){
+			if('['==row[j].substr(0,1)){ // && ']'==row[j].substr(-1,1)
+//			if(pattyb.test(row[j])){
+//				alert(row[j]);
+//				return;
+				nowd = j;
+				yb = row[j];
+				//if(']'!=row[j].substr(-1,1)){
+				if((row[j].length-1)!=(pos=row[j].indexOf(']'))){
+					++pos;
+					yb = row[j].substr(0,(pos));
+					if(null==row[j+1]){
+						row[j+1] = row[j].substr((pos),(row[j].length-pos));
+						lenrow = row.length;
+					}
+					else{
+						row[j+1] = (row[j].substr((pos),(row[j].length-pos))+row[j+1]);
+					}
+					//glog('aa:'+row[j+1]+",j+1="+(j+1));
+				}
+				break;
+			}
 		}
+		if(-1==nocx && ""==yb){continue;} //glog("not cx:"+arr[i]);
 		//merge
 		qus = "";
 		for(var k=1;k<nowd;++k){
@@ -62,14 +109,26 @@ function pick()
 			qus += row[k];
 		}
 		ans = "";
-		for(var k=nocx+1;k<lenrow;++k){
+		//glog("nocx="+nocx+",nowd="+nowd+",lenrow="+lenrow);
+		for(var k=((-1!=nocx)?(nocx+1):(nowd+1));k<lenrow;++k){
+			if("&"==row[k]){continue;}
 			if(""!=ans){ans += " ";}
 			ans += row[k];
 		}
+		if(-1!=ans.indexOf("&"))
+			ans = ans.replace("&","");
 		//glog("qus="+qus+",yb="+yb+",cx="+cx+",ans="+ans);
 		arrtbl[tblno].push([qus,yb,cx,ans]);
 	}
 	show(arrtbl);
+}
+function is_cx(s)
+{
+	//是否词性
+	//返回:1全匹配,2头匹配,0不匹配
+	if(m_cxkey[s]){return 1;}
+	if(m_pattn.test(s)){return 2;}
+	return 0;
 }
 function show(arrtbl)
 {
@@ -96,16 +155,17 @@ function $$(id){return document.getElementById(id);}
 
  <body>
  <textarea id="txt_src" style="width:100%;height:200px;">
-初中英语词汇表
-注：n 名词   v 动词       adj形容词
-adv 副词       prep介词  conj连词
-phr.短语      num数词   pron 代名词
-第一册 1----833
-1    what [hwɔt] pron 什么
-2    is [iz] v 是
-3    what's [hwɔts] what is 的缩写形式
-4    your [juə] pron 你的,你们的 
-第二册  834----1644
+大学英语四级词汇表
+ 
+1.	abandon vt.丢弃；放弃，抛弃 
+2.	ability n.能力；能耐，本领 
+3.	abnormal a.不正常的；变态的 
+4.	aboard ad.在船(车)上；上船 
+5.	abroad ad.(在)国外；到处 
+54.	addition [ə'diʃən] n.加，加法；附加物 
+55.	additional [ə'diʃənl] a.附加的，追加的 
+56.	address [ə'dres] n.地址；演说；谈吐 
+57.	adequate ['ædikwit] a.足够的；可以胜任的 
 
 </textarea>
  <button onclick="pick();">pick</button>
