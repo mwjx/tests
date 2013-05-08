@@ -704,3 +704,25 @@ td::allocator<int> >::empty (this=0x488ef100) at stl_tree.h:645
 #4  0x2827ab1f in pthread_getprio () from /lib/libthr.so.3
 #5  0x00000000 in ?? ()
 (gdb)
+
+(gdb) thread 2
+[Switching to thread 2 (Thread 0x28501c00 (LWP 100319))]#0  0x0804fa76 in std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_get_Node_allocator (this=0x488ef100) at stl_tree.h:358
+358           { return *static_cast<const _Node_allocator*>(&this->_M_impl); }
+(gdb) bt
+#0  0x0804fa76 in std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_get_Node_allocator (
+    this=0x488ef100) at stl_tree.h:358
+#1  0x0804fab8 in std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::get_allocator (
+    this=0x488ef100) at stl_tree.h:362
+#2  0x0805043d in std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_create_node (
+    this=0x488ef100, __x=@0x48f14b50) at stl_tree.h:378
+#3  0x08050d11 in std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_insert (this=0x488ef100, 
+    __x=0x0, __p=0x49001080, __v=@0x48f14b50) at stl_tree.h:838
+#4  0x08050f10 in std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_insert_unique (
+    this=0x488ef100, __v=@0x48f14b50) at stl_tree.h:990
+#5  0x08050f88 in std::set<int, std::less<int>, std::allocator<int> >::insert (this=0x488ef100, __x=@0x48f14b50) at stl_set.h:307
+#6  0x0806501b in c_broadcastlist::get_ul (this=0x488f0040, o=@0x488ef100) at class_broadcastlist.cpp:168
+#7  0x0805e3ce in c_cmd_buf::_recv_bc (this=0x488df000) at cmd_buf/cmd_buf_pk.cpp:253
+#8  0x0805e127 in _th_cmd_buf (ptr=0x488ef0dc) at cmd_buf/cmd_buf_pk.cpp:287
+#9  0x28292b1f in pthread_getprio () from /lib/libthr.so.3
+#10 0x00000000 in ?? ()
+(gdb) 
