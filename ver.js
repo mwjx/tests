@@ -85,7 +85,13 @@ function copyfile(to,from)
 function readfiles(path)
 {
 	//读取文件
-	return "";
+	var fso=new ActiveXObject("Scripting.FileSystemObject");
+	var file = fso.GetFile(path);
+	var ts = file.OpenAsTextStream(ForReading,TristateUseDefault);  
+	//var mynote = ts.ReadLine(); 读取一行
+	var s=ts.ReadAll(); //读取全部
+	ts.Close();
+	return s;
 }
 function get_loc(path)
 {
