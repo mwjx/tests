@@ -7,8 +7,153 @@
   <meta name="Keywords" content="">
   <meta name="Description" content="">
 <script type="text/javascript">
-var m_cxkey = {"n":true,"v":true,"adj":true,"adv":true,"prep":true,"conj":true,"phr.":true,"num":true,"pron":true,"vt.":true,"n.":true,"a.":true,"ad.":true,"vi.":true,"prep.":true,"v.":true,"adj.":true,"adv.":true,"conj.":true,"num.":true,"pron.":true};
-var m_pattn=new RegExp("^[a-z]{1,5}[.]{1}");
+var m_cxkey = {"phr.":true,"vt.":true,"n.":true,"a.":true,"ad.":true,"vi.":true,"prep.":true,"v.":true,"adj.":true,"adv.":true,"conj.":true,"num.":true,"pron.":true,"n":true,"v":true,"adj":true,"adv":true,"prep":true,"conj":true,"num":true,"pron":true};
+var m_pattn=new RegExp("^.*[a-z]{1,5}[.]{1}");
+function pickgz()
+{
+	//高中表
+	var arr = $$("txt_src").value.split("\n");
+	var len = arr.length;
+	var row,lenrow;
+	var patt1=new RegExp("^第.*册$");
+	var pattn=new RegExp("^[0-9.]+$");
+	var arrtbl = [];
+	var tblno = -1;
+	var qus,yb,cx,ans,pos,posyb,ret,nocx=-1,nowd=-1,tmp;
+	var out = []; //[[qus,yb,cx,ans]]
+	arrtbl.push([]);
+	tblno = 0;
+	for(var i =0;i<len;++i){
+		row = arr[i].split(/\s+/);
+		lenrow = row.length;
+		//glog("lenrow="+lenrow+","+row.join(";"));
+		//break;
+		//continue;
+		if(-1==tblno){continue;}
+		if(lenrow<1){continue;}
+		//find cx
+		nocx = -1;
+		cx = "";
+		for(var j=0;j<lenrow;++j){
+			if((ret=is_cx(row[j]))>0){
+				nocx = j;
+				cx = row[nocx];
+				//glog("cx:"+row[nocx]);
+				if(2==ret){
+					var tmp = get_cx(row[j]);
+					//glog("tmp:"+tmp.join("|"));
+					cx = tmp[0];
+					if(null==row[j+1]){
+						row[j+1] = tmp[1];
+						lenrow = row.length;
+					}
+					else{
+						row[j+1] = (tmp[1]+row[j+1]);
+					}
+				}
+				row[j] = "";
+				break;
+			}
+		}
+		//continue;
+		//find yb
+		nowd = nocx;
+		yb = "";
+		for(var j=0;j<lenrow;++j){
+			if(-1==(posyb=row[j].indexOf('['))){continue;}
+			if(-1==(pos=row[j].indexOf(']'))){continue;}
+			++pos;
+			nowd = (j>nowd)?j:nowd;
+			yb = row[j].substr(posyb,(pos-posyb));
+			var tmp = row[j].substr(0,posyb);
+			var tmp2 = (row[j].substr(pos,(row[j].length-pos)));
+			//glog("j="+j+",tmp="+tmp+",tmp2="+tmp2);
+			row[j] = tmp;
+			if(null==row[j+1]){
+				row[j+1] = tmp2;
+				lenrow = row.length;
+				//glog("lenrow="+lenrow);
+			}
+			else{
+				row[j+1] = (tmp2+row[j+1]);
+			}
+			//nowd = ((j>nowd)?j:nowd)+1;
+			break;
+		}
+		if(-1==nocx && ""==yb){continue;} //glog("not cx:"+arr[i]);
+		//merge
+		qus = "";
+		for(var k=0;k<=nowd;++k){
+			if(""!=qus){qus += " ";}
+			qus += row[k];
+		}
+		//glog(row.join("|"));
+		while(-1!=qus.indexOf("&")){qus = qus.replace("&","");}
+		qus = Trim(qus);
+
+		ans = "";
+		//glog("nocx="+nocx+",nowd="+nowd+",lenrow="+lenrow);
+		for(var k=(nowd+1);k<lenrow;++k){
+			if("&"==row[k]){continue;}
+			if(""!=ans){ans += " ";}
+			ans += row[k];
+		}
+		while(-1!=ans.indexOf("&")){ans = ans.replace("&","");}
+		//glog("lenrow="+lenrow+",nocx="+nocx+",nowd="+nowd+",qus="+qus+",yb="+yb+",cx="+cx+",ans="+ans);
+		arrtbl[tblno].push([qus,yb,cx,ans]);
+	}
+	show(arrtbl);
+}
+function picklj()
+{
+	//六级表
+	var arr = $$("txt_src").value.split("\n");
+	var len = arr.length;
+	var row,lenrow;
+	var patt1=new RegExp("^第.*册$");
+	var pattn=new RegExp("^[0-9.]+$");
+	var arrtbl = [];
+	var tblno = -1;
+	var qus,yb,cx,ans,pos,ret,nocx=-1,nowd=-1,tmp;
+	var out = []; //[[qus,yb,cx,ans]]
+	for(var i =0;i<len;++i){
+		row = arr[i].split("/"); 
+		lenrow = row.length;
+		//glog("lenrow="+lenrow+","+row.join(";"));
+		if(0==i%900){//四级分表
+			arrtbl.push([]);
+			tblno = arrtbl.length-1;
+			//glog("new tbl="+tblno);
+		}
+		//continue;
+		if(-1==tblno){continue;}
+		if(lenrow<3){continue;}
+		ans = Trim(row[2]);
+		//find cx
+		nocx = -1;
+		cx = "";
+		if((ret=is_cx(ans))>0){
+			cx = ans;
+			if(2==ret){
+				pos = ans.indexOf(".");
+				++pos;
+				cx = ans.substr(0,(pos));
+				ans = Trim(ans.substr((pos),(ans.length-pos)));
+			}
+		}
+		//find yb
+		yb = Trim(row[1]);
+		if(""==yb){continue;} //glog("not cx:"+arr[i]);
+		//merge
+		qus = Trim(row[0]);
+		//&
+		while(-1!=ans.indexOf("&")){
+			ans = ans.replace("&","");}
+		//glog("qus="+qus+",yb="+yb+",cx="+cx+",ans="+ans);
+		arrtbl[tblno].push([qus,yb,cx,ans]);
+	}
+	show(arrtbl);
+}
 function pick()
 {
 //	alert(m_pattn.test("vssssd.(使)加快；促进"));
@@ -27,7 +172,7 @@ function pick()
 	var qus,yb,cx,ans,pos,ret,nocx=-1,nowd=-1,tmp;
 	var out = []; //[[qus,yb,cx,ans]]
 	for(var i =0;i<len;++i){
-		row = arr[i].split(/\s+/);
+		row = arr[i].split(/\s+/); //四级表
 		//tmp = row["	"]
 		lenrow = row.length;
 		//glog("lenrow="+lenrow+","+row.join(";"));
@@ -122,12 +267,35 @@ function pick()
 	}
 	show(arrtbl);
 }
+function get_cx(s)
+{
+	//取词性
+	//参数:包含词性的字符串
+	//返回:[cx,去cx的原字符串]
+	var pos,cx="",tmp="";
+	for(var k in m_cxkey){
+		if(-1==(pos=s.indexOf(k))){continue;}
+		cx = s.substr(pos,k.length);
+		tmp = s.substr(0,pos);
+		pos += k.length;
+		tmp += (s.substr(pos,(s.length-pos)));
+		break;
+	}
+	return [cx,tmp];
+//	pos = row[j].indexOf(".");
+//	++pos;
+//	cx = row[j].substr(0,(pos));
+
+}
 function is_cx(s)
 {
 	//是否词性
 	//返回:1全匹配,2头匹配,0不匹配
+	//glog("is_cx:"+s);
 	if(m_cxkey[s]){return 1;}
+	//glog("aa");
 	if(m_pattn.test(s)){return 2;}
+	//glog("bb");
 	return 0;
 }
 function show(arrtbl)
@@ -146,28 +314,47 @@ function show(arrtbl)
 }
 window.onload = function()
 {
-	pick();
+	//pick();
+	//picklj();
+	pickgz();
 }
 function glog(s){console.log(s);}
 function $$(id){return document.getElementById(id);}
+//此处为独立函数
+function LTrim(str)
+{
+    var i;
+    for(i=0;i<str.length;i++)
+    {
+        if(str.charAt(i)!=" "&&str.charAt(i)!=" ")break;
+    }
+    str=str.substring(i,str.length);
+    return str;
+}
+function RTrim(str)
+{
+    var i;
+    for(i=str.length-1;i>=0;i--)
+    {
+        if(str.charAt(i)!=" "&&str.charAt(i)!=" ")break;
+    }
+    str=str.substring(0,i+1);
+    return str;
+}
+function Trim(str)
+{
+    return LTrim(RTrim(str));
+}
 </script>
  </head>
 
- <body>
- <textarea id="txt_src" style="width:100%;height:200px;">
-大学英语四级词汇表
- 
-1.	abandon vt.丢弃；放弃，抛弃 
-2.	ability n.能力；能耐，本领 
-3.	abnormal a.不正常的；变态的 
-4.	aboard ad.在船(车)上；上船 
-5.	abroad ad.(在)国外；到处 
-54.	addition [ə'diʃən] n.加，加法；附加物 
-55.	additional [ə'diʃənl] a.附加的，追加的 
-56.	address [ə'dres] n.地址；演说；谈吐 
-57.	adequate ['ædikwit] a.足够的；可以胜任的 
+<body>
+<textarea id="txt_src" style="width:100%;height:200px;">
+高三全一册
+UNIT1
+beard[biəd]n.（下巴上的）胡须；络腮胡子
 
 </textarea>
- <button onclick="pick();">pick</button>
+ <button onclick="pickgz();">pick</button>
  </body>
 </html>
