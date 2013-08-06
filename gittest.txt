@@ -19,3 +19,4 @@ scp mwjx@mwjx.vicp.net:/Users/mwjx/en.*  ./
 git config --global user.email "liang0735@gmail.com"
 git config --global user.name "mwjx"
 
+tests
