@@ -64,10 +64,14 @@
 //安装cvs,15:00
 //qq程序员,16:00
 //工作机环境
+//git空项目
 测试全部逻辑
 编译框架
 整理框架提交
-git空项目
+编译完整版,17:00
+
+
+C:\Program Files (x86)\NetworkSimplicity\ssh;D:\tools\NetworkSimplicity\ssh;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Dev-Cpp\bin;D:\tools\scrt\;D:\tools\NetworkSimplicity\ssh
 
 
 老高  13:50:28
