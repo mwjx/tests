@@ -20,3 +20,18 @@ git config --global user.email "liang0735@gmail.com"
 git config --global user.name "mwjx"
 
 tests
+
+Create a new repository on the command line
+
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/mwjx/ye.git
+git push -u origin master
+
+
+Push an existing repository from the command line
+
+git remote add origin https://github.com/mwjx/ye.git
+git push -u origin master
