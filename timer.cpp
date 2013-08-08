@@ -71,16 +71,10 @@
 编译完整版,17:00
 
 
-ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAxgwlQ5E1sLJwjjOiP4yMJYuqcxkx+TBpoITBgvfzxjddT8oZJhR5YoDrkObFhZJRFKGeyGGyur2usrODzdpACigOdXw90WpKW8R/+9iM5fzdXzPUdfDaN25fETTqJXqJ/a3MSxT+5Ez29lFMOwTqIIQikIOyIiTQ3CgeY10m0Kejt0uQso66D0LqVYZNNTYy62JlB4/XUgl/eppZn6aUMOFfz0oZr6SxaUrUiW5t5Z1tiqn36TSmMFfQbbgqdX5dcO0G+jEuIEcp08Y6LhobvLcKTP5fpk2qIaZPFLOlLaAjTcJJj/mW15S3UvqkTLHJeFklp0/w34yrcymbm3joow== Administrator@23AHN
-
-
-C:\Program Files (x86)\NetworkSimplicity\ssh;D:\tools\NetworkSimplicity\ssh;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\tools\Dev-Cpp\bin;D:\tools\scrt\;D:\tools\NetworkSimplicity\ssh
 
 
 
-note
-E:\shell;D:\tools\mtasc;D:\tools\flex4sdk\bin;D:\tools\Dev-Cpp\pthread\Pre-built.2\lib
-d:\tools\NetworkSimplicity\ssh;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\.ssh;C:\Program Files\CVSNT;D:\tools\mysql\bin;D:\tools\Dev-Cpp\bin;D:\tools\unxtools\usr\local\wbin;D:\tools\svn\bin;D:\tools\Dev-Cpp\pthread\Pre-built.2\lib
+
 老高  13:50:28
  279323376
 
