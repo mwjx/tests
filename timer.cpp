@@ -71,7 +71,10 @@
 ±‡“ÎÕÍ’˚∞Ê,17:00
 
 
-C:\Program Files (x86)\NetworkSimplicity\ssh;D:\tools\NetworkSimplicity\ssh;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Dev-Cpp\bin;D:\tools\scrt\;D:\tools\NetworkSimplicity\ssh
+ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAxgwlQ5E1sLJwjjOiP4yMJYuqcxkx+TBpoITBgvfzxjddT8oZJhR5YoDrkObFhZJRFKGeyGGyur2usrODzdpACigOdXw90WpKW8R/+9iM5fzdXzPUdfDaN25fETTqJXqJ/a3MSxT+5Ez29lFMOwTqIIQikIOyIiTQ3CgeY10m0Kejt0uQso66D0LqVYZNNTYy62JlB4/XUgl/eppZn6aUMOFfz0oZr6SxaUrUiW5t5Z1tiqn36TSmMFfQbbgqdX5dcO0G+jEuIEcp08Y6LhobvLcKTP5fpk2qIaZPFLOlLaAjTcJJj/mW15S3UvqkTLHJeFklp0/w34yrcymbm3joow== Administrator@23AHN
+
+
+C:\Program Files (x86)\NetworkSimplicity\ssh;D:\tools\NetworkSimplicity\ssh;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\tools\Dev-Cpp\bin;D:\tools\scrt\;D:\tools\NetworkSimplicity\ssh
 
 
 
