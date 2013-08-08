@@ -68,8 +68,8 @@
 //老高  13:50:28
 // 279323376
 //编译完整版,17:00
-测试全部逻辑
-运行排错,17:30
+//运行排错,17:30
+//测试全部逻辑,18:00
 
 
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame" -d zs_ye fc_server2
@@ -78,11 +78,12 @@ cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame" dqs
 
 
 五,2013-08-09
+//openssh排错
 内网服务器环境安装
-openssh排错
 编译框架
 整理框架提交
-
+cvs使用ssh
+战斗列表值乱码
 
 
 2013-09
@@ -100,3 +101,8 @@ IP Address. . . . . . . . . . . . : 192.168.16.174
 MDEF["port"] = 8091;
 
 包格式:包头(1),父命令(1),子命令(2),包长(4),包体
+
+
+
+
+
