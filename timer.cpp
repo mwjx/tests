@@ -74,6 +74,10 @@
 C:\Program Files (x86)\NetworkSimplicity\ssh;D:\tools\NetworkSimplicity\ssh;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Dev-Cpp\bin;D:\tools\scrt\;D:\tools\NetworkSimplicity\ssh
 
 
+
+note
+E:\shell;D:\tools\mtasc;D:\tools\flex4sdk\bin;D:\tools\Dev-Cpp\pthread\Pre-built.2\lib
+d:\tools\NetworkSimplicity\ssh;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\.ssh;C:\Program Files\CVSNT;D:\tools\mysql\bin;D:\tools\Dev-Cpp\bin;D:\tools\unxtools\usr\local\wbin;D:\tools\svn\bin;D:\tools\Dev-Cpp\pthread\Pre-built.2\lib
 ¿œ∏ﬂ  13:50:28
  279323376
 
