@@ -65,11 +65,11 @@
 //qq程序员,16:00
 //工作机环境
 //git空项目
+//老高  13:50:28
+// 279323376
+//编译完整版,17:00
 测试全部逻辑
-编译框架
-整理框架提交
-编译完整版,17:00
-
+运行排错,17:30
 
 
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame" -d zs_ye fc_server2
@@ -77,12 +77,11 @@ cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame" commu
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame" dqs
 
 
-老高  13:50:28
- 279323376
-
 五,2013-08-09
 内网服务器环境安装
 openssh排错
+编译框架
+整理框架提交
 
 
 
