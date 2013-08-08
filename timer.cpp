@@ -72,7 +72,9 @@
 
 
 
-
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame" -d zs_ye fc_server2
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame" commu
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame" dqs
 
 
 ¿œ∏ﬂ  13:50:28
