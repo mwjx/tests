@@ -72,23 +72,39 @@
 //测试全部逻辑,18:00
 
 
-cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame" -d zs_ye fc_server2
-cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame" commu
-cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame" dqs
-
 
 五,2013-08-09
 //openssh排错
-内网服务器环境安装
-编译框架
-整理框架提交
-cvs使用ssh
+//当日计划,10:15
+//cvs使用ssh,11:00
+//去注释，关页面,11:15
+//check代码,11:45
+//改include,13:30
+//编译运行框架,14:00
 战斗列表值乱码
+内网服务器环境安装
+整理框架提交,15:30
+
+
+
+一,2013-08-12
+二,2013-08-13
+三,2013-08-14
+四,2013-08-15
+五,2013-08-16
+git-cmd整合
 
 
 2013-09
 record服务器
 login/dispatch服务器
+
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame" -d zs_ye fc_server2
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame" commu
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame" -d kp dqs 
+
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout tt
+
 
 
 
