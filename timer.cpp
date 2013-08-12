@@ -89,18 +89,45 @@
 
 
 一,2013-08-12
-内网服务器环境安装,gcc,mysql
-安装操作系统
+//今日计划,10:15
+//通讯服视图,11:00
+//旧有客户端测试,11:30
+//去无用注释SOCK,12:00
+//收发代码整理
+//ws
+//usersock
+//cals
+//sockls
+//bufio
+//cmd_buf_pk改cmd_buf,13:30
+//客户端空项目,14:00
+//客户端框架,14:30
+//开会,16:00
+//去逻辑服,17:15
+//去广播器,17:30
+//commu库,17:30
+//逻辑服接口,18:00
+//通讯分支,18:30
+
+
 
 
 二,2013-08-13
+安装操作系统
+内网服务器环境安装,gcc,mysql
+分离通讯服
+广播器接口
+模拟客户端
+
 
 三,2013-08-14
+分离逻辑服
 
 四,2013-08-15
+战斗列表值乱码
 
 五,2013-08-16
-战斗列表值乱码
+动态缓冲区
 
 
 2013-09
@@ -113,7 +140,11 @@ cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame" -d kp dqs
 
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout tt
 
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot import -m "" zc_ye zll yegame start
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout zc_ye
 
+cvs tag -b "yesgame_commu"
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame_commu" commu
 
 
 注册登录请求:
