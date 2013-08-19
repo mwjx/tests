@@ -20,7 +20,7 @@ function tests()
 {
 	var id = 8003;
 	var cmd = get_cmd(id);
-	cmd.shell = "$mlogin 8566386";
+	cmd.shell = "$mlogin 123456";
 	var str = pack(cmd);
 	g_send(str);
 }

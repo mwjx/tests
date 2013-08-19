@@ -174,15 +174,25 @@
 
 
 一,2013-08-19
+//今日计划,10:30
+//if框架,10:50
+//login框架,11:20
+//rom框架,11:50
+//rom安装,13:30
+//全流程指令,14:00
+//分离逻辑服,14:30
+//安装apache
+//apache环境,15:00
+//配置调试apache
+//客户端空项目,15:30
+包通讯
 s装包
 s解包
-c装包
 c解包
-外网服务器环境安装,mysql,gcc
-内网服务器环境安装,gcc,mysql
-分离逻辑服
-rom安装
-rom框架
+c装包,16:30
+环境
+
+
 
 二,2013-08-20
 定义数据表
@@ -191,10 +201,12 @@ rom框架
 定义英雄表
 
 三,2013-08-21
-日志多线程
+外网服务器环境安装,mysql,gcc
+内网服务器环境安装,gcc,mysql
 
 四,2013-08-22
 断言生产版
+日志多线程
 
 五,2013-08-23
 定时器线程安全
@@ -221,6 +233,7 @@ cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout zc_ye
 
 cvs tag -b "yesgame_commu"
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame_commu" commu
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "fc_ye" -d fc_ye xfc
 
 
 注册登录请求:
@@ -250,6 +263,7 @@ MDEF["port"] = 8091;
 你安装系统时只配置电信ip，配置好之后再配置联通ip，联通网关默认不用配置
 202.96.128.166
 202.96.128.86
+
 
 
 
