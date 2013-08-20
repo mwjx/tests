@@ -188,23 +188,37 @@
 //c装包环境,15:40
 //c装包,17:00
 //c解包,18:00
-通讯测试,18:30
+//通讯测试,18:30
 
 
 二,2013-08-20
-定义数据表
-定义技能表
-定义buff表
-定义英雄表
+//今日计划,10:30
+//组装服务器流程,11:00
+//mysql库,11:55
+//全部测试流程,14:30
+//登录,14:00
+//新版服务器,15:00
 兼容包
-包通讯
 s解包
 s装包
+包通讯
+开会,17:00
 
+$mlogin 123456
+14+5=19
++2=21
++1=22
+<cross-domain-policy><allow-access-from domain="*" to-ports="8091"/></cross-domain-policy>
+<policy-file-request/>
 
 三,2013-08-21
 外网服务器环境安装,mysql,gcc
 内网服务器环境安装,gcc,mysql
+定义数据表
+定义技能表
+定义buff表
+定义英雄表
+
 
 四,2013-08-22
 断言生产版
@@ -236,6 +250,9 @@ cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout zc_ye
 cvs tag -b "yesgame_commu"
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame_commu" commu
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "fc_ye" -d fc_ye xfc
+
+cvs tag -b "zs_ye2"
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "zs_ye2" -d zs_ye2 zc_ye
 
 
 注册登录请求:
