@@ -198,35 +198,39 @@
 //全部测试流程,14:30
 //登录,14:00
 //新版服务器,15:00
-兼容包
-s解包
-s装包
-包通讯
-开会,17:00
+//开会,18:00
 
-$mlogin 123456
-14+5=19
-+2=21
-+1=22
-<cross-domain-policy><allow-access-from domain="*" to-ports="8091"/></cross-domain-policy>
-<policy-file-request/>
 
 三,2013-08-21
-外网服务器环境安装,mysql,gcc
+//今日计划,10:30
+//环境,10:45
+//s装包,13:30
+//导cvs库,15:00
+//开会,18:00
+//导zlla库,15:30
+//下载mysql,16:00
+//sshkey,17:30
+//安装mysql,16:30
+//测试mysql,17:00
+//建表,18:00
 内网服务器环境安装,gcc,mysql
+兼容包
+包通讯
+s解包
+编译运行sql,18:30
+
+四,2013-08-22
 定义数据表
 定义技能表
 定义buff表
 定义英雄表
 
-
-四,2013-08-22
+五,2013-08-23
 断言生产版
 日志多线程
-
-五,2013-08-23
 定时器线程安全
 动态缓冲区
+外网服务器环境安装,mysql,gcc
 
 
 
@@ -237,6 +241,38 @@ $mlogin 123456
 2013-09
 record服务器
 login/dispatch服务器
+
+/usr/local/mysql/bin/mysqld_safe --user=mysql --datadir=/usr/local/mysql/var
+
+ssh mwjx@192.168.16.166
+
+/usr/local/mysql/bin/mysqld_safe --user=mysql &
+
+/usr/local/mysql/share/mysql/mysql.server start
+
+/usr/local/share/mysql/mysql.server start
+/usr/local/share/mysql/mysql.server -user=root start
+cp /usr/local/share/mysql/my-medium.cnf /etc/my.cnf
+
+scp mwjx@192.168.16.166:/usr/home/mwjx/src/.err ./
+scp mwjx@fish838.com:/usr/www/mysql-5.0.51.tar.gz ./
+scp mysql-5.0.51.tar.gz mwjx@192.168.16.166:/usr/home/mwjx/data/mysql-5.0.51.tar.gz
+
+scp mwjx@192.168.16.166:/usr/home/mwjx/data/mysql-5.0.51/INSTALL-SOURCE ./
+
+
+./configure --prefix=/usr/local/mysql --with-extra-charsets=complex --enable-thread-safe-client --enable-local-infile --enable-assembler --with-named-z-libs=not-used --disable-shared
+
+Starting MySQL... ERROR! The server quit without updating PID file (/var/db/mysql/.pid).
+
+
+$mlogin 123456
+14+5=19
++2=21
++1=22
+<cross-domain-policy><allow-access-from domain="*" to-ports="8091"/></cross-domain-policy>
+<policy-file-request/>
+
 
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame" -d zs_ye fc_server2
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame" commu
@@ -253,6 +289,22 @@ cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "fc_ye" -d fc_ye xfc
 
 cvs tag -b "zs_ye2"
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "zs_ye2" -d zs_ye2 zc_ye
+
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot export -r "zs_ye2" -d zs_ye2 zc_ye
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot export -r "yesgame_commu" commu
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot export zlla
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout zlla
+
+
+
+cvs -d mwjx@192.168.16.166:/usr/home/mwjx/cvsroot import -m "zs_ye3" zs_ye3 zll yegame start
+cvs -d /usr/home/mwjx/cvsroot init
+cvs -d /usr/home/mwjx/cvsroot import -m "zs_ye3" zs_ye3 zll yegame start
+cvs -d mwjx@192.168.16.166:/usr/home/mwjx/cvsroot checkout zs_ye3
+cvs -d /usr/home/mwjx/cvsroot import -m "zlla" zlla zll yegame start
+cvs -d mwjx@192.168.16.166:/usr/home/mwjx/cvsroot checkout zlla
+cvs -d mwjx@192.168.16.166:/usr/home/mwjx/cvsroot checkout -d CVSROOT_166 CVSROOT
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -d CVSROOT_838 CVSROOT
 
 
 注册登录请求:
