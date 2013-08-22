@@ -217,38 +217,64 @@
 //内网服务器环境安装,gcc,mysql
 
 四,2013-08-22
-兼容包
-包通讯
-s解包
-内网编译环境搭建
+//今日计划,10:30
+//装gmake,11:00
+//commu排错,12:00
+//主目录排错,13:30
+//make排错,14:00
+//lg排错,11:30
+//.环境,15:00
+//内网编译环境搭建,15:30
+//mysql连接,14:30
+//客户端配置,16:00
+//粘包处理,16:00
+//粘包提交,16:30
+//战斗表排错,17:00
+包通讯,19:00
+s解包,18:00
+
 
 
 五,2013-08-23
-外网服务器环境安装,mysql,gcc
-断言生产版
-日志多线程
-定时器线程安全
-动态缓冲区
+mysql自启动
+定义改enum
+兼容包
+commu库独立
+get_rche兼容ws
+ye3端口配置
+
+一,2013-08-26
 定义数据表
 定义技能表
 定义buff表
 定义英雄表
 
+二,2013-08-27
+三,2013-08-28
+定时器线程安全
+动态缓冲区
 
+四,2013-08-29
+外网服务器环境安装,mysql,gcc
+断言生产版
+日志多线程
 
 五,2013-08-30
 框架环境(通讯服整理,内外网环境,内外网调试,网页版通讯包)
 逻辑服(配对模块,战斗模块)
 商店,排行榜,注册登录
+
 2013-09
 record服务器
 login/dispatch服务器
+
+/usr/local/mysql/bin/mysqld_safe --user=mysql &
 
 /usr/local/mysql/bin/mysqld_safe --user=mysql --datadir=/usr/local/mysql/var
 
 ssh mwjx@192.168.16.166
 
-/usr/local/mysql/bin/mysqld_safe --user=mysql &
+
 
 /usr/local/mysql/share/mysql/mysql.server start
 
