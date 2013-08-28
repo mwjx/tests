@@ -263,24 +263,38 @@
 //tinyxml,18:00
 //装载指令定义表,19:00
 //去注释关页面,19:30
-全自动备份脚本,20:00
-ye3
+//全自动备份脚本,20:00
+//ye3
 
 二,2013-08-27
-commu库独立
-get_rche兼容ws
-mysql自启动
-复杂指令
-转换全部包
+//今日计划,10:30
+//转换全部包,11:30
+//取房，提交
+//客户端取房按钮,13:30
+//客户端处理指令机制,14:30
+//mysql自启动,15:00
+//去注释关页面,15:30
+//开会,15:00-17:10
+//装载cmd.xml,18:00
+//server重读新格式cmd.xml,19:00
+//登录
+//定义信号,发出信号,订阅信号,处理信号,
+//取房,20:00
+//s处理,c响应
 
 三,2013-08-28
-定时器线程安全
-动态缓冲区
+//登录前装载cmd.xml
 定义数据表
 定义技能表
 定义buff表
 定义英雄表
 定义改enum
+get_rche兼容ws
+复杂指令
+提交
+存取数据模块
+服务器联调
+id禁用
 
 
 四,2013-08-29
@@ -292,6 +306,9 @@ mysql自启动
 框架环境(通讯服整理,内外网环境,内外网调试,网页版通讯包)
 逻辑服(配对模块,战斗模块)
 商店,排行榜,注册登录
+定时器线程安全
+动态缓冲区
+commu库独立
 
 2013-09
 record服务器
@@ -343,6 +360,7 @@ cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout zc_ye
 cvs tag -b "yesgame_commu"
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame_commu" commu
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "fc_ye" -d fc_ye xfc
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "en" -d en xfc
 
 cvs tag -b "zs_ye2"
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "zs_ye2" -d zs_ye2 zc_ye
