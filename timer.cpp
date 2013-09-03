@@ -386,36 +386,65 @@
 //s.处理购买
 //存储晶核数量
 //购装备,14:30(18:00)
-定义数据表,18:00
-定义技能表,17:45
-定义buff表,17:30
-定义英雄表,17:15
-房间结束后机器人放回,17:00
-房间结束去关联,uid=>room,16:30
-战斗框架,16:00
-c.界面隐藏
+//今日计划,10:30
+//显隐按钮
+//登录成功后对战钮
+//显隐面板
+//房间成功后英雄钮
+//宝石成功后三消钮
+//三消成功后装备钮
+//c.界面隐藏,12:00
+//换阶段
+//倒计时计数
+//双方装备成功开战
+//运行计算广播
+//旧代码
+//实验dequeue,14:00
+//出牌器,14:30
+//buff管理,15:00
+//值管理,15:30
+//输出事件表
+//是否能战斗
+//设置攻击方,15:30
+//初始增益技能,15:45
+//循环攻击开始,15:50
+//战斗框架,16:00
+//房间结束去关联,uid=>room,16:30
+//房间结束后机器人放回,17:00
+//定义英雄表,17:15
+//定义buff表,17:30
+//定义技能表,17:45
+//定义数据表,18:00
 
 
 三,2013-09-04
+//所有技能分析,17:30
+//技能表细节,18:00
 下发序列
 下发结果
 购买道具
 购买英雄
 装备表
 道具表
+s.提交技能使用
+s.提交技能保存
+s.房间结束清空房间数据,去用户ID
+s.结算
+s.结果
+buff表细节
 
 四,2013-09-05
 战斗模块完善
 使用道具
 
 五,2013-09-06
-断言生产版
-日志多线程
 json2ye
 ye2json
 s.机器人英雄配置
 s.装载装备表
 s.购买后加装备
+s.无限循环战斗处理
+s.装备的作用
 
 2013-09
 商店,排行榜,注册登录
@@ -427,6 +456,9 @@ login/dispatch服务器
 定时器线程安全
 动态缓冲区
 commu库独立
+断言生产版
+日志多线程
+
 
 
 /usr/local/mysql/bin/mysqld_safe --user=mysql &
@@ -462,6 +494,9 @@ $mlogin 123456
 <cross-domain-policy><allow-access-from domain="*" to-ports="8091"/></cross-domain-policy>
 <policy-file-request/>
 
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout zs_gz2
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout dqs
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "fc_kp" -d fc_kp dqs
 
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame" -d zs_ye fc_server2
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame" commu
