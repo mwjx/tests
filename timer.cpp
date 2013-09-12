@@ -578,28 +578,32 @@
 //下载安装firefox
 //选英雄无返回,18:00
 //显示提交按钮,18:30
-选英雄联调
-买英雄联调
-取我的英雄表
-c.重复进房
-s.重复进房
-s.重复登录
-s.装载装备表
-s.机器人英雄配置
-s.机器人默认血攻
-bug,只有一个普通攻击
-响应买装备
-err:roommg/roommg.cpp,789,不是买装备阶段
-err:roommg/roommg.cpp,830,room=0,不是提交三消阶段
+//今日计划,10:30
+//响应买装备,12:00
+//bug,只有一个普通攻击,14:30
+//选英雄联调,16:00
+//生成宝石联调
+//读配置文件 
+//s.机器人英雄配置,15:30
+//读配置技能,16:30
+//取配置值,17:00
+//s.机器人默认血攻
+//err:roommg/roommg.cpp,789,不是买装备阶段
+//err:roommg/roommg.cpp,830,room=0,不是提交三消阶段
+//s.重复登录
+//s.重复进房
+//c.重复进房
+//读配置文件
+//s.装载装备表,18:00
+//取配置值
 
 
 五,2013-09-13
-生成宝石联调
+//svn文档
+买英雄联调
 买道具联调
-s.无限循环战斗处理
 s.购买后加装备
 s.装备的作用
-
 
 
 2013-09
@@ -614,10 +618,11 @@ login/dispatch服务器
 commu库独立
 断言生产版
 日志多线程
-s.任一人提交三消,房间进入装备阶段
 s.广播事件死机
+s.任一人提交三消,房间进入装备阶段
 s.提交的非英雄技能不通过
 使用道具
+s.无限循环战斗处理
 
 
 /usr/local/mysql/bin/mysqld_safe --user=mysql &
@@ -742,3 +747,9 @@ sshd_enable="YES"
 moused_enable="YES"
 # Set dumpdev to "AUTO" to enable crash dumps, "NO" to disable
 dumpdev="AUTO"
+
+phonegap create hello com.example.hello HelloWorld
+phonegap create my-app com.example.myapp myapp
+phonegap local build ios
+phonegap local build android
+phonegap build android
