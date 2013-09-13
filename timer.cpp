@@ -600,11 +600,43 @@
 
 五,2013-09-13
 //svn文档
-买英雄联调
-买道具联调
-s.购买后加装备
-s.装备的作用
+//今日计划,10:30
+//看策划文档,11:00
+//整理服务端文档,12:00
+//s.购买后加装备,14:00
+//配置操作
+//配置buff
+//读取配置文件
+//产生buff
+//取得配置项
+//s.装备的作用,15:00
+//buff效果，操作
+//操作表
+//动作表
+//phonegap环境,16:30
+//实现操作,17:30
+//买英雄联调,18:00
+//买道具联调
+//提交三消联调
 
+
+一,2013-09-16
+战斗沟通
+全部buff
+全部技能
+全部操作
+
+二,2013-09-17
+战斗联调
+s.任一人提交三消,房间进入装备阶段
+s.提交的非英雄技能不通过
+
+三,2013-09-18
+战斗排查
+使用道具
+
+日,2013-09-22
+全部流程检查
 
 2013-09
 商店,排行榜,注册登录
@@ -619,9 +651,6 @@ commu库独立
 断言生产版
 日志多线程
 s.广播事件死机
-s.任一人提交三消,房间进入装备阶段
-s.提交的非英雄技能不通过
-使用道具
 s.无限循环战斗处理
 
 
@@ -753,3 +782,14 @@ phonegap create my-app com.example.myapp myapp
 phonegap local build ios
 phonegap local build android
 phonegap build android
+
+C:\Program Files (x86)\CVSNT\;C:\msysgit\msysgit\bin;C:\msysgit\msysgit\mingw\bin;C:\msysgit\msysgit\cmd;C:\msysgit\msysgit\mingw\libexec\gcc\mingw32\4.4.0;D:\tools\mysql\lib\tmp;E:\shell;C:\Users\Administrator\AppData\Roaming\npm
+
+.;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\scrt\;C:\PROGRA~2\SecureFX;C:\Program Files\nodejs\;D:\tools\android-sdk-windows\tools;C:\Program Files\TortoiseSVN\bin;%JAVA_HOME%\bin
+
+JAVA_HOME=C:\Program Files (x86)\Java\jdk1.6.0_10
+CLASSPATH=.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;D:\tools\android-sdk-windows\tools\lib
+Path=.;%JAVA_HOME%\bin
+
+javac HelloWorld.java  
+java HelloWorld  
