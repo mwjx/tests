@@ -621,15 +621,29 @@
 
 
 一,2013-09-16
-战斗沟通
-全部buff
-全部技能
-全部操作
+//今日计划,10:30
+//开会,12:00
+//开会,17:30
+//全部操作,18:00
+//战斗沟通
+//全部buff
+//全部技能
+//动作技能
+//配置buff
+//配置技能
+
 
 二,2013-09-17
 战斗联调
 s.任一人提交三消,房间进入装备阶段
 s.提交的非英雄技能不通过
+战斗沟通
+全部buff
+全部技能
+动作技能
+配置buff
+配置技能
+
 
 三,2013-09-18
 战斗排查
@@ -712,6 +726,8 @@ cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot export -r "zs_ye2" -d zs_ye2 zc_y
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot export -r "yesgame_commu" commu
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot export zlla
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout zlla
+
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "fc_ds" -d fc_ds fc_client
 
 
 
