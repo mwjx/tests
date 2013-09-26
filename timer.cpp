@@ -786,20 +786,43 @@
 
 
 四,2013-09-26
-s.任一人提交三消,房间进入装备阶段
-s.提交的非英雄技能不通过
-提交三消
-c.表演
-特效
-攻击
-移动
-cli.我方加普攻次数
-cli.敌我持续技能完成
-s.限制每边一个触发技能
-乱码排查
+//今日计划,10:30
+//全部普攻检查,11:00
+//乱码排查,13:30
+//乱码排查2,15:00
+//s.转义字符,16:30
+//提交三消
+//s.登录关联,17:00
+//cli.我方加普攻次数,17:30
+//cli.敌我持续技能完成
+//删除实验,17:45
+//s.限制每边一个触发技能,18:00
+//写输入框
+//model框架
+//取旧值
+//ctrl框架
+//界面完成通知
+//订阅处理通知
+//按钮事件通知
+//xef功能,bind,18:30
+//更新值
+//订阅处理通知
+//攻击
+//c.表演
+//特效
+//移动
+
 
 五,2013-09-27
+xef,in
+s.任一人提交三消,房间进入装备阶段
+s.提交的非英雄技能不通过
 战斗
+提交三消
+提交三消新格式
+c.表演
+特效
+移动
 
 
 日,2013-09-29
@@ -878,6 +901,7 @@ cvs tag -b "yesgame_commu"
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "yesgame_commu" commu
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "fc_ye" -d fc_ye xfc
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "en" -d en xfc
+cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "xef" -d xef xfc
 
 cvs tag -b "zs_ye2"
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -r "zs_ye2" -d zs_ye2 zc_ye
