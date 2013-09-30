@@ -851,17 +851,41 @@
 
 一,2013-09-30
 //触发限制,敌我各一次
-s.任一人提交三消,房间进入装备阶段
-参数最大值
-使用道具
-战斗buff表
-战斗联调
-组装播放
+//今日计划,10:30
+//播放环境
+//缺省值,14:00
+//人物地图安装,11:30
+//组装播放,15:00
+//conf_obj排错,16:30
+//组装播放,16:45
+//战斗联调
+//战斗双方信息填充,17:00
+//外网服务器安装,18:00
+//重复使用地图
+//闪避
+//火球技能,18:30
 
 
 二,2013-10-08
+外网环境
+mysql安装
+数据表导入
+程序安装
+战斗双方信息填充2
+重复使用地图
+闪避
+火球技能
+火球消失
+
 三,2013-10-09
+使用道具
+战斗buff表
+普攻移动
+
 四,2013-10-10
+s.任一人提交三消,房间进入装备阶段
+参数最大值
+
 五,2013-10-11
 
 2013-09
@@ -896,6 +920,12 @@ ssh mwjx@192.168.16.166
 /usr/local/share/mysql/mysql.server start
 /usr/local/share/mysql/mysql.server -user=root start
 cp /usr/local/share/mysql/my-medium.cnf /etc/my.cnf
+
+外网
+/usr/local/share/mysql 
+#cd /opt/mysql
+#scripts/mysql_install_db --user=mysql 
+scripts/mysql_install_db --user=mysql --datadir=/u01/mysql/data
 
 scp mwjx@192.168.16.166:/usr/home/mwjx/src/.err ./
 scp mwjx@fish838.com:/usr/www/mysql-5.0.51.tar.gz ./
