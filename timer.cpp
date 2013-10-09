@@ -867,28 +867,63 @@
 
 
 二,2013-10-08
-外网环境
-mysql安装
-数据表导入
-程序安装
-战斗双方信息填充2
-重复使用地图
+//mysql安装
+//数据表导入
+//程序安装
+//外网环境
+//今日计划,10:30
+//外网编译排错,11:00
+//会议,12:00
+//外网编译排错,tt,14:00
+//zlla库,16:30
+//ssh配置,16:45
+//会议,16:50
+//zs_ye3库,17:15
+//zs_ye3排错,17:55
+//内网zs_ye3
+
+
+
+三,2013-10-09
+//今日计划,10:30
+//zs_ye3排错,12:00
+//c/s时钟对齐,14:00
+//网络驱动
+//配对房间对手信息,15:00
+//宝石格式,16:00
+//英雄信息,17:00
+对表,19:30
+
+四,2013-10-10
+宝石,英雄信息联调
+s.任一人提交三消,房间进入装备阶段
+参数最大值
+s.初始血攻晶核等级
+
+
+五,2013-10-11
+提交结果及装备
 闪避
 火球技能
 火球消失
 
-三,2013-10-09
+
+
+六,2013-10-12
+战斗联调
+重复使用地图
+
+
+一,2013-10-14
 使用道具
 战斗buff表
 普攻移动
+战斗双方信息填充2
+外网服务
+外网zs_ye3
+外网b64库
 
-四,2013-10-10
-s.任一人提交三消,房间进入装备阶段
-参数最大值
-
-五,2013-10-11
-
-2013-09
+2013-10
 商店,排行榜,注册登录
 record服务器
 login/dispatch服务器
@@ -905,6 +940,9 @@ s.无限循环战斗处理
 服务器长连接,errno=2006,error:MySQL server has gone away
 c.战斗消息死机
 幽灵船
+s.连胜数
+s.排名
+s.机器人延迟选英雄
 
 
 /usr/local/mysql/bin/mysqld_safe --user=mysql &
@@ -985,6 +1023,21 @@ cvs -d /usr/home/mwjx/cvsroot import -m "zlla" zlla zll yegame start
 cvs -d mwjx@192.168.16.166:/usr/home/mwjx/cvsroot checkout zlla
 cvs -d mwjx@192.168.16.166:/usr/home/mwjx/cvsroot checkout -d CVSROOT_166 CVSROOT
 cvs -d mwjx@fish838.com:/usr/home/mwjx/cvsroot checkout -d CVSROOT_838 CVSROOT
+cvs -d mwjx@125.89.70.104:/usr/home/mwjx/cvsroot checkout -d CVSROOT_104 CVSROOT
+
+cvs -d mwjx@192.168.16.166:/usr/home/mwjx/cvsroot export -r "zll" zlla
+cvs -d mwjx@125.89.70.104:/usr/home/mwjx/cvsroot import -m "zlla" zlla zll yegame start
+cvs -d mwjx@125.89.70.104:/usr/home/mwjx/cvsroot checkout zlla
+
+cvs -d mwjx@192.168.16.166:/usr/home/mwjx/cvsroot export -r "zll" zs_ye3
+cvs -d mwjx@192.168.16.166:/usr/home/mwjx/cvsroot export -r "remote" zs_ye3
+cvs -d mwjx@ye.fish838.com:/usr/home/mwjx/cvsroot import -m "zs_ye3" zs_ye3 zll yegame start
+cvs -d mwjx@ye.fish838.com:/usr/home/mwjx/cvsroot checkout zs_ye3
+cp Makefile* ~/src/zs_ye3_old/commu/
+cp Makefile.lib ~/src/zs_ye3_old/
+cp conf.mk ~/src/zs_ye3_old/
+cp Makefile ~/src/zs_ye3_old/
+cp Makefile* ~/src/zs_ye3_old/
 
 
 注册登录请求:
