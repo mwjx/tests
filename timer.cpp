@@ -926,22 +926,28 @@
 
 六,2013-10-12
 //s.任一人提交三消,房间进入装备阶段
-战斗联调
-重复使用地图
-参数最大值
-s.初始血攻晶核等级
-s.提交三消时阶段检查,c_roommg::set_core
-s.战斗广播加回合数
-s.登录失败
-闪避
-s.登录成功响应
-概要信息
-提交结果联调
-宝石,英雄信息联调
-提交结果及装备
+//今日计划,10:30
+//mysql,timeout,11:00
+//s.登录成功响应,12:00
+//概要信息
+//提交结果及装备,14:00
+//c.调试环境,15:00
+//c.闪避,16:00
+//断言检查,16:15
+//c.移动到对方,16:30
+//c.移回已方,17:00
+//提交结果
+//选英雄
+//配对
+//登录
+//提交结果联调
+//宝石,英雄信息联调
+//c.片断结束,18:00
 
 
 一,2013-10-14
+提交结果联调
+宝石,英雄信息联调
 使用道具
 战斗buff表
 普攻移动
@@ -949,6 +955,28 @@ s.登录成功响应
 外网服务
 外网zs_ye3
 外网b64库
+s.登录失败
+战斗联调
+重复使用地图
+参数最大值
+s.初始血攻晶核等级
+s.提交三消时阶段检查,c_roommg::set_core
+s.战斗广播加回合数
+s.英雄编号转换,c_roommg::set_hero
+s.日志打印时间
+提交结果
+选英雄
+配对
+登录
+
+二,2013-10-15
+
+三,2013-10-16
+
+四,2013-10-17
+
+五,2013-10-18
+
 
 2013-10
 商店,排行榜,注册登录
@@ -970,9 +998,28 @@ c.战斗消息死机
 s.连胜数
 s.排名
 s.机器人延迟选英雄
+s.mysql自动重连
 
 
+cd ~/src/zs_ye3
+nohup zsye &
+
+内网:
 /usr/local/mysql/bin/mysqld_safe --user=mysql &
+interactive_timeout=2592000
+wait_timeout=2592000
+set global interactive_timeout=2592000
+set global wait_timeout=2592000;
+set global  wait_timeout = 10000; 
+show variables like '%timeout%';
+select Host,User,Password from mysql.user where User='root' and Host='%';
+select Host,User,Password from user;
+select Host,User,Password from mysql.user;
+
+
+update mysql.user set Password=PASSWORD('123456') where User='root' and Host='%';
+update mysql.user set Password=PASSWORD('') where User='root' and Host='%';
+FLUSH PRIVILEGES;
 
 /usr/local/mysql/bin/mysqld_safe --user=mysql --datadir=/usr/local/mysql/var
 
